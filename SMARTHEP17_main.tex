@@ -1,0 +1,490 @@
+\documentclass[11pt,a4paper]{article}
+% a minimum font size of 11 points, except for the Gantt chart and tables where the minimum font size is 8 points
+%8 points for 11pt is \scriptsize
+\usepackage{lipsum}
+\usepackage[gen]{eurosym}
+\usepackage{framed}
+\usepackage{layout}
+\usepackage{layouts}
+\usepackage{caption}
+\usepackage{placeins}
+\usepackage{lastpage}
+\usepackage{color}
+\usepackage[pdftex]{epsfig}
+\DeclareGraphicsExtensions{.jpg,.mps,.pdf,.png,.eps}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{pdfpages}
+\usepackage{amssymb,amsmath, multicol, latexsym,mathrsfs,multirow}
+\usepackage{xspace}
+\usepackage{wrapfig}
+\usepackage{comment}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{titling}
+
+%automate spacesaving - 2017 - ants in the eyes of the evaluators
+%\usepackage[lists=tight, title=tight, sections=tight, margins=normal, wordspacing=tight, paragraphs=tight, tracking=tight, charwidths=tight]{savetrees} %wordspacing=normal, 
+
+\usepackage[lists=tight, title=tight, sections=tight, margins=normal, paragraphs=tight, tracking=tight, wordspacing=normal]{savetrees} %wordspacing=normal, 
+
+% Uncomment here if you want to go back to manual spacesaving
+%\usepackage{enumitem}
+\usepackage{rotating}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{framed}
+\usepackage{colortbl,ctable,hhline}
+\usepackage{pbox}
+\usepackage{footnote}
+\usepackage[para]{footmisc}
+\usepackage{tablefootnote}
+\usepackage{sty/trackchanges}
+\usepackage[nomarkers,nolists]{endfloat}
+%\usepackage[float]
+%\restylefloat{figure}
+
+\makesavenoteenv{tabular}
+%\makesavenoteenv{table}
+
+\usepackage{chngcntr}
+\counterwithin{table}{subsection}
+\usepackage{longtable}
+
+\usepackage[italic]{hepparticles}
+\usepackage[italic]{hepnames}
+\usepackage[pdftex,unicode]{hyperref}
+
+%correlct umlauts
+\usepackage[utf8]{inputenc}
+
+%\usepackage{cite}
+%\usepackage[numbers,sort&compress]{natbib}
+%\usepackage{hypernat}%,natbibspacing}
+%\bibliographystyle{mybib/short_style_m}
+
+\setlength{\columnseprule}{.4pt} 
+
+%\usepackage[colorgrid,texcoord]{eso-pic}\TPshowboxestrue  
+
+%bibliography
+% Taken from https://github.com/sean-chester/H2020-MSCA-IF-2016/blob/master/IF-2016-Part_B.tex
+\usepackage[style=verbose-ibid,backend=biber]{biblatex}
+
+% vertical page and text spacing
+\topmargin -11mm
+\headheight 14pt
+\headsep 2.5mm
+\footskip 6.5mm
+\textheight 240mm
+%\parskip 3pt
+\def\baselinestretch{1.}
+
+% horizontal page spacing
+\oddsidemargin -10.5mm
+\textwidth  180mm
+
+%fonts
+% Palatino for main text and math
+%\usepackage[osf,sc]{mathpazo}
+
+%\usepackage{utopia}
+
+%Garamond saves space and looks way poncier
+\usepackage[T1]{fontenc}
+%\usepackage[urw-garamond]{mathdesign}
+%\usepackage{ebgaramond}
+\renewcommand\labelitemi{$\bullet$}
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Helvetica for sans serif
+% (scaled to match size of Palatino)
+%\usepackage[scaled=0.90]{helvet}
+
+% Bera Mono for monospaced
+% (scaled to match size of Palatino)
+\usepackage[scaled=0.85]{beramono}
+
+% title and spacing
+%\newfontfamily\headingfont[]{Palatino}
+\titleformat{\section}{\Large\fontseries{b}\color{blue}}{B\thesection.}{1em}{}
+\titleformat{\subsection}{\large\fontseries{b}\color{blue}}{B\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\fontseries{b}\color{blue}}{B\thesubsubsection}{1em}{}
+\titlespacing*{\section}{0pt}{*2}{*1}
+\titlespacing*{\subsection}{0pt}{*2}{*.75}
+\titlespacing*{\subsubsection}{0pt}{*2}{*.75}
+%bibliography
+\renewcommand{\footnotesize}{\fontsize{8bp}{1em}\selectfont}
+\renewcommand{\cite}{\autocite} % citations in footnotes
+\addbibresource{SMARTHEP17_main.bib}
+% Explicitly set footnote font size to match call (i.e., 8pt).
+% Taken from http://tex.stackexchange.com/a/249422/84485
+\makeatletter
+\renewcommand\footnotesize{%
+   \@setfontsize\footnotesize\@ixpt{8}%
+   \abovedisplayskip 8\p@ \@plus2\p@ \@minus4\p@
+   \abovedisplayshortskip \z@ \@plus\p@
+   \belowdisplayshortskip 4\p@ \@plus2\p@ \@minus2\p@
+   \def\@listi{\leftmargin\leftmargini
+               \topsep 4\p@ \@plus2\p@ \@minus2\p@
+               \parsep 2\p@ \@plus\p@ \@minus\p@
+               \itemsep \parsep}%
+   \belowdisplayskip \abovedisplayskip
+}
+
+\addtocontents{toc}{\protect\enlargethispage{\baselineskip}}
+
+\renewcommand\tableofcontents{%
+    \@starttoc{toc}%
+}
+\makeatother
+
+%float spacing
+\setlength{\textfloatsep}{9pt plus 2.0pt minus 4.0pt}
+\setlength{\floatsep}    {8pt plus 2.0pt minus 4.0pt}
+\setlength{\intextsep}   {9pt plus 2.0pt minus 4.0pt}
+
+%start title page
+\def\acronym{SMARTHEP\xspace}
+\include{SMARTHEP17-WP-descriptions}
+
+\pagestyle{fancy}
+\lhead{}
+\chead{\textbf{ \acronym\ -\ ETN}}
+\rhead{}
+\lfoot{}
+\cfoot{\textbf{Part B2\ -\ Page \thepage}}%\ of \pageref{LastPage}}}
+\rfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\message{YYY \the\footskip}
+
+%\newcommand{\vs}{\vspace{-0.3cm}}
+\newcommand{\ite}[1]{\vspace{-0.25cm}\item[\mbox{[#1]}]}
+\newcommand{\iteCV}{\vspace{-0.25cm}\item[$\circ$]}
+
+\captionsetup[table]{position=above,skip=-12pt,singlelinecheck=false}
+\captionsetup{font=footnotesize}
+
+\hypersetup{ a4paper
+            ,pdfauthor={Johannes Albrecht, Caterina Doglioni, Vladimir Gligorov}
+            ,pdfview={FitV}
+            ,pdfstartview={FitV}
+            %,pdfborder={0000}
+            %,pdfborder= {255 0 0}
+            ,pdfborderstyle={/S/U/W 1}
+            ,urlbordercolor = red
+            ,citebordercolor = white
+            ,linkbordercolor = white
+	        }
+
+\include{SMARTHEP17-defs-physics}
+\include{SMARTHEP17-defs-institutes}
+\include{SMARTHEP17-defs-deliverables}
+
+\begin{document}
+
+%\thispagestyle{empty}
+\begin{center}
+
+\mbox{ }\\[1ex
+\vspace{1cm}]
+
+{\LARGE\bf START PAGE}
+
+\vspace{2.5cm}
+
+
+{\LARGE MARIE SK\L ODOWSKA-CURIE ACTIONS}\\[2ex]
+
+\vspace{2cm}
+
+{\LARGE\bf Innovative Training Networks (ITN)\\
+Call: H2020-MSCA-ITN-2017}\\[2ex]
+
+\vspace{1.0cm}
+
+{\LARGE PART B}
+
+%\begin{figure*}{h}{1.0\textwidth}
+\begin{textblock*}{15cm}(3cm,13.5cm)
+	\centering 
+	\includegraphics[width=1.0\textwidth]{figs/NetworkComposition}
+	%\caption{\small Structure of the Network. \label{fig:network}} 
+\end{textblock*}    
+%\end{figure*}
+
+\vspace{9.0cm}
+
+%{\LARGE Indu\textbf{S}trial \textbf{M}achine Learning and \textbf{A}utomated Detecto\textbf{R T}uning\\in \textbf{H}igh \textbf{E}nergy \textbf{P}hysics\\\vspace{1cm}``\acronym'' }
+
+{\LARGE {\color{blue}\textbf{S}}ynergies between {\color{blue}\textbf{M}}ultivariate {\color{blue}\textbf{A}}nalysis, 
+ {\color{blue}\textbf{R}}eal {\color{blue}\textbf{T}}ime analysis and {\color{blue}\textbf{H}}ybrid architectures 
+ for {\color{blue}\textbf{E}}vent {\color{blue}\textbf{P}}rocessing \\ SMARTHEP}
+
+\vspace{1.0cm}
+
+
+{\large\bf This proposal is to be evaluated as:}\\
+{\large\bf ETN}
+
+\vspace{1.0cm}
+
+\end{center}
+
+
+\cleardoublepage % those two lines are needed to have the bookmark pointing \\  
+\phantomsection  % correctly to the reference, an not two pages before.
+\pdfbookmark[1]{\contentsname}{content_pdfbookmark}
+
+%{\color{red} Max 1 page}
+%\vspace{-5mm}
+\tableofcontents
+
+\newpage
+
+%\layout
+%\floatdiagram
+%\floatdesign
+%\layout
+%\floatdiagram
+%\floatdesign
+%TODO look for p{} but so that text is centered
+\newcommand\Tstrut{\rule{0pt}{2.6ex}}
+\newcommand\TTstrut{\rule{0pt}{3.2ex}}
+\newcommand\Bstrut{\rule[-1.2ex]{0pt}{0pt}}
+\newcommand\BBstrut{\rule[-1.8ex]{0pt}{0pt}}
+\newcolumntype{M}[1]{>{\centering\hspace{0pt}}p{#1}}
+\newcommand\numberofextrapages{5\ }
+
+%{\color{red} Max 2 pages}
+
+\section*{LIST OF PARTICIPATING ORGANIZATIONS}  
+\input{Subsections/participants_list}
+
+\newpage
+%{\scriptsize \noindent \color{red} START PAGE COUNT - MAX 30+\numberofextrapages PAGES \\
+%\noindent \makebox[\linewidth]{\rule{\textwidth}{0.4pt}}\normalsize}
+
+\section{EXCELLENCE}
+\label{sec:EXCELLENCE}
+
+\input{Subsections/introExcellence}
+
+%1.1
+\vspace{-2mm}
+\subsection{Quality, innovative aspects and credibility of the research programme}
+\input{Subsections/introduction_objectives_overview}
+
+%\end{document}
+
+%flush all figs and tables up to here, but keep them at the end
+\processdelayedfloats
+
+{\scriptsize \noindent \color{red} YR SUGGESTED PAGE COUNT - KEEP TO 7-8+\numberofextrapages PAGES UP TO HERE \\
+%\noindent \makebox[\linewidth]{\rule{\textwidth}{0.4pt}}\normalsize }
+
+%%1.2
+\vspace{-2mm}
+\subsection{Quality and innovative aspects of the training programme}
+\label{sec:training}
+\input{Subsections/training_overview}
+\label{sub:trainingOverview}
+\processdelayedfloats
+
+{\scriptsize \noindent \color{red} YR SUGGESTED PAGE COUNT - KEEP TO 9+\numberofextrapages PAGES UP TO HERE \\
+%\noindent \makebox[\linewidth]{\rule{\textwidth}{0.4pt}}\normalsize}
+
+%%1.3
+\vspace{-2mm}
+\subsection{Quality of the supervision}
+\label{sec:supervision}
+\input{Subsections/quality_supervision}
+\processdelayedfloats
+
+{\scriptsize \noindent \color{red} SUGGESTED PAGE COUNT - KEEP TO 14+\numberofextrapages PAGES UP TO HERE \\
+%\noindent \makebox[\linewidth]{\rule{\textwidth}{0.4pt}}\normalsize}
+
+%\clearpage 
+
+%%1.4
+\vspace{-2mm}
+\subsection{Quality of the proposed interaction between the participating organisations}
+\input{Subsections/quality_interaction}
+\label{sec:qualityInteraction}
+\processdelayedfloats
+
+
+{\scriptsize \noindent \color{red} SUGGESTED PAGE COUNT - KEEP TO 15+\numberofextrapages PAGES UP TO HERE \\
+%\noindent \makebox[\linewidth]{\rule{\textwidth}{0.4pt}}\normalsize }
+
+%%CD commented out for debugging
+\vspace{-2mm}
+\section{IMPACT}
+
+%%
+%%B2.1
+\subsection{Enhancing the career perspectives and employability of researchers, contribution to their skills development} 
+\input{Subsections/keyskills}
+\processdelayedfloats
+%%B2.2
+\subsection{Contribution to structuring doctoral/early-stage research training at the European level and to strengthening European innovation capacity}
+\label{subsec:ContribToEcon}
+\input{Subsections/contribtoecon}
+\processdelayedfloats
+
+%%2.3
+\vspace{-2mm}
+\subsection{Quality of the proposed measures to exploit and disseminate the project results}
+\label{sec:qualityExploitDissemination}
+
+%%2.3.1
+\subsubsection{Dissemination of the research results}
+\label{sec:dissemination}
+\input{Subsections/dissemination}
+
+%%2.3.2
+\subsubsection{Exploitation of results and intellectual property}
+\label{sec:exploit}
+\input{Subsections/exploitation}
+
+%2.4
+\vspace{-2mm}
+\subsection{Quality of the proposed measures to communicate the project activities to different target audiences}
+\subsubsection{Communication and public engagement strategy}
+\label{sec:CommPub}
+\input{Subsections/communication}
+
+
+
+%%Note that the subsection: \subsection{Quality of the proposed measures to communicate the project activities to different target audiences} is in here
+\processdelayedfloats
+%
+{\scriptsize \noindent \color{red} SUGGESTION OF PAGE COUNT - KEEP TO 20+\numberofextrapages PAGES \\
+%\noindent \makebox[\linewidth]{\rule{\textwidth}{0.4pt}}\normalsize}
+
+%\clearpage
+\vspace{-2mm}
+\section{QUALITY AND EFFICIENCY OF THE IMPLEMENTATION}
+
+%
+\subsection{Coherence and effectiveness of the work plan}
+\label{sec:coherence}
+\input{Subsections/coherence}
+
+\processdelayedfloats
+\FloatBarrier
+
+\subsection{Appropriateness of the management structure and procedures}
+\input{Subsections/management}
+\processdelayedfloats
+
+\subsection{Appropriateness of the infrastructure of the participating organizations}
+\input{Subsections/infrastructure}
+\processdelayedfloats
+%%Explain the appropriateness of the infrastructure of each participating organisation, as outlined in Section 5 (Participating Organisations), in light of the tasks allocated to them in the action.
+
+\FloatBarrier
+\end{document}
+%
+
+\clearpage
+%%
+{\color{red} Stop page count (max 30 pages sections 1-3)}
+%%
+\section*{GANTT CHART}
+\label{sec:gantt}
+%%\input {Subsections/gantt}
+%%%\addcontentsline{toc}{section}{GANTT CHART}
+%%%NB: The schedule of the project should be in terms of number of months elapsed from the start.
+%\input{figs/gantt}
+{	\centering 
+	\includegraphics[width=0.9\textwidth]{figs/gantt_v2}
+}
+
+
+%%
+\section*{CAPACITIES OF THE PARTICIPATING ORGANISATIONS}
+\input {Subsections/capacities}
+\label{sec:capacities}
+%\input {NodeDescriptions/Partner}
+
+%\FloatBarrier
+
+%
+%%%\textbf{Complete one table of maximum one page per beneficiary and half a page per partner organisation (min font size: 9). The experts will be instructed to disregard content above this limit.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\input{NodeDescriptions/NIKHEF}
+%%
+\section*{ETHICAL ISSUES}
+
+We have answered all questions on ethical issues on the forms and there is nothing to follow up. . 
+%%%\includegraphics[width=16cm]{ethics.png}
+%%\input{Subsections/ethics}
+%%
+\clearpage
+\section*{LETTERS OF COMMITMENT}
+
+%Partners
+\includepdf[pages={1}]{LOC/Fleetmatics}
+\includepdf[pages={1,2}]{LOC/Ximantis}
+\includepdf[pages={1}]{LOC/Lightbox}
+\includepdf[pages={1,2}]{LOC/Cathi}
+\includepdf[pages={1,2}]{LOC/WTT}
+\includepdf[pages={1}]{LOC/USC}
+\includepdf[pages={1}]{LOC/INFN}
+\includepdf[pages={1}]{LOC/OSU}
+\includepdf[pages={1,2}]{LOC/Oregon}
+\includepdf[pages={1}]{LOC/Cincinnati}
+\includepdf[pages={1,2}]{LOC/VU}
+\includepdf[pages={1}]{LOC/Radboud}
+\includepdf[pages={1}]{LOC/HIMT_CommitmentLetter}
+
+%
+%%Please use this section to insert scanned copies of the required Letters of
+%%Commitment from partner organisations.
+%%\thispagestyle{empty}
+
+
+\begin{center}
+
+\mbox{ }\\[1ex
+\vspace{1cm}]
+
+{\LARGE\bf ENDPAGE}
+
+\vspace{2.5cm}
+
+
+{\LARGE MARIE SK\L ODOWSKA-CURIE ACTIONS}\\[2ex]
+
+\vspace{2cm}
+
+{\LARGE\bf Innovative Training Networks (ITN)\\
+Call: H2020-MSCA-ITN-2017}\\[2ex]
+
+\vspace{3.cm}
+
+{\LARGE PART B}
+
+\vspace{2.5cm}
+
+{\LARGE ``\acronym'' }
+
+\vspace{2.5cm}
+ 
+{\large\bf This proposal is to be evaluated as:}\\
+{\large\bf ETN}
+
+\vspace{2.cm}
+
+\end{center}
+
+\end{document}
+
+
+%\label{LastPage}
+

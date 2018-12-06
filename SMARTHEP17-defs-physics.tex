@@ -1,0 +1,239 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  Definitions definitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newcommand{\cp}{\mcal{CP}\xspace}
+\newcommand{\NP}{New Physics\xspace}
+
+\newcommand{\pT}{\ensuremath{p_{\rm T}}\xspace}
+\newcommand{\ET}{\ensuremath{E_{\rm T}}\xspace}
+\newcommand{\IP}{\ensuremath{{\rm IP}}\xspace}
+\newcommand{\IPS}{\ensuremath{{\rm IPS}}\xspace}
+\newcommand{\DOF}{\ensuremath{{\rm DOF}}\xspace}
+\newcommand{\DOFS}{\ensuremath{{\rm DOFS}}\xspace}
+\newcommand{\DOCA}{\ensuremath{{\rm DOCA}}\xspace}
+\newcommand{\GL}{\ensuremath{{\rm GL}}\xspace}
+\newcommand{\signif}[1]{\ensuremath{\rm #1\!/\!\sigma_{#1}}}
+\newcommand{\signifm}[1]{\ensuremath{#1\!/\!\sigma_{#1}}}
+\newcommand{\sig}[1]{\ensuremath{\frac{#1}{\sigma_{#1}}}\xspace}
+\newcommand{\DLL}[2]{\ensuremath{\rm \Delta  \ln{\cal L}_{\particle{#1}\particle{#2}}}}
+\newcommand{\Dll}[2]{\ensuremath{\Delta\textrm{LL}_{\particle{#1}\particle{#2}}}}
+\newcommand{\BR}[1]{\ensuremath{\mathcal{B}(#1)}\xspace}
+\newcommand{\BF} {branching fraction\xspace}
+\newcommand{\BFs}{branching fractions\xspace}
+\newcommand{\Cer}{\v Cerenkov\xspace}
+\newcommand{\cer}{\v cerenkov\xspace}
+\newcommand{\we}{\ensuremath{\theta_{\rm W}}\xspace}
+\def\idmath{\mbox{l\hspace{-0.5em}1} }
+\def\idmath2{\mbox{\scriptsize l\hspace{-0.5em}1 }}
+
+
+\newlength{\MarcoH}  %%  http://www.tac.dk/cgi-bin/info2www?(latex)Lengths
+\newlength{\MarcoL}
+\newcommand{\TwoUp}[1]{
+\settoheight{\MarcoH}{#1}
+\settowidth{\MarcoL}{#1}
+\raisebox{0.5\MarcoH}{#1}\hspace{-\MarcoL}\raisebox{-0.5\MarcoH}{#1}}
+
+
+\newcommand{\sm}{SM\xspace}
+\newcommand{\CL}{C.L.\xspace}
+\newcommand{\ie}{\textit{i.e.}\xspace}
+\newcommand{\eg}{\textit{e.g.}\xspace}
+\newcommand{\wrt}{w\!.r\!.t.\xspace}
+\newcommand{\etal}{\textit{et al.}\xspace}
+\newcommand{\belle}{Belle\xspace}
+\newcommand{\babar}{{\sc BaBar}\xspace}
+\newcommand{\teva}{Tevatron\xspace}
+\newcommand{\tbe}{\ensuremath{\tan \beta}\xspace}
+\newcommand{\mcal}[1]{\ensuremath{\mathcal{#1}}\xspace}
+\newcommand{\phd}{Ph.\@{}D.\@{}\xspace}
+
+\newcommand{\IT}{Inner Tracker\xspace}
+\newcommand{\vel}{VeLo\xspace}
+\newcommand{\vs}{\textit{vs}\xspace}
+\newcommand{\MC}{Monte Carlo\xspace}
+
+\newcommand{\qsq}{{\ensuremath{q^2}}\xspace}
+\newcommand{\fl}{\ensuremath{F_{\textrm{L}}}\xspace}
+\newcommand{\afb}{\ensuremath{A_{\textrm{FB}}}\xspace}
+\newcommand{\at}[1]{\ensuremath{A_{T}^{(#1)}}\xspace}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%         Particles
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\BAR}[1]{\overline{#1}}
+\newcommand{\particle}[1]{{\ensuremath{ #1}}\xspace}
+
+
+\newcommand{\pp}{\particle{pp}}
+\newcommand{\ppbar}{\particle{p\BAR{p}}}
+\newcommand{\cc}{\particle{c\BAR{c}}}
+\renewcommand{\b}{\particle{b}}
+\newcommand{\bbar}{\particle{\BAR{b}}}
+\newcommand{\bb}{\particle{b\BAR{b}}}
+
+
+%Bees
+\newcommand{\B}{\PB}
+\newcommand{\Bs}{\PBs}
+%\newcommand{\Bsd}{\particle{B^0_{(s,d)}}}
+\newcommand{\Bd}{\PBzero}
+\newcommand{\Bds}{\HepParticle{B}{(s)}{0}\xspace}
+\newcommand{\Bu}{\PBplus}
+\newcommand{\Bc}{\PBc}
+\newcommand{\Lb}{\PLambdab}
+\newcommand{\Bbar}{\APB}
+\newcommand{\Bsbar}{\APBs}
+\newcommand{\Bdbar}{\APBzero}
+\newcommand{\Bdsbar}{\HepAntiParticle{B}{(s)}{0}}
+\newcommand{\Bubar}{\PBminus}
+\newcommand{\Bcbar}{\APBc}
+\newcommand{\Lbbar}{\HepAntiParticle{\Lambda}{b}{}}
+
+\newcommand{\Ks}{\PKs}
+\newcommand{\Ko}{\PKzero}
+\newcommand{\Kl}{\PKl}
+\newcommand{\Kp}{\PKplus}
+\newcommand{\Km}{\PKminus}
+\newcommand{\Kst}{\HepParticle{K}{}{\ast0}}
+\newcommand{\APKst}{\HepAntiParticle{K}{}{\ast0}}
+\newcommand{\Jpsi}{\PJpsi}
+\newcommand{\Jmm}{\PJpsi(\Pgm\Pgm)}
+\newcommand{\mup}{\Pgmp}
+\newcommand{\mum}{\Pgmm}
+
+\newcommand{\Dp}{\PDplus}
+\newcommand{\Dm}{\PDmimus}
+\newcommand{\Do}{\PDzero}
+\newcommand{\Dob}{\APDzero}
+\newcommand{\Dst}{\PDstar}
+\newcommand{\Dsto}{\HepParticle{D}{}{\ast0}} 
+\newcommand{\Dstob}{\HepAntiParticle{D}{}{\ast0}} 
+\newcommand{\Dstb}{\HepAntiParticle{D}{}{\ast}} 
+\newcommand{\Dstp}{\HepParticle{D}{}{\ast+}}
+\newcommand{\Dstm}{\HepParticle{D}{}{\ast-}}
+\newcommand{\DDst}{\HepParticle{DD}{}{\ast}}
+
+\newcommand{\pio}{\Ppizero}
+\newcommand{\pip}{\Ppiplus}
+\newcommand{\pim}{\Ppiminus}
+
+% kaons
+\newcommand{\Fii}  {\particle{f_2^{\prime}}(1525)}
+\newcommand{\Kii}  {\particle{K_2^{\ast0}}(1430)}
+\newcommand{\Kiii} {\particle{K_1}(1270)}
+\newcommand{\Kiiii}{\particle{K_1}(1400)}
+
+
+\DeclareRobustCommand{\PUpsilonFiveS}{\HepParticleResonance{\PgU}{5S}{}{}\xspace}
+\DeclareRobustCommand{\Phplus} {\HepParticle{h}{}{+}\xspace}
+\DeclareRobustCommand{\Phminus}{\HepParticle{h}{}{-}\xspace}
+
+\DeclareRobustCommand{\PJpsi}{\HepParticle{J\!/\!\psi}{}{}\xspace}
+
+%Decays
+\newcommand{\decay}[2]{\particle{#1\!\to #2}}
+
+\newcommand{\bsgamma}{\decay{b}{s \gamma}}
+\newcommand{\bsll}{\decay{b}{s \ell \ell}}
+\newcommand{\Bsmumu}{\decay{\Bs}{\mup\mum}}
+\newcommand{\Bdmumu}{\decay{\Bd}{\mup\mum}}
+\newcommand{\Bdsmumu}{\decay{\Bds}{\mup\mum}}
+\newcommand{\Bsbarmumu}{\decay{\Bsbar}{\mup\mum}}
+\newcommand{\Bsmumugamma}{\decay{\Bs}{\mup\mum\Pphoton}}
+\newcommand{\Bdpipi}{\decay{\Bd}{\pip\pim}}
+\newcommand{\BsKK}{\decay{\Bs}{ \PKplus \PKminus}}
+\newcommand{\BdKpi}{\decay{\Bd}{ \PKplus\pim}}
+\newcommand{\BspiK}{\decay{\Bs}{\pip \PKminus}}
+\newcommand{\Bhh}{\decay{\Bds}{ \Phplus\Phminus}}
+\newcommand{\Buhhh}{\decay{\PBpm}{ \Phplus \Phminus h^{\pm}}}
+\newcommand{\BsDspi}{\decay{\Bs}{\PDsminus \pip}}
+\newcommand{\BsJpsiPhi}{\decay{\Bs}{\PJpsi \Pphi}}
+
+\newcommand{\BuJpsiK}{\decay{\PBplus}{\PJpsi \PKplus}}
+\newcommand{\BuJPsiK}{\decay{\PBplus}{\PJpsi \PKplus}}
+\newcommand{\BuJpsimumuK}{\decay{\PBplus}{\Jmm \PKplus}}
+\newcommand{\BdJpsiKst}{\decay{\Bd}{\PJpsi \Kst}}
+\newcommand{\BdJpsimumuKstKpi}{\decay{\Bd}{\Jmm \Kst(\Kp\pim)}}
+\newcommand{\BcJpsimumumunu}{\decay{\PBc}{\Jmm\mup\Pnum}}
+\newcommand{\Jpsimumu}{\decay{\PJpsi}{\mup\mum}}
+\newcommand{\Lambdappi}{\decay{\PLambda}{\Pproton\pim}}
+
+\newcommand{\BsPhimm}  {\decay{\PBs}{\Pphi\mup\mum}}
+\newcommand{\BsPhiKKmm}{\decay{\PBs}{\Pphi(\to\PK\PK)\mup\mum}}
+\newcommand{\BsFtwomm} {\decay{\PBs}{\Fii\mup\mum}}
+
+\newcommand{\BdKstmm} {\decay{\Bd}{\Kst\mup\mum}}
+\newcommand{\BdKstee} {\decay{\Bd}{\Kst e e}}
+\newcommand{\BdKTwomm}{\decay{\PBd}{\Kii\mup\mum}}
+\newcommand{\BdKOnemm}{\decay{\PBd}{\Kiii\mup\mum}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Units
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newcommand{\unit}[1]{\ensuremath{\,{\rm #1}}\xspace}
+
+\newcommand{\kev}{\unit{keV}}
+\newcommand{\mev}{\unit{MeV}}
+\newcommand{\gev}{\unit{GeV}}
+\newcommand{\tev}{\unit{TeV}}
+\newcommand{\kevc}{\unit{keV}}
+\newcommand{\mevc}{\unit{MeV\!/\!\textit{c}}}
+\newcommand{\gevc}{\unit{GeV\!/\!\textit{c}}}
+\newcommand{\tevc}{\unit{TeV\!/\!\textit{c}}}
+\newcommand{\kevcc}{\unit{keV\!/\!\textit{c}^2}}
+\newcommand{\mevcc}{\unit{MeV\!/\!\textit{c}^2}}
+\newcommand{\gevcc}{\unit{GeV\!/\!\textit{c}^2}}
+\newcommand{\tevcc}{\unit{TeV\!/\!\textit{c}^2}}
+
+\newcommand{\mb}{\unit{mb}}
+\newcommand{\microb}{\unit{\mu b}}
+\newcommand{\pb}{\unit{pb}}
+\newcommand{\fb}{\unit{fb}}
+\newcommand{\invpb}{\unit{pb^{-1}}}
+\newcommand{\invfb}{\unit{fb^{-1}}}
+\newcommand{\unitlum}{\unit{cm^{-2}\,s^{-1}}}
+
+\newcommand{\cm}{\unit{cm}}
+\newcommand{\mm}{\unit{mm}}
+\newcommand{\m}{\unit{m}}
+\newcommand{\ps}{\unit{ps}}
+\newcommand{\invps}{\unit{ps^{-1}}}
+\newcommand{\fs}{\unit{fs}}
+\newcommand{\micron}{\unit{\mu m}}
+\newcommand{\mrad}{\unit{mrad}}
+
+\newcommand{\degree}{\ensuremath{^\circ}\xspace}
+\newcommand{\degC}{\ensuremath{^{\circ}\,{\rm C}}\xspace}
+\newcommand{\V}{\unit{V}}
+\newcommand{\A}{\unit{A}}
+\newcommand{\Hz}{\unit{Hz}}
+\newcommand{\MHz}{\unit{MHz}}
+
+\newcommand{\robust}{alternate\xspace}
+\newcommand{\Robust}{Alternate\xspace}
+\newcommand{\rob}{\robust}
+\newcommand{\Rob}{\Robust}
+
+\newcommand{\std}{standard\xspace}
+\newcommand{\Std}{Standard\xspace}
+
+\newcommand{\CLsb}{\ensuremath{\textrm{CL}_{\textrm{s+b}}}\xspace}
+\newcommand{\CLs}{\ensuremath{\textrm{CL}_{\textrm{s}}}\xspace}
+\newcommand{\CLb}{\ensuremath{\textrm{CL}_{\textrm{b}}}\xspace}
+
+\newcommand{\pdf}{p.d.f.\@{}\xspace}
+\newcommand{\pdfp}{p.d.f.}
+\newcommand{\pdfs}{p.d.f.s\xspace}
+
+\newcommand{\tl}{\ensuremath{\theta_{l}}\xspace}
+\newcommand{\tk}{\ensuremath{\theta_{K^*}}\xspace}

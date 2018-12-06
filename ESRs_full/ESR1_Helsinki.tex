@@ -1,0 +1,88 @@
+%\begin{table}[h]
+
+%\begin{table}[h]
+\begin{center}\small
+\resizebox {\textwidth }{!}{%
+\begin{tabular}{|p{16mm}|p{33mm}|p{28mm}|p{18mm}|p{18mm}|p{67mm}|}
+\hline
+\textbf{\Tstrut Fellow} &
+\textbf{Host} &
+\textbf{\phd} &
+\textbf{Start} &
+\textbf{Duration} &
+\textbf{Deliverables}\tabularnewline 
+ESR1 &  \helsinki & Yes & Month 6& 36 & \deliverableCMSHLTDNNJEC, \deliverableHEPPubCMSDijet \tabularnewline
+\hline
+\multicolumn{4}{|l|}{\textbf{\Tstrut Work Package:}
+WP3, WP5} &
+\multicolumn{2}{l|}{\textbf{Doctoral programme:} \helsinki }\tabularnewline\hline
+\multicolumn{6}{|p{20.2cm}|}{\textbf{\Tstrut Project Title: Discovery of new physics with jets in CMS with real-time analysis
+%Improving jet reconstruction and performing an inclusive low dijet mass search at the trigger level
+}  
+}\tabularnewline\hline
+\multicolumn{6}{|p{20.2cm}|}{\textbf{\Tstrut Objectives:}
+%%CD: removed PF details to save space
+%Hadronic jets are traditionally reconstructed at the trigger level
+%only using detector information from the calorimeters. 
+%The jet reconstruction technique called particle flow (PF)  
+%has proven to greatly improve the performance of hadronic jets at CMS, and  
+%is used in CMS for both real-time and offline analysis. PF jets attempt to reconstruct 
+%the individual particles composing a jet, and therefore contain an enormous amount of information
+%that could be exploited for a very precise knowledge of the energy of the jet. 
+%The first objective of ESR1 is to compare the performance of PF jets to calorimeter
+%jets in CMS, and resources needed for their reconstruction at the trigger level. 
+Reconstructing and calibrating jets precisely is crucial for new physics searches. 
+ATLAS and CMS employs two different techniques, the former only using limited
+detector information and the latter called "particle flow" (PF) that
+attempts to reconstruct every single particles composing a jet. The first
+objective of the ESR is to understand resource costs and 
+performance for these two kinds of jets in CMS.
+The current calibration constants for PF jets%, 
+%both at the trigger level and for fully reconstructed events, 
+are only parameterised for a limited number of features,
+thus do not exploit all available PF information.
+A Deep Neural Network (DNN) regressed on the individual PF jet constituents
+can learn powerful new features for jet calibration.
+The second objective of ESR1 is to obtain a DNN calibration that can work on
+both real-time and offline analysis, and evaluate its performance.
+Since offline jets have access to more refined features than real-time jets,
+ESR1 will also develop additional transformation DNNs to align the performance of real-time and offline jets. 
+On its industrial secondment, ESR1 will work on improving \ximantis's existing AI modeling algorithms. The Stochastic model used to forecast dynamic traffic conditions and evolution within the \ximantis app has a number of unknown parameters, which require continuous calibration. Using a Convolutional Neural Network (CNN) to automatically analyze and dynamically calibrate these parameters is a novel and essential ingredient for the success of the predictions. 
+Since the use of CNNs to resolve serious mathematical modeling problems is rather recent, the theory is not yet fully developed for this purpose. The ESR's third objective will be to explore a number of ideas within the field in order to produce models with better predicting capabilities.
+%, in particular redesigning the CNN by changing the number of the parameters it is allowed to change on its own. (WHAT DOES THIS MEAN???)
+The experience gained during the secondment to \ximantis will be crucial to adapt and test CNN for the calibration of jets. During the secondment to \lund, common inter-experimental tools for the calibration
+of jets reconstructed in real-time will be developed, and the fourth objective of ESR1 will be to evaluate the resources needed
+to implement real-time calibrated PF jets with low energies.
+%calibrated with MC techniques 
+%at the trigger level will be evaluated as the fourth objective of ESR1.  
+%Too much detail
+% and the procedures on 
+%how to correlate systematic uncertainties on the jet energy scale will be defined.
+%both online and offline are only parametrised as a function of \pT, $\eta$, jet area A, and underlying event density $\rho$. However, the jet-energy response is known to be correlated with a number of jet shape observables such as those used for quark-gluon discrimination and differences in the quark/gluon flavor response are among the leading systematic uncertainties on the jet energy scale. 
+The fifth objective of ESR1 will be to perform a dijet mass resonance search from very low masses (using exclusively
+real-time reconstruction) up to very high masses (using also the offline reconstruction), using the improved real-time jet reconstruction.
+% and it 
+%is intended to show that online and offline reconstructions are equivalent.
+}\tabularnewline\hline
+\multicolumn{6}{|p{20.2cm}|}{\textbf{\Tstrut Expected Results:}
+ESR1 will lead the improvement of jet reconstruction at the trigger level of CMS, 
+developing on Run2 data and putting the new methods to use on Run3 data (Deliverable~\deliverableCMSHLTDNNJEC), 
+documented in a peer-reviewed technical paper (Deliverable~\deliverableHEPPubCMSHLTDNNJEC). 
+The work with Ximantis will lead to an improvement in the predictive power of their app (Deliverable~\deliverableXimantisML). 
+The physics analysis will lead to a peer-reviewed publication on dijet resonances (Deliverable~\deliverableHEPPubCMSDijet). 
+The ESR will receive a PhD in experimental HEP at \helsinkilong.
+}\tabularnewline\hline
+\multicolumn{6}{|p{20.2cm}|}{\textbf{\Tstrut Secondments:}
+\lund, 5 months, Dr. Caterina Doglioni. Topic: improving the performance of physics objects
+analysed in real-time using inter-experiment tools. 
+\ximantis, 4 months, Dr. Alexandros Sopasakis. Enhancement of the existing artificial intelligent modelling algorithms
+for traffic prediction, using Convolutional Neural Networks (CNNs). 
+The ESR will gain hands-on experience within the training of those neural networks, as well as 
+theoretical knowledge about the field of ML, AI and best current practices in general.
+}\tabularnewline
+\hline
+\end{tabular}
+}%
+\end{center}
+%\end{table}
+%

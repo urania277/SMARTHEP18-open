@@ -1,0 +1,128 @@
+%\begin{table}[h]
+
+%\begin{table}[h]
+\begin{center}\small
+\resizebox {\textwidth }{!}{%
+\begin{tabular}{|p{16mm}|p{33mm}|p{28mm}|p{18mm}|p{18mm}|p{67mm}|}
+\hline
+\textbf{\Tstrut Fellow} &
+\textbf{Host} &
+\textbf{\phd} &
+\textbf{Start} &
+\textbf{Duration} &
+\textbf{Deliverables}\tabularnewline 
+ESR11 &  \nikhef & Yes & Month 6& 36 & \deliverableTechPubMLForOptimisation \deliverableTriggerOptToolkit \deliverableUltrasoundSimulation \deliverableHEPPubLFVATLAS \tabularnewline
+\hline
+\multicolumn{4}{|l|}{\textbf{\Tstrut Work Package:}
+WP3, WP4, WP5, WP6, WP7} &
+\multicolumn{2}{l|}{\textbf{Doctoral programme:} \radboudlong }\tabularnewline\hline
+\multicolumn{6}{|p{20.2cm}|}{\textbf{\Tstrut Project Title: Smart optimization of resources for efficient trigger and analysis and use for ATLAS measurements of LFV}
+}\tabularnewline\hline
+\multicolumn{6}{|p{20.2cm}|}{\textbf{\Tstrut Objectives:}
+This project aims to bring advanced machine learning tools into trigger and analysis. 
+Instead of focusing on specific physics processes and separation of signal 
+versus background based on the  characteristics of these processes, we will investigate a more generic approach - 
+what are the bottlenecks in our trigger algorithms, what prevents us to record events we want and how to do more
+exciting physics with the same or even less resources we have. 
+This allows the project to be conducted in synergy with ESR12, also at \nikhef, within the LHCb experiment. 
+%For main text
+%The typical bottlenecks for real-time data processing are : available CPU, available memory and available disk space. 
+%The main limitations come from necessity to accomplish the work in very specific and short t ime as well as
+%necessity to reduce the incoming data by factor within few milliseconds.
+ATLAS experiment covers a huge variety of interesting physics processes, 
+with a scientific output of a few hundred peer reviewed papers per year. 
+The data selection and data analysis system that makes this rich physics program possible 
+consists of a few thousands lines of code called "trigger lines", 
+developed by a hundred of physicists with different programming skills. 
+%Even though a highly trained and experienced team of physicists writes and optimizes this software,
+%it still requires many tests as some parts of it are still manually edited and therefore error prone. 
+%Further, the constant improvement on the LHC performance (high luminosity of events, higher density of
+%interactions, higher volume of data) 
+%makes 
+The optimization of trigger software and hardware is an ongoing, ever-evolving challenge that follows constant improvement of the LHC accelerator performance. 
+ESR11 will simplify, streamline and optimize the process of testing and benchmarking, 
+by creating software tools that will analyze the performance of each trigger line, 
+the resources used by each line and its commonalities, and eventually reduce the consumption
+of resources using ML algorithms. A secondment at CERN under the supervision of 
+physicists from the \oregonlong will prove that these tools are useful within
+the ATLAS trigger system, in testing the performance of the algorithms developed by ESR15 on real data.  
+As the tools developed by ESR11 will not use any physics characteristics 
+%(except for "physics independent approach", when such characteristics are used to group 
+%triggers together or to select the most optimal step without loose of physics performance), 
+they will be portable and useful for applications independently of the experiment. 
+Specifically, we will design the tools together with LHCb trigger colleagues (ESR12).
+%as the LHCb experiment has a similarly complex trigger system and a similarly
+%complex set of limitations/bottlenecks, where such tools could be applied.
+The work of ESR11 will proceed with the search for Lepton Flavor Violation in the tau to 3 muon leptons final state 
+with ATLAS data, where the optimization of the analysis chain 
+%(with less focus on resources and more focus on characteristics of background processes) 
+is critical and needs to be specified. 
+%At this point is not clear how to preserve this very 
+%challenging physics process at the ATLAS trigger system. 
+The application of the tools that ESR11 will design in this project is a critical ingredient
+for a discovery of this process.
+Such benchmarking and optimisation tools are software independent and are useful outside the 
+HEP environment, for example in industrial groups managing large software projects. 
+To make these tools fully environment independent, ESR11 will collaborate with the industrial partner
+\cathi to test these tools in their environment and making these available as a toolkit for
+their benefit as well. The practical use case to be tested within the secondment with \cathi
+is the integration of real-time medical ultrasound simulation within the \cathiSimulator. 
+%Ultrasound simulation requires simulating ultrasound wave interactions with the 3D representation of organs 
+%using highly parallel computing, providing a 2D image similar to real medical ultrasound image as output. 
+%It is important that the radiated wave propagation and the image reconstruction are
+%performed in real-time for the \cathiSimulator to be effective in training medical 
+%students and specialists as they were working on real patients, and as such this process needs to be optimised. 
+The student will refactor the existing ultrasound simulation code and optimise its performance using 
+the benchmarking tools developed within the first part of the project, and 
+implement the simulation algorithms on a GPU for maximal parallelization. 
+%Original text
+%Medical Ultrasound is one of the most important techniques used in modern medical imaging. 
+%In order to provide a possibility for medical students and specialists to train and improve their skills in this technique, we are integrating real-time medical ultrasound simulation into CATHIS® Simulator.
+%The project operates with such concepts as a 3D scene, an ultrasound transducer and a 2D ultrasound image. 
+%The 3D scene consists of several objects located in 3D space and represented as mesh models (sets of polygons). 
+%The ultrasound transducer is basically a source of ultrasound waves radiated from a given position into a predefined
+%direction within the scene. So, the transducer can be considered as a pair (position, direction) and a set of parameters (constants)
+%that define some physical properties of the radiated ultrasound waves. The waves interact with the objects within the 3D scene 
+%(reflection, refraction) and return to the transducer with different delays and energies, forming ?a scan? of the scene.
+%This scan is called a 2D ultrasound image. Formally, the basic idea of the simulation module consists in real-time mapping of
+%the transducer object within the 3D scene into the corresponding 2D ultrasound image. This can be described using the following simplified scheme:
+%? Input: a) 3D scene representing a set of 3D-mesh organs with some predefined tissue properties, b) ultrasound transducer (source and detector of ultrasound waves) in 3D defined by (position, direction);
+%? Processing: simulation of ultrasound waves interaction with the objects using highly parallel
+%computing;
+%? Output: 2D image similar to real medical ultrasound images;
+%The implementation of the module includes such real-time tasks as radiated wave propagation and image reconstruction. 
+%The wave propagation process is simulated using an approximation model. It is important that the above tasks are solved in real-time as the developed ultrasound module is considered to be a part of CATHIS simulator. Therefore, the main objectives of the project are:
+%? Refactoring of the programming code and performance optimization of the ultrasound simulation module (C++);
+%? Implementation of the most important algorithms on a GPU for maximal parallelization;
+%During this project a student will improve his/her skills in parallel programming (C++ and Nvidia CUDA), code optimization and real-time image processing.
+%within the Ultrasound project we have only two principal limitations: 1) the final ultrasound image must be quite realistic 2) the image must be generated in real-time. The first means that we have to find a simulation method that produces appropriate quality. In the beginning it could be done using a programming environment that is suitable for modelling and experimenting (e.g. C++ on a single CPU or MATLAB). The second means that we will need to accelerate the algorithm, and here a GPU is probably the only possibility, with all that it entails (limited GPU memory, quite low-level programming style with specific code-design etc.). The speed must be at least several images per second, so if the final accelerated algorithm is slower than this, we will need to find a trade-off between the quality and the speed. Possibly a good idea is to use Nvidia OptiX framework, we already have some prototypes working on it (not in a very optimal way, as OptiX is designed for ray tracing and not for wave propagation). In this case a lot of pure GPU programming will be reduced to utilization of this framework (never the less this also requires programming in CUDA) and optimization of the algorithm speed/quality.
+}\tabularnewline\hline
+\multicolumn{6}{|p{20.2cm}|}{\textbf{\Tstrut Expected Results:}
+This ESR will produce an inter-experiment toolkit for benchmarking and optimization of trigger systems together with ESR12 (Deliverable~\deliverableTriggerOptToolkit), 
+and a related peer-reviewed inter-experiment publication. The toolkit will also be released for use in industrial applications, and contribute
+to the delivery of an optimized module for ultrasound simulation for the \cathiSimulator (Deliverable~\deliverableUltrasoundSimulation). 
+The ML methods used in the toolkit will be documented separately in a technical publication (Deliverable~\deliverableTechPubMLForOptimisation).
+The physics research will lead to a peer-reviewed publication on Lepton Flavor Violation (Deliverable~\deliverableHEPPubLFVATLAS).
+% - Improved ATLAS trigger performance, allowing more physics channels and therefore more scientific output
+% - industry  quality tool to speed up software and limit its CPU and memory consumption .
+% - Preservation of lepton flavor analysis tau to 3 muons at high luminosity LHC
+% - development of SMART tools to improve physics performance by optimizing resources and reusing common parts
+% - application of SMART tools to an alternative software project such as LHCb experiment and CATHY firm software
+% - paper on machine learning optimization based on resources and not on output parameters
+% - paper on trigger for Lepton Flavor Violation of tau to 3 muons with ATLAS
+ESR11 will receive a PhD in experimental HEP at \radboudlong.
+}\tabularnewline\hline
+
+%\multicolumn{6}{|p{20.2cm}|}{\textbf{Doctoral program:} Cambridge}\tabularnewline\hline
+\multicolumn{6}{|p{20.2cm}|}{\textbf{\Tstrut Secondments:}
+\cathi, 4 months, Dr. Dzmitry Hlindzich. Optimization and parallelization of the ultrasound simulation code within \cathiSimulator. 
+With this secondment, ESR11 will improve their knowledge of C++ and parallel programming, programming for GPU (Nvidia CUDA) and acquire
+a basic understanding of physical principles of medical ultrasound imaging and image processing. 
+\oregon (at CERN), 5 months, Dr. Frank Winklmeier. Benchmarking of algorithms for energy clustering in the ATLAS trigger system. 
+}\tabularnewline
+\hline
+\end{tabular}
+}%
+\end{center}
+%\end{table}
+%
