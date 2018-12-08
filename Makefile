@@ -20,8 +20,8 @@ TARGET=SMARTHEP17_main
 ###           # do something...
 ###
 
-#PDFLATEX	?= pdflatex -halt-on-error -file-line-error
-PDFLATEX	?= pdflatex -file-line-error
+PDFLATEX	?= pdflatex -halt-on-error -file-line-error
+#PDFLATEX	?= pdflatex -file-line-error
 BIBTEX		?= bibtex
 
 ifneq ($(QUIET),)
