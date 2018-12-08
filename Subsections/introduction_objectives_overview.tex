@@ -7,30 +7,19 @@
 
 %Introduction: who is doing this, give background context
 \noindent{\color{blue}{Overview of the research program}.}
-The main actors of \acronym are HEP researchers and 
-entrepreneurs %industrial parties? businesspeople?
-sharing the same challenge: \textbf{how to take decisions fast and efficiently.}
-The traditional paradigm of first collecting and then analyzing raw data encounters
-a bottleneck in data-rich environments where a coarse pre-selection risks to throw away valuable information. This is 
-a key challenge that, if solved, will increase the information quality 
-extracted from any data-rich environment. 
+%industrial parties? businesspeople?
+The main actors of \acronym are HEP researchers and entrepreneurs sharing the same challenge: \textbf{how to take decisions fast and efficiently.}
+The traditional paradigm of first collecting and then analyzing raw data encounters a bottleneck in data-rich environments where a coarse pre-selection risks to throw away valuable information.
+This is a key challenge that, if solved, will increase the information quality extracted from any data-rich environment. 
 
 %why is LHC data-rich, what HEP does, how it connects to industry
-The objective of HEP is to study the
-basic constituents of matter and search for possible extensions of the
-theory describing these fundamental components of matter. 
-The main experimental tools in HEP
-are particle colliders, where particle beams are accelerated to high energies 
-and collided, and detectors which observe the products
+The objective of HEP is to study the basic constituents of matter and search for possible extensions of the theory describing these fundamental components of matter. 
+The main experimental tools in HEP are particle colliders, where particle beams are accelerated to high energies and collided, and detectors which observe the products
 of these collisions. 
-The LHC in Geneva collides protons 30 million times per second. The 
-products of the collisions are observed by four main particle detectors located at the
-collision points: ALICE, ATLAS, CMS and LHCb\footnote{CERN, \href{http://cds.cern.ch/record/1997374}{The LHC Experiments},
-CERN Document Server}. All experiments are represented in \acronym. 
-The so-called \textit{trigger system} discards most of those events with a maximum
-delay of micro- to milliseconds, since the
-rates of recording them are prohibitive for the current data acquisition and 
-storage systems. 
+The LHC in Geneva collides protons 30 million times per second.
+The products of the collisions are observed by four main particle detectors located at the collision points: ALICE, ATLAS, CMS and LHCb\footnote{CERN, \href{http://cds.cern.ch/record/1997374}{The LHC Experiments}, CERN Document Server}.
+All experiments are represented in \acronym. 
+The so-called \textit{trigger system} discards most of those events with a maximum delay of micro- to milliseconds, since the rates of recording them are prohibitive for the current data acquisition and storage systems. 
 
 %This means that the decision on whether to keep the event needs to occur 
 %on the order of micro- to milliseconds. %explain why it's not 25 ns: buffering
@@ -38,145 +27,84 @@ storage systems.
 LHC experiments are at the forefront of big data, not only within the scientific domain.
 %To give one example, in 2010 it was estimated that 13000~PB of data were saved 
 %worldwide\footnote{\href{http://www.mckinsey.com/insights/business_technology/big_data_the_next_frontier_for_innovation}{Report on Big Data by McKinsey\&Company.}}. 
-Computing sites that are part of the Worldwide LHC Computing Grid need around 1 exabyte
-to store data from the LHC experiments\footnote{The HEP Software Foundation, \href{https://arxiv.org/pdf/1712.06982.pdf}{A Roadmap for HEP Software and Computing R\&D for the 2020s}, ArXiv Document Server}, while Netflix in 2016 required 
+Computing sites that are part of the Worldwide LHC Computing Grid need around 1 exabyte to store data from the LHC experiments\footnote{The HEP Software Foundation, \href{https://arxiv.org/pdf/1712.06982.pdf}{A Roadmap for HEP Software and Computing R\&D for the 2020s}, ArXiv Document Server}, while Netflix in 2016 required 
 tens of petabytes\footnote{Ars Technica, \href{https://arstechnica.com/information-technology/2016/02/netflix-finishes-its-massive-migration-to-the-amazon-cloud/}{Interview on Netflix migration to Amazon Cloud}, accessed online 01/2018}. 
 %Removed in favour of HSF paper
 %The LHCb experiment alone produces 3000~PB of data per year, as it collects 
 %15 million 50~kByte collision events per second during roughly $4\cdot 10^{6}$ seconds/year, while 
 %the ATLAS and CMS experiments produce an order of magnitude more with their data collection rate of 
 %1000 events per second, where the size of each event is 1.5 MB.  
-The codebase of the LHC experiments, 
-more than 50 million lines long\footnote{Information Is Beautiful, \href{http://www.informationisbeautiful.net/visualizations/million-lines-of-code/}{Codebase infographics}, accessed online 01/2018} 
-is larger than all but the biggest commercial projects.  
-No other research ecosystem provides such an opportunity to develop new methods
-of analyzing big data. 
+The codebase of the LHC experiments, more than 50 million lines long\footnote{Information Is Beautiful, \href{http://www.informationisbeautiful.net/visualizations/million-lines-of-code/}{Codebase infographics}, accessed online 01/2018} is larger than all but the biggest commercial projects.  
+No other research ecosystem provides such an opportunity to develop new methods of analyzing big data. 
 
-The sheer size of the datasets collected by
-scientific experiments is leading researchers in HEP towards advanced methods normally used in industry,
+The sheer size of the datasets collected by scientific experiments is leading researchers in HEP towards advanced methods normally used in industry, such as ML and AI. 
 %The advancement of our understanding of the basic building blocks of matter 
 %requires expertise not only from HEP but from a variety of interdisciplinary grounds: 
 %statistics, 
-such as ML and AI. This wealth of data and the short timescales to analyze it
-naturally connects HEP with the industrial sector 
-on the common ground of Data Science, with similarities between the mode of operation and challenges faced by 
-particle physics experiments and those of many practical and industrial processes. 
-Due to the evolution of computational power, data storage, transmission, and cheap
-sensors in the last twenty years, collecting immense amounts of data
-quasi-automatically in both science and industry is easier than ever. 
-The average daily, per-person rate of interactions involving data is 
-expected to increase twentyfold by 2025, as everything becomes data-enabled
-and generates data\footnote{International Data Corporation,
-\href{https://www.seagate.com/files/www-content/our-story/trends/files/Seagate-WP-DataAge2025-March-2017.pdf}{Data Age 2025}, IDC Whitepaper}
-Advancement in terms of fast and efficient decision-making and data analysis are required by 
-society and the commercial sector. A selection of industrial use cases sharing common issues with HEP
-has been chosen as integral part of the \acronym research and exploitation program, on two main topics that are
-relevant for European economical advancement: automotive traffic\footnote{The European Union, 
-\href{https://europa.eu/european-union/about-eu/figures/economy_en}{Economy: Transport}, accessed online 01/2018} and Internet-of-Things sensors$^8$. 
-Researchers in \acronym will contribute to commercial applications towards the optimization of  
-the prediction of automotive traffic, in-vehicle mobile applications, industrial production processes, 
-management of computing farms, and simulation of medical surgery. 
+This wealth of data and the short timescales to analyze it naturally connects HEP with the industrial sector on the common ground of Data Science, with similarities between the mode of operation and challenges faced by particle physics experiments and those of many practical and industrial processes. 
+Due to the evolution of computational power, data storage, transmission, and cheap sensors in the last twenty years, collecting immense amounts of data quasi-automatically in both science and industry is easier than ever. 
+The average daily, per-person rate of interactions involving data is expected to increase twentyfold by 2025, as everything becomes data-enabled and generates data\footnote{International Data Corporation, \href{https://www.seagate.com/files/www-content/our-story/trends/files/Seagate-WP-DataAge2025-March-2017.pdf}{Data Age 2025}, IDC Whitepaper}.
+Advancement in terms of fast and efficient decision-making and data analysis are required by society and the commercial sector. A selection of industrial use cases sharing common issues with HEP has been chosen as integral part of the \acronym research and exploitation program, on two main topics that are
+relevant for European economical advancement: automotive traffic\footnote{The European Union, \href{https://europa.eu/european-union/about-eu/figures/economy_en}{Economy: Transport}, accessed online 01/2018} and Internet-of-Things sensors$^8$. 
+Researchers in \acronym will contribute to commercial applications towards the optimization of the prediction of automotive traffic, in-vehicle mobile applications, industrial production processes, management of computing farms, and simulation of medical surgery. 
 \vskip2pt
 \noindent{\color{blue}{Real-time data processing: why and how}.}
-What is becoming apparent in all LHC collaborations is that our most advanced tools, both hardware and software,
-are not yet consistently designed for optimally handling the available data rates. 
+What is becoming apparent in all LHC collaborations is that our most advanced tools, both hardware and software, are not yet consistently designed for optimally handling the available data rates. 
 %What is becoming apparent in all LHC collaborations after the first
 %few years of running is that our most advanced data analysis
 %tools, both in terms of hardware and software, are not yet either fully designed nor ready for
 %making the most of LHC data. 
-This is not only a HEP challenge: the same issues arise in the processing of the
-vast amount of information in commercial applications. 
+This is not only a HEP challenge: the same issues arise in the processing of the vast amount of information in commercial applications. 
 %%2. triggers
 %{\color{blue}{Objective 1: \acronym solves research and industry challenges with real-time data analysis.}}
-A key driver of the \acronym research program is the fact that processing data in
-real-time is far cheaper than storing and distributing it. 
-LHC experiments can only record a maximum of a thousand collision events per second
-over the millions produced by the LHC for further analysis using a selection system 
+A key driver of the \acronym research program is the fact that processing data in real-time is far cheaper than storing and distributing it. 
+LHC experiments can only record a maximum of a thousand collision events per second over the millions produced by the LHC for further analysis using a selection system 
 implemented in a combination of software and hardware, called~\textit{trigger}.
 %real-time processing only means 
-The present HEP paradigm, in which a pre-selection of interesting signals based on simple event features
-reduces the event rate to a manageable size for further storage, works well in an environment
-dominated by uninteresting ``backgrounds'', where the backgrounds can be distinguished from the 
-signal using those event features. For example, only around
-one in ten trillion LHC collisions produce a Higgs boson\footnote{See slide 3 of \href{https://indico.cern.ch/event/a062849/material/1/1.pdf}{P. Sphicas, Lectures on Trigger \& Data Acquisition}.}.
+The present HEP paradigm, in which a pre-selection of interesting signals based on simple event features reduces the event rate to a manageable size for further storage, works well in an environment dominated by uninteresting ``backgrounds'', where the backgrounds can be distinguished from the signal using those event features.
+For example, only around one in ten trillion LHC collisions produce a Higgs boson\footnote{See slide 3 of \href{https://indico.cern.ch/event/a062849/material/1/1.pdf}{P. Sphicas, Lectures on Trigger \& Data Acquisition}.}.
 %, while around one in ten thousand
 %collisions\footnote{See \href{http://cds.cern.ch/record/1670985?ln=en}{http://cds.cern.ch/record/1670985?ln=en}.} produces
 %a hadron containing a beauty quark. 
-However, crucial HEP research questions cannot be answered entirely by
-physics processes that have these characteristics. 
+However, crucial HEP research questions cannot be answered entirely by physics processes that have these characteristics. 
 %The LHC experiments have performed so well, however,
 %that they are being overwhelmed by new ideas and proposals far
 %beyond their original designs. 
-From studies of charm or strange hadrons at LHCb\footnote{V. Gligorov and C. Fitzpatrick, \href{http://cds.cern.ch/record/1670985}{Anatomy of an upgrade event in the upgrade era, and implications for the LHCb trigger}, CERN Document Server.}
-to those of light new particles decaying to multi-jet final states 
-at ATLAS and CMS\footnote{CMS Collaboration, \href{https://arxiv.org/abs/1604.08907}{Search for narrow resonances in dijet final states at $\sqrt{s}$ = 8 TeV with the novel CMS technique of data scouting}, Phys. Rev. Lett. 117, 031802 (2016), and ATLAS Collaboration, \href{https://cds.cern.ch/record/2295739}{Trigger-object Level Analysis with the ATLAS detector at the Large Hadron Collider: summary and perspectives}, CDS Document Server} to the investigation of processes in collective particle behavior in ALICE\footnote{ALICE Collaboration, \href{https://cds.cern.ch/record/2011297/files/ALICE-TDR-019.pdf}{Technical Design Report}, CDS Document Server}, 
-it is now clear that almost every collision at the LHC
-contains processes which can shed light on fundamental questions in physics. 
-Recording this vast amount of data for further processing is not the 
-standard LHC paradigm due to the economic and 
-technological realities of storage costs. Not being able to fully exploit
-the wealth of collision data delivered by the LHC because it is impossible 
-to save it for further analysis is a severe cost for the
-advancement of the physics program of all LHC experiments, especially in light of
-the planned upgrade to the LHC collider (called High-Luminosity LHC, or HL-LHC)
-that will significantly increase the collision rates. 
+From studies of charm or strange hadrons at LHCb\footnote{V. Gligorov and C. Fitzpatrick, \href{http://cds.cern.ch/record/1670985}{Anatomy of an upgrade event in the upgrade era, and implications for the LHCb trigger}, CERN Document Server.} to those of light new particles decaying to multi-jet final states at ATLAS and CMS\footnote{CMS Collaboration, \href{https://arxiv.org/abs/1604.08907}{Search for narrow resonances in dijet final states at $\sqrt{s}$ = 8 TeV with the novel CMS technique of data scouting}, Phys. Rev. Lett. 117, 031802 (2016), and ATLAS Collaboration, \href{https://cds.cern.ch/record/2295739}{Trigger-object Level Analysis with the ATLAS detector at the Large Hadron Collider: summary and perspectives}, CDS Document Server} to the investigation of processes in collective particle behavior in ALICE\footnote{ALICE Collaboration, \href{https://cds.cern.ch/record/2011297/files/ALICE-TDR-019.pdf}{Technical Design Report}, CDS Document Server}, it is now clear that almost every collision at the LHC contains processes which can shed light on fundamental questions in physics. 
+Recording this vast amount of data for further processing is not the standard LHC paradigm due to the economic and technological realities of storage costs.
+Not being able to fully exploit the wealth of collision data delivered by the LHC because it is impossible to save it for further analysis is a severe cost for the advancement of the physics program of all LHC experiments, especially in light of the planned upgrade to the LHC collider (called High-Luminosity LHC, or HL-LHC) that will significantly increase the collision rates. 
 
-Whether in academia or in industry, it is clear that we must move away from the concept of 
-``raw'' data that is recorded and then analyzed only later, and instead develop detectors and tools that 
-%perform RTA of the raw data events and 
-directly produce high-level quantities 
-fast and efficiently using RTA. One of the most promising approaches is that of 
-saving only the highest level of information rather than the full event for later analysis. 
-For HEP, this means reconstructing the detector information into high-level physics quantities 
-(reconstructed particles) in real-time, and only recording those.
-This approach
+%perform RTA of the raw data events and
+Whether in academia or in industry, it is clear that we must move away from the concept of ``raw'' data that is recorded and then analyzed only later, and instead develop detectors and tools that directly produce high-level quantities fast and efficiently using RTA.
+One of the most promising approaches is that of saving only the highest level of information rather than the full event for later analysis. 
+For HEP, this means reconstructing the detector information into high-level physics quantities (reconstructed particles) in real-time, and only recording those.
+This approach allows a greater number of events to be analyzed, in direct proportion to the size difference between the raw event and the condensed analysis summary objects.
 %which produces summary objects one or two orders of magnitude smaller
 %than the raw data, 
 %stands in contrast to the traditional paradigm of first collecting the raw data for a subset of interesting" events and only then analyzing it. It 
-allows a greater number of events to be analyzed,
-in direct proportion to the size difference between the raw event and the condensed analysis summary objects.
 This technique has been pioneered in each of the LHC experiments by the proponents of the \acronym network. 
 
-In order to obtain high-level information in real-time, we will make 
-full use of advanced emerging 
-\textbf{Machine Learning} techniques. 
-The consortium is well-placed at the frontier of data analysis,
-with HEP world experts 
+In order to obtain high-level information in real-time, we will make full use of advanced emerging \textbf{Machine Learning} techniques. 
+The consortium is well-placed at the frontier of data analysis, with HEP world experts 
 %such as Gligorov, Pierini and Ustyuzhanin, 
 and industry experts
 %such as Sopasakis, Catastini, and Sambo 
-among its members. The scientists who lead the trigger systems and pioneer real-time
-analysis techniques for each of
-the main experiments 
+among its members.
+The scientists who lead the trigger systems and pioneer real-time analysis techniques for each of the main experiments are also part of the consortium, as explained in
+detail in Secs.~\ref{sec:trainingcontrib} and~\ref{ss:competence_44}.
 %(V. Gligorov, J. Albrecht, B. Petersen, D. Strom, S. Majewski, A. Boveia, C. Doglioni,
 %M. Dunford, P. Starovoitov, M. Voutilainen, M. Pierini, P. Christiansen, R. Shahoyan)
-are also part of the consortium, as explained in
-detail in Secs.~\ref{sec:trainingcontrib} and~\ref{ss:competence_44}.
-We will develop algorithm implementations which efficiently
-use modern computing hardware that is increasingly both highly parallel and
-heterogeneous, with CPU-based processing farms complemented by Graphical Processing
-Units (GPU) or Field Programming Gate Arrays (FPGA) co-processors. 
-This kind of~\textbf{hybrid architectures} enable
-faster data processing, but designing them also requires highly-specialized
-training which few contemporary researchers in the physical sciences have.
+We will develop algorithm implementations which efficiently use modern computing hardware that is increasingly both highly parallel and heterogeneous, with CPU-based processing farms complemented by Graphical Processing Units (GPU) or Field Programming Gate Arrays (FPGA) co-processors. 
+This kind of~\textbf{hybrid architectures} enables faster data processing, but designing the hybrid architectures also requires highly-specialized training which few contemporary researchers in the physical sciences have.
 The experts on this topic in the consortium span HEP and industry.  
 %, with Lacassagne, 
 %Santos, Crescioli, Annovi, Boveia, and Hlindzich. 
 %, e.g. 
 %Deep Learning\footnote{\href{http://www.forbes.com/sites/anthonykosner/2014/12/29/tech-2015-deep-learning-and-machine-intelligence-will-eat-the-world/}{http://tinyurl.com/q32cvhb}}.
-\acronym researchers will employ these techniques and tools to 
-enable RTA techniques throughout the four main LHC collaborations,
-and reach \textbf{physics goals} that answer fundamental questions of the SM that
-would otherwise be left unanswered, described in Sec.~\ref{sec:metho}. 
-\acronym also identifies concrete \textbf{commercial deliverables} using the
-drivers of RTA to cater to the industrial topics of transportation
-and IoT sensors, described in Sec.~\ref{sec:exploit}.
-In addition to these direct commercial benefits, we expect that the secondment
-of the ESRs to our industrial partners will lead to cross-pollination of
-methods. Throughout this ETN, RTA
-will provide the common language linking these challenges and disciplines, 
-in research, academia and industry, and will enable each of the specific
-projects to benefit from the progress made in the others.
+\acronym researchers will employ these techniques and tools to enable RTA techniques throughout the four main LHC collaborations, and reach \textbf{physics goals} that answer fundamental questions of the SM that would otherwise be left unanswered, described in Sec.~\ref{sec:metho}. 
+\acronym also identifies concrete \textbf{commercial deliverables} using the drivers of RTA to cater to the industrial topics of transportation and IoT sensors, described in Sec.~\ref{sec:exploit}.
+In addition to these direct commercial benefits, we expect that the secondment of the ESRs to our industrial partners will lead to cross-pollination of methods.
+Throughout this ETN, RTA will provide the common language linking these challenges and disciplines, in research, academia and industry, and will enable each of the specific projects to benefit from the progress made in the others.
 \vskip2pt
 \noindent{\color{blue}{Composition of the network}.} 
 %The consortium created for \acronym and includes three major European research institutes, 
@@ -209,19 +137,12 @@ projects to benefit from the progress made in the others.
 %WildTree - SWI
 %%Lightbox - I
 \acronym spans nine different countries, its structure is shown on the cover page.
-\cernentity, the \nikhefentity and \cnrsentity research organizations, and universities \sorbonneentity, \helsinkientity, \unigeentity, \dortmundentity, \lundentity, \heidelbergentity
-form the core academic side of the Network. \ibmentity and \dqentity as beneficiaries, and 
-\ximantisentity, \lightboxentity, \fleetmaticsentity, \cathientity, \wildtreeentity and \heidelberginstrumentsentity as partners,
-form a balanced counterpart to academia with a focus on the same challenges of analyzing large quantities of data in real-time. 
-\oregonentity, \ohioentity, \cincinnatientity, \pisaentity,
-\santiagoentity, \radboudentity and \amsterdamentity 
-are high-profile associated academic partners that reinforce the
-network, provide training and secondment to the ESRs, 
-and award PhD degrees in case the beneficiaries are industries and research institutes\footnote{We use "node" to indicate
+\cernentity, the \nikhefentity and \cnrsentity research organizations, and universities \sorbonneentity, \helsinkientity, \unigeentity, \dortmundentity, \lundentity, \heidelbergentity form the core academic side of the Network.
+\ibmentity and \dqentity as beneficiaries, and \ximantisentity, \lightboxentity, \fleetmaticsentity, \cathientity, \wildtreeentity and \heidelberginstrumentsentity as partners, form a balanced counterpart to academia with a focus on the same challenges of analyzing large quantities of data in real-time. 
+\oregonentity, \ohioentity, \cincinnatientity, \pisaentity, \santiagoentity, \radboudentity and \amsterdamentity are high-profile associated academic partners that reinforce the
+network, provide training and secondment to the ESRs, and award PhD degrees in case the beneficiaries are industries and research institutes\footnote{We use "node" to indicate
 either beneficiary or partner. The \textit{node responsible} is the \textit{main scientific contact person} for the node. Administrators, albeit indispensable for the network functioning, are not named even if they are node responsibles in the case scientists are affiliated to two nodes.}.
-All consortium members  have successfully proven
-their capabilities for research, training, exploitation and dissemination
-as shown in Sec.~\ref{sec:supervision},~\ref{ss:competence_44} and part B2.    
+All consortium members  have successfully proven their capabilities for research, training, exploitation and dissemination as shown in Sec.~\ref{sec:supervision},~\ref{ss:competence_44} and part B2.    
     
 %\end{wrapfigure}
 
@@ -238,10 +159,8 @@ as shown in Sec.~\ref{sec:supervision},~\ref{ss:competence_44} and part B2.
 %{\color{blue}{Network topics and objectives}.}
 \vskip2pt
 \noindent{\color{blue}{Topics and research objectives}.} 
-We define four main topics for \acronym,
-focused on taking efficient decisions using RTA. 
-All research topics require collaboration between industry and HEP, 
-and have concrete outcomes beyond the state of the art benefiting both, only achievable with this network. 
+We define four main topics for \acronym, focused on taking efficient decisions using RTA.
+All research topics require collaboration between industry and HEP, and have concrete outcomes beyond the state of the art benefiting both, only achievable with this network. 
 The \acronym topics, goals and research objectives are:
 
 %\vspace{-2mm}
@@ -286,22 +205,14 @@ The \acronym topics, goals and research objectives are:
 %Fig.~\ref{fig:scienceStructure}. 
 
 The research objectives defined in \acronym go beyond the present state-of-the-art. 
-They can only be achieved through the constitution 
-of a multidisciplinary team, 
+They can only be achieved through the constitution of a multidisciplinary team, providing the required research resources and the appropriate \textbf{training}. 
 %shown in Fig.~\ref{fig:scienceStructure}
-providing
-the required research resources and the appropriate \textbf{training}. 
 %Therefore, outstanding training will be an objective in itself.
 %How the individual projects of the recruited researchers will be integrated into -- and contribute to
 %-- the overall research program is described in more detail together with the research methodology in Sec.~\ref{sec:metho}.  
-The concrete outcomes of \acronym will be \textbf{whitepapers, peer-reviewed publications and 
-software toolkits} for the research objectives, that would not be possible without the expertise in this network. 
-We also believe that the experience gained
-with \acronym will lead to new interdisciplinary training models for scientists
-in other data-intensive domains. With four in ten companies reporting a shortage of analytical skills\footnote{\href{http://www.forbes.com/sites/gilpress/2015/04/30/the-supply-and-demand-of-data-scientists-what-the-surveys-say/}{Supply and demand of data scientists}, Forbes 2015},
-we believe that the proposed training program will increase the growth and competitiveness of 
-European research, both in the academic and industrial sectors, while placing the foundations for a balanced career 
-development model.
+The concrete outcomes of \acronym will be \textbf{whitepapers, peer-reviewed publications and software toolkits} for the research objectives, that would not be possible without the expertise in this network. 
+We also believe that the experience gained with \acronym will lead to new interdisciplinary training models for scientists in other data-intensive domains.
+With four in ten companies reporting a shortage of analytical skills\footnote{\href{http://www.forbes.com/sites/gilpress/2015/04/30/the-supply-and-demand-of-data-scientists-what-the-surveys-say/}{Supply and demand of data scientists}, Forbes 2015}, we believe that the proposed training program will increase the growth and competitiveness of European research, both in the academic and industrial sectors, while placing the foundations for a balanced career development model.
 
 % that is becoming necessary.
 % for research and industry to both contribute to European growth and competitiveness.
@@ -375,11 +286,12 @@ development model.
 %should be 
 %highly optimized to fit the limited ressources.
 
+%%%%%%%%%%%%%%%%%%%%% AB: END HERE %%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsubsection{Research methodology and approach.}
 \label{sec:metho}
 
-\acronym defines four research WPs in the Table below and Fig.2, 
-each corresponding to a research topic with its specific research objectives. 
+\acronym defines four research WPs in the Table below and Fig.2, each corresponding to a research topic with its specific research objectives. 
 The following table describes the motivations for each of the \acronym research topics and WPs and related ESRs. 
 Additionally, WPs are defined for the management of the consortium, for training, and for outreach and dissemination.  
 A description of the overall tasks for all WPs can be found in Sec.~\ref{sec:WPdescription}. 
@@ -407,9 +319,7 @@ A description of the overall tasks for all WPs can be found in Sec.~\ref{sec:WPd
 \cellcolor{red} \textbf{\color{white}WP2\color{black}}    & Training   & Sfyrla  & 5 & 42 & Recruitment and training & \unigeentity & All \tabularnewline\hline\midrule
 
 \cellcolor{orange} \textbf{\color{black}WP3\color{black}}   & Data analysis and ML & Gligorov & 1 & 48 & Research& \cnrs & All \tabularnewline \hline%: Software and algorithms enabling RTA
-\multicolumn{8}{p{\textwidth}}{\textbf{Motivation:} In order to optimize real-time analyses and selections,
-it is important to employ the most powerful selection algorithms. One of the ML specialties is to find interesting features 
-of data without being explicitly told what to look for. 
+\multicolumn{8}{p{\textwidth}}{\textbf{Motivation:} In order to optimize real-time analyses and selections, it is important to employ the most powerful selection algorithms. One of the ML specialties is to find interesting features of data without being explicitly told what to look for. 
 %This goal is achieved by minimizing some measure of error in predictions the machine learning algorithm makes. 
 %In general, this is an iterative process in which the prediction is altered and the measure of error
 %in prediction reevaluated in turn, lowering the total error. 
@@ -419,33 +329,21 @@ This leads to remarkable performance in tasks of regression and classification.
 The ability to learn from the analyzed datasets also makes ML a very attractive tool towards RTA applications.
 %for fast and efficient data analysis
 %, since once a decision is made then the data is lost.
-Different ML algorithms are investigated by ESRs 1-3, 6, 9 for object reconstruction and feature identification, 
-and for benchmarking and optimisation purposes for ESRs 4, 5, 7, 8, 10-12. 
+Different ML algorithms are investigated by ESRs 1-3, 6, 9 for object reconstruction and feature identification, and for benchmarking and optimisation purposes for ESRs 4, 5, 7, 8, 10-12. 
 Custom algorithms for real-time object reconstruction will be deployed by ESRs 3-5, 7, 14, 15.} \tabularnewline \hline \midrule
 \cellcolor{yellow} \textbf{\color{black}WP4\color{black}}    & Hybrid architectures & Lacassagne & 1 & 48 & Research & \sorbonneentity  & 3, 4, 8, 9, 11, 15 \tabularnewline \hline % : Novel hardware for detectors and computing 
 \multicolumn{8}{p{\textwidth}}{
 \textbf{Motivation:} 
-Innovative solution in hybrid hardware/software architectures are needed 
-for faster, more efficient real-time data analysis, as the complexity and rate 
-of the LHC data does not allow standard processors or data analysis techniques 
-to be competitive (see J.P. Vlimant, \href{https://erez.weizmann.ac.il/pls/htmldb/f?p=101:58:::NO:RP:P58_CODE,P58_FILE:5393,Y}{Machine Learning in Charged Particle Tracking}, Hammers and Nails ML\&HEP Conference, 2017). 
+Innovative solution in hybrid hardware/software architectures are needed for faster, more efficient real-time data analysis, as the complexity and rate of the LHC data does not allow standard processors or data analysis techniques to be competitive (see J.P. Vlimant, \href{https://erez.weizmann.ac.il/pls/htmldb/f?p=101:58:::NO:RP:P58_CODE,P58_FILE:5393,Y}{Machine Learning in Charged Particle Tracking}, Hammers and Nails ML\&HEP Conference, 2017). 
 The implementation of ML and detector reconstruction algorithms will be tested on GPUs by ESRs 3, 9, 10 and 11. 
-Another example of a solution that ESRs 4, 8 and 15 will focus on is the ATLAS Fast TracKer (FTK)
-(see ATLAS Collaboration,\href{https://inspirehep.net/record/1614024/}{The ATLAS Fast TracKer}, CERN Document Server, 2016), a unique hardware processor to reconstruct
-the trajectory (track) of the charged particles that cross the inner part
-of the experiment. The FTK is a complex system made by several
-custom electronics boards based on FPGAs and unique computing devices.  %Associative Memory Chips
+Another example of a solution that ESRs 4, 8 and 15 will focus on is the ATLAS Fast TracKer (FTK) (see ATLAS Collaboration,\href{https://inspirehep.net/record/1614024/}{The ATLAS Fast TracKer}, CERN Document Server, 2016), a unique hardware processor to reconstruct the trajectory (track) of the charged particles that cross the inner part of the experiment.
+The FTK is a complex system made by several custom electronics boards based on FPGAs and unique computing devices.  %Associative Memory Chips
 %The hardware tracking will be also a central part of the Phase-II Upgrade of ATLAS, with upgraded version of FTK called FTK+
 %The tracking information is an essential tool for effective real-time event selection and has a
 %central role in the whole ATLAS physics program especially in the HL-LHC phase. 
-Moreover, with the end of Moore's law and the increase in parallelization and diversification of computing
-architectures, it becomes increasingly complicated to design the optimal architecture for a processing task. 
-Particularly for complex tasks, such as the real-time data processing of LHC experiments, there may be many
-constraints involved: the I/O limitations of each architecture,
-the memory limitations and compilers used, the optimal scheduling of subprocesses within each task. 
-ESR10 will optimize data formats and processing techniques to enable CPUs, GPUs, FPGAs, 
-and hybrids to work together to solve problems which none of these technologies could solve on their own, 
-and as ESR4 and ESR8 will investigate parallelization and multithreading of current algorithms.
+Moreover, with the end of Moore's law and the increase in parallelization and diversification of computing architectures, it becomes increasingly complicated to design the optimal architecture for a processing task. 
+Particularly for complex tasks, such as the real-time data processing of LHC experiments, there may be many constraints involved: the I/O limitations of each architecture, the memory limitations and compilers used, the optimal scheduling of subprocesses within each task. 
+ESR10 will optimize data formats and processing techniques to enable CPUs, GPUs, FPGAs, and hybrids to work together to solve problems which none of these technologies could solve on their own, and as ESR4 and ESR8 will investigate parallelization and multithreading of current algorithms.
 } \tabularnewline \hline \midrule
 
 \cellcolor{lime} \textbf{\color{black}WP5\color{black}}   & Physics applications & Christiansen, Dunford, Voutilainen, Albrecht  & 1 & 48 & Research & \helsinkientity & 1-8, 10-15 \tabularnewline\hline %: Physics measurements and searches
@@ -453,36 +351,23 @@ and as ESR4 and ESR8 will investigate parallelization and multithreading of curr
 \textbf{Motivation:} 
 The theory describing the Standard Model (SM) is incomplete. 
 %%DM
-Physics phenomena beyond the SM are needed to explain, for example, 
-as observed from indirect gravitational and cosmological observations
-the existence of massive "dark" matter present within our universe in amounts by far exceeding normal matter.%, or 
+Physics phenomena beyond the SM are needed to explain, for example, as observed from indirect gravitational and cosmological observations the existence of massive "dark" matter present within our universe in amounts by far exceeding normal matter.%, or 
 %%New Higgs searches
 %the apparent difference between the measured mass of the recently discovered Higgs boson 
 %and what theorized within the SM. %% PS I just removed the clause with Higgs mass, as it is dodgy
-ESRs 1-4, 8, 13 and 15 search for new phenomena 
-that could resolve these issues, and measure the properties of the Higgs boson. 
+ESRs 1-4, 8, 13 and 15 search for new phenomena that could resolve these issues, and measure the properties of the Higgs boson. 
 %%LFU
-Precise measurements of the SM parameters can also highlight shortcomings
-of the current theory. In particular, ESRs 5-7 and 10-12 probe the SM prediction 
-that the weak force couplings to all lepton types are equal (Lepton Flavor
-Universality, or LFU), and that the overall number of leptons of a given type
-does not change in interactions (Lepton Flavor Violation, LFV). 
-Recent measurements published by LHCb indicate that in 
+Precise measurements of the SM parameters can also highlight shortcomings of the current theory.
+In particular, ESRs 5-7 and 10-12 probe the SM prediction that the weak force couplings to all lepton types are equal (Lepton Flavor Universality, or LFU), and that the overall number of leptons of a given type does not change in interactions (Lepton Flavor Violation, LFV). 
+Recent measurements published by LHCb indicate that in decays of beauty mesons, LFU might be violated (see e.g. Phys. Rev. Lett. 113(2014)151601 and JHEP08(2017)055), making this one of the most interesting topics for the near-future of particle physics. 
 %loop-level 
-decays of beauty mesons, LFU might be
-violated (see e.g. Phys. Rev. Lett. 113(2014)151601 and JHEP08(2017)055), 
 %(CITE RK,RK*), 
-making this one of the most interesting topics for the near-future of particle physics. 
 %Two researches in this proposal are leading
 %ERC research groups to further investigate this question. 
 %CD this is best in the quality of the supervision
 %%ALICE
-The collective behavior of particles measured by ESR15 sheds light
-on the state of matter present in the early universe 
-a few milliseconds after the Big Bang. 
-The common denominator of all those
-searches and measurements is that they would not be possible without
-specifically designed data taking techniques with a strong real-time component.
+The collective behavior of particles measured by ESR15 sheds light on the state of matter present in the early universe a few milliseconds after the Big Bang. 
+The common denominator of all those searches and measurements is that they would not be possible without specifically designed data taking techniques with a strong real-time component.
 %as detailed in Sec.~\ref{sub:Originality}. 
 %\vspace{-2mm}
 } \tabularnewline \hline\midrule
@@ -517,13 +402,9 @@ specifically designed data taking techniques with a strong real-time component.
 \cellcolor{green} \textbf{\color{black}WP6\color{black}}   & Industrial applications & Meric, Starovoitov  & 1 & 48 & Research& \dqentity, \heidelbergentity & 1-4, 7-9, 11, 13, 15 \tabularnewline\hline %: Exploitation of RTA 
 \multicolumn{8}{p{\textwidth}}{
 \textbf{Motivation:} 
-Real-time analysis techniques are employed in a variety of industrial contexts. \acronym
-selected the cases with the best fit to the physics research program and techniques employed 
-by each ESRs for their industrial secondments. Most ESRs include a project with
-concrete industrial deliverables, concerning real-time traffic prediction (ESR1), in-vehicle mobile pattern recognition (ESR2), 
-Internet-of-Things sensors (ESR3, ESR13, ESR15), 
-task optimization and parallelization (ESR4, ESR8), 
-efficient handling of computing clusters (ESR7), medical applications and insurance (ESR9, ESR11).
+Real-time analysis techniques are employed in a variety of industrial contexts.
+\acronym selected the cases with the best fit to the physics research program and techniques employed by each ESRs for their industrial secondments.
+Most ESRs include a project with concrete industrial deliverables, concerning real-time traffic prediction (ESR1), in-vehicle mobile pattern recognition (ESR2), Internet-of-Things sensors (ESR3, ESR13, ESR15), task optimization and parallelization (ESR4, ESR8), efficient handling of computing clusters (ESR7), medical applications and insurance (ESR9, ESR11).
 } \tabularnewline \hline\midrule
 %
 
@@ -543,13 +424,9 @@ efficient handling of computing clusters (ESR7), medical applications and insura
 %and configure themselves to achieve an optimal understanding of the data which they collect, with as few human assumptions
 %as possible, and within the constraints of real-time data processing?} 
 
-Cutting-edge techniques in ML and hybrid architectures will be assessed and developed by the ESRs 
-before their application to specific use cases, in order to enable RTA that advance HEP, industry and society, 
-to follow with exploitation and dissemination (Sec.~\ref{sec:qualityExploitDissemination}), as shown in Fig.1. 
+Cutting-edge techniques in ML and hybrid architectures will be assessed and developed by the ESRs before their application to specific use cases, in order to enable RTA that advance HEP, industry and society, to follow with exploitation and dissemination (Sec.~\ref{sec:qualityExploitDissemination}), as shown in Fig.1. 
 This modus operandi is at the heart of \acronym and ensures the efficiency of its implementation. 
-Our research methodology seeks to apply RTA to novel problems posed by HEP;
-in turn, the methods employed will evolve from exposure to these new challenges and
-will be applied to novel industrial and commercial problems.
+Our research methodology seeks to apply RTA to novel problems posed by HEP; in turn, the methods employed will evolve from exposure to these new challenges and will be applied to novel industrial and commercial problems.
 %This methodology is made explicit in Fig. 1.%~\ref{fig:scienceStructure}. 
 
 %Each ESR develops novel methods in light of HEP problems, and applying DS methods to commercial applications. 
@@ -599,13 +476,9 @@ will be applied to novel industrial and commercial problems.
 \label{sub:Originality}
 %((in light of the current state of the art and existing programs / networks / doctoral research trainings)
 
-HEP experiments are by their very nature built around \textbf{training}, 
-as around a third of all LHC collaborations consist of PhD students.
-This combination of a collaborative, training-based research culture, and a focus on the largest datasets
-produced in the world using beyond state-of-the-art technology
-leads to the proposal of \acronym as a training-centered research program in HEP and DS.
-In the following, we cover the points that make the program of \acronym unique, 
-in light of the current state of the art of research and doctoral trainings. 
+HEP experiments are by their very nature built around \textbf{training}, as around a third of all LHC collaborations consist of PhD students.
+This combination of a collaborative, training-based research culture, and a focus on the largest datasets produced in the world using beyond state-of-the-art technology leads to the proposal of \acronym as a training-centered research program in HEP and DS.
+In the following, we cover the points that make the program of \acronym unique, in light of the current state of the art of research and doctoral trainings. 
 
 %\begin{wrapfigure}{r}{0.75\textwidth}
 %	\vspace{-5mm}
@@ -629,31 +502,20 @@ Figure 1: \acronym implementation strategy and main node expertise.
      %\vspace{-5mm} 
 %%\begin{figure}	
 \end{wrapfigure}
-A large part of the novelty of this proposal is the volume of data which will
-be processed, comparable to the largest commercial tasks. 
+A large part of the novelty of this proposal is the volume of data which will be processed, comparable to the largest commercial tasks. 
 This is true across both academic and non-academic applications:
 an estimated 90$\%$ of generated data is considered too expensive to store\footnote{\href{http://www.mckinsey.com/insights/business_technology/big_data_the_next_frontier_for_innovation}{2010 report on Big Data by McKinsey\&Company.}}.
-One can compare Facebook and e.g. the LHCb collaboration:
-the former processes hundreds of petabytes of data per year and spends half a billion
-dollars a year on computing\footnote{Facebook, 
-  \href{http://www.datacenterknowledge.com/the-facebook-data-center-faq-page-three/}{The Facebook Data Center FAQ}, 2010.}
-while the latter processes thousands of petabytes of data per year
-and spends around seven million dollars a year on computing\footnote{Private communication, \href{mailto:peter.clarke@ed.ac.uk}{Prof. Peter Clarke}, University of Edinburgh.}. The essential difference is that Facebook
-stores and distributes this data to its users while LHC experiments 
-largely process and then dispose of the data. An example of this are the physics searches and measurements performed
-solely using trigger information. In these searches only a small fraction of each event, regardless of whether
-LHC experiments are able to record it for offline reconstruction or not, is saved for further processing. 
-This overcomes the storage limitations and allows to be more than an order of magnitude more sensitive
-to certain new particles (e.g. associated to Dark Matter, as in Fig.3).
+One can compare Facebook and e.g. the LHCb collaboration.
+The former processes hundreds of petabytes of data per year and spends half a billion dollars a year on computing\footnote{Facebook, \href{http://www.datacenterknowledge.com/the-facebook-data-center-faq-page-three/}{The Facebook Data Center FAQ}, 2010.} while the latter processes thousands of petabytes of data per year and spends around seven million dollars a year on computing\footnote{Private communication, \href{mailto:peter.clarke@ed.ac.uk}{Prof. Peter Clarke}, University of Edinburgh.}.
+The essential difference is that Facebook stores and distributes this data to its users while LHC experiments largely process and then dispose of the data.
+An example of this are the physics searches and measurements performed solely using trigger information.
+In these searches only a small fraction of each event, regardless of whether LHC experiments are able to record it for offline reconstruction or not, is saved for further processing. 
+This overcomes the storage limitations and allows to be more than an order of magnitude more sensitive to certain new particles (e.g. associated to Dark Matter, as in Fig.3).
 
-This requires a more systematic application of RTA, machine learning and 
-hybrid architectures for HEP. 
-E.g. for ML, ESR1 and ESR2 will make use of Deep Learning techniques,
-which build high-level features from raw
-data. ESR10 will use Recurrent Neural Networks (RNNs), which learn ordered patterns in the data and can be applicable both to tracking and to model paths taken by vehicles, and develop Generative Adversarial Networks (GAN), and ESR13 will implement anomaly detection techniques. 
-This paradigm shift can be used in industry as well, 
-while the research environment can benefit from a generation of
-ESRs trained in industrial grade algorithms and tools. 
+This requires a more systematic application of RTA, machine learning and hybrid architectures for HEP. 
+E.g. for ML, ESR1 and ESR2 will make use of Deep Learning techniques, which build high-level features from raw data.
+ESR10 will use Recurrent Neural Networks (RNNs), which learn ordered patterns in the data and can be applicable both to tracking and to model paths taken by vehicles, and develop Generative Adversarial Networks (GAN), and ESR13 will implement anomaly detection techniques. 
+This paradigm shift can be used in industry as well, while the research environment can benefit from a generation of ESRs trained in industrial grade algorithms and tools. 
 
 \begin{wrapfigure}{r}{0.4\textwidth}
 	\vspace{-4mm}
@@ -693,34 +555,19 @@ in the search for new particles. Main analyzers: Boveia, Doglioni, Starovoitov, 
 %ignores the growing importance of the analysis of raw, unstructured, data across both academia
 %and industry. For both issues, a series of techniques known as machine learning, multivariate analysis, and 
 
-\noindent {\color{blue}{2. The \acronym program of searches and measurement could
-lead to breakthroughs in our understanding of nature}}
-Research topics chosen to drive conceptual developments
-within \acronym have potential to lead to 
-the discovery of new physics beyond the standard model, but only RTA techniques enable
-full exploitation of the LHC dataset. 
+\noindent {\color{blue}{2. The \acronym program of searches and measurement could lead to breakthroughs in our understanding of nature}}
+Research topics chosen to drive conceptual developments within \acronym have potential to lead to the discovery of new physics beyond the standard model, but only RTA techniques enable full exploitation of the LHC dataset. 
 %the full statistical reach of the LHC data to be exploited. 
 %Only RTA techniques will enable such discoveries. 
-ESRs working on physics topics will target common challenges, e.g. 
-when real-time algorithms and reconstruction techniques are not sufficiently 
-advanced to distinguish signal from noise, 
-or when the statistical power of the dataset is not fully
-exploited if objects are reconstructed with traditional techniques. 
+ESRs working on physics topics will target common challenges, e.g. when real-time algorithms and reconstruction techniques are not sufficiently advanced to distinguish signal from noise, or when the statistical power of the dataset is not fully exploited if objects are reconstructed with traditional techniques. 
 %The advanced tools under design in \acronym
 %will allow the real-time systems of LHC 
 %experiments to improve coherently. 
 
-One central physics topic of \acronym is
-lepton flavor physics. ESR 5-7, 9, 11-12 will work on questions concerning
-the conservation and universality of lepton flavor in different final states and experiments,
-as tantalizing hints of discrepancies between
-measurements and SM theory have been recently reported. 
-All measurements described here have the potential to be the most
-sensitive by several orders of
-magnitude. 
-If existing hints for lepton non-universality turn out to be true, 
-one would expect to see the first hints of lepton flavor violation in
-some of these analyses. 
+One central physics topic of \acronym is lepton flavor physics.
+ESR 5-7, 9, 11-12 will work on questions concerning the conservation and universality of lepton flavor in different final states and experiments, as tantalizing hints of discrepancies between measurements and SM theory have been recently reported. 
+All measurements described here have the potential to be the most sensitive by several orders of magnitude. 
+If existing hints for lepton non-universality turn out to be true, one would expect to see the first hints of lepton flavor violation in some of these analyses. 
 %CD: cut?
 %ESR7 will work on novel real time selection strategies to extend the
 %tests for LFU in semileptonically decaying decays of beauty mesons. 
@@ -728,55 +575,25 @@ some of these analyses.
 %at the LHCb and ATLAS experiments, respectively. ESR9 will search for
 %LFV in decays of mesons containing strange quarks and ESR 6 will
 %examine the heavier charmonium and bottomonium systems.
-Dark matter mediators and new light particles
-are well-motivated new physics benchmarks\footnote{M. Chala et al,
-\href{http://arxiv.org/abs/1503.05916}{Constraining Dark Sectors with Monojets and Dijets}, JHEP 1507 (2015) 089.}.
-The volume of data needed to be sensitive to these rare processes is
-the perfect testing ground for improved real-time techniques for ESR1 and 8.  
-RTAs looking for dark matter mediators in ESR13 and 15, and the
-search for new particles of ESR3 and 4 using ML
-have never been performed at the LHC, 
-nor have generic searches for rare new phenomena as in ESR2.
-Measurements in ESR2 and 15 precisely probe the SM 
-in the Higgs and heavy ions sectors. 
+Dark matter mediators and new light particles are well-motivated new physics benchmarks\footnote{M. Chala et al, \href{http://arxiv.org/abs/1503.05916}{Constraining Dark Sectors with Monojets and Dijets}, JHEP 1507 (2015) 089.}.
+The volume of data needed to be sensitive to these rare processes is the perfect testing ground for improved real-time techniques for ESR1 and 8.  
+RTAs looking for dark matter mediators in ESR13 and 15, and the search for new particles of ESR3 and 4 using ML have never been performed at the LHC, nor have generic searches for rare new phenomena as in ESR2.
+Measurements in ESR2 and 15 precisely probe the SM in the Higgs and heavy ions sectors. 
 
-The choice of physics topics that all need RTA to achieve beyond-state-of-the-art results 
-ensures advancement in detector development and contribution to
-major advances in key analyses of LHC data.
+The choice of physics topics that all need RTA to achieve beyond-state-of-the-art results ensures advancement in detector development and contribution to major advances in key analyses of LHC data.
 %paving the way to understand the main questions of our universe. 
 
 \noindent {\color{blue}{3. ESRs in \acronym deploy and disseminate their research at a unique time for particle physics}.}
-As highlighted by the HEP Software Foundation Whitepaper$^{4}$,
-the period 2019-2023 is ideal for this R\&D in HEP, as it
-is a time of transition between LHC data taking periods that 
-will be necessary to prepare for
-an upgrade of the LHC accelerator where the amount of data delivered 
-will make RTA techniques  the key to pursue 
-the physics programs of the four main LHC experiments.
-The systematic optimization of HEP experiments by \acronym
-will boost the performance of the
-current and planned upgrades of the CERN based accelerator
-experiments. Furthermore, the developed toolkits will be advertised
-at international conferences and thus the developed methods will
-shape the online event selection of all future HEP experiments. 
+As highlighted by the HEP Software Foundation Whitepaper$^{4}$, the period 2019-2023 is ideal for this R\&D in HEP, as it is a time of transition between LHC data taking periods that will be necessary to prepare for an upgrade of the LHC accelerator where the amount of data delivered will make RTA techniques  the key to pursue the physics programs of the four main LHC experiments.
+The systematic optimization of HEP experiments by \acronym will boost the performance of the current and planned upgrades of the CERN based accelerator experiments.
+Furthermore, the developed toolkits will be advertised at international conferences and thus the developed methods will shape the online event selection of all future HEP experiments. 
 
-\noindent {\color{blue}{4. \acronym researchers develop techniques and infrastructures that
-can be exploited in industrial applications, as well as in HEP}.}
-The close links of the research institutes of the consortium with the
-industry partners means that the ESRs will directly drive the development of
-novel industrial products, while also bringing professional methods
-of data mining that are exercised in large
-companies into the academic environment. 
-Most modern methods applied in research can
-in this way be transferred more easily to industry applications in automotive
-traffic optimization (ESR1-2, 6, 8) 
+\noindent {\color{blue}{4. \acronym researchers develop techniques and infrastructures that can be exploited in industrial applications, as well as in HEP}.}
+The close links of the research institutes of the consortium with the industry partners means that the ESRs will directly drive the development of novel industrial products, while also bringing professional methods of data mining that are exercised in large companies into the academic environment. 
+Most modern methods applied in research can in this way be transferred more easily to industry applications in automotive traffic optimization (ESR1-2, 6, 8) and analysis of sensor data for Internet-of-Things and medical applications (ESR3-4, 9, 11, 13, 15).
 %JA: not , 14 (??)) 
-and analysis of sensor data for
-Internet-of-Things and medical applications (ESR3-4, 9, 11, 13, 15).
-The proposed algorithms and the use of machine learning methods on these
-scales of data are novel to both HEP and industry. 
-By exposing industry-grade methods to the volume and complexity of HEP data,
-we will stimulate their development in a complementary way for the benefit of industry.
+The proposed algorithms and the use of machine learning methods on these scales of data are novel to both HEP and industry. 
+By exposing industry-grade methods to the volume and complexity of HEP data, we will stimulate their development in a complementary way for the benefit of industry.
 
 %\noindent {\color{blue}{5. \acronym researchers share information and write sustainable code}.}
 %As the \acronym WPs intimately depend on each other,
