@@ -4,12 +4,12 @@
 \begin{tabular}{|p{21mm}|p{19mm}|p{15mm}|p{8mm}p{12mm}|p{19mm}|p{39mm}|p{38mm}|}
 \hline
 \textbf{\Tstrut Fellow} \ESRm&
-\textbf{Host} \hdshort&
+\textbf{Host} \fleetmatics&
 \textbf{\phd} Yes&
 \textbf{Start} & Month 8&
 \textbf{Duration} 36&
 \textbf{Deliverables} \deliverableWhitepaperStateOfTheArtWPThree,\deliverableWhitepaperDevelopmentWPThree, \deliverableDashboardCam& 
-\textbf{Work Package:} TBC \tabularnewline 
+\textbf{Work Package:} \WPESRm \tabularnewline 
 %\ESRm &  \hdshort & Yes & Month 6& 36 & \deliverableHEPPubATLASTLAMultijet, \deliverableHEPPubPileupNoiseCaloFTK \tabularnewline
 \hline
 %\multicolumn{2}{|l|}{\textbf{\Tstrut Work Package:}
@@ -23,11 +23,11 @@ In particular, two classical problems in modern computer vision are depth from m
 Depth from monocular images is concerned with creating algorithms that can estimate the metric distance of objects from the camera using only one image, a problem traditionally solved with two cameras (stereo setup). Semantic segmentation algorithms assign a label among a predefined set of classes to every pixel of an input image (e.g. road, grass, pavement, pedestrian, etc...). 
 The state-of-the-art approaches in both problems are nowadays based on highly-specialized deep learning pipelines, which require powerful GPUs to achieve real-time performance. 
 Therefore, they are not suitable for deployment in smart dashcams to analyze video streams according to an edge-computing paradigm. 
-The first objective of \ESRm will be the development and field testing of algorithms to compute depth from monocular images and semantic segmentation suitable for resource-constrained platforms, like the nVidia Jetson TX2, Ambarella CV2AQ, or Rasberry Pi 3 by using frameworks like Tensorflow Lite. 
+The first objective of \ESRm will be the development and field testing of algorithms to compute depth from monocular images and semantic segmentation suitable for resource-constrained platforms, like the nVidia Jetson TX2, Ambarella CV2AQ, or Raspberry Pi 3 by using frameworks like Tensorflow Lite. 
 \ESRm will propose simplifications of existing models to make them meet the real-time constraint on embedded devices and will test their accuracy on publicly available datasets as well as internal real customer data. 
 The second objective of the project will be to investigate if and how hybrid platforms, like boards equipped with GPUs and FPGAs, can offer a different, more cost-effective solution to the problem of RTA of video streams in embedded platforms. 
-A secondment in LIP6 in \sorbonneentity will train \ESRm with the background needed in heterogeneous computing architectures and the optimal resource allocation, which will then be applied to the domain of this project.
-}
+A secondment in LIP6 in \sorbonneentity will train \ESRm with the background needed in heterogeneous computing architectures and the optimal resource allocation, which will then be applied to the domain of this project. 
+During the 2-months secondment at \lundentity, \ESRm will use simulated datasets within the Open Data Project to deliver a starting point for using computer vision techniques in HEP triggers, where the initial testing ground will be using energy deposits left in the detector by hadronic jets as images. This work will also have connections with \ESRa's project for identification of jets from heavy quarks.}
 \tabularnewline\hline
 \multicolumn{8}{|p{20.2cm}|}{\textbf{\Tstrut Expected Results:}
 Two peer reviewed papers: one on the best performing simplified models that meet real-time requirements on the selected platforms; a second one on the results of the investigations on hybrid platforms for the problems of interest to the project.
@@ -36,7 +36,8 @@ Two peer reviewed papers: one on the best performing simplified models that meet
 \tabularnewline\hline
 %\multicolumn{6}{|p{20.2cm}|}{\textbf{Doctoral program:} Cambridge}\tabularnewline\hline
 \multicolumn{8}{|p{20.2cm}|}{\textbf{\Tstrut Secondments:}
-\oregonentity, \sorbonneentity (at CERN), 3 months, Lacassagne. Heterogeneous computing for video streams in embedded platforms. 
+\sorbonneentity, 3 months, Lacassagne. Heterogeneous computing for video streams in embedded platforms. 
+\lundentity, 2 months, Doglioni. Sample toolkit for classification of hadronic jets. 
 }\tabularnewline
 \hline
 \end{tabular}

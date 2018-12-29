@@ -1,4 +1,4 @@
-TARGET=SMARTHEP17_main
+TARGET=SMARTHEP18_main
 
 ### generic GNU make Makefile for .tex -> .pdf.
 ### ransford at cs.washington.edu
