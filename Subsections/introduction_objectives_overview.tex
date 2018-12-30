@@ -9,19 +9,21 @@
 \noindent{\color{blue}{Overview of the research program}.}
 %industrial parties? businesspeople?
 \acronym comprises of HEP researchers and entrepreneurs sharing the same challenge: \textbf{how to take decisions fast and efficiently.}
-The traditional paradigm of first collecting and then analyzing raw data encounters sever limitations in data-rich environments.
+The traditional paradigm of first collecting and then analyzing raw data encounters severe limitations in data-rich environments, as it is impossible to store all raw data.
+\acronym trains researchers on RTA to overcome this limitation, so that data is analyzed as soon as it is collected and only the most relevant information is kept. 
+
 %MLD I removed this line because I felt that either you make this claim stronger or just remove it. And since we make this stronger below. I removed it here
 % where a coarse pre-selection risks to throw away valuable information.
 %This is a key challenge that, if solved, will increase the information quality extracted from any data-rich environment. 
 
+%CD WORKING HERE
 %why is LHC data-rich, what HEP does, how it connects to industry
-The objective of HEP is to study the basic constituents of matter and search for possible extensions of the theory describing these fundamental components of matter. 
-The main experimental tools in HEP are particle colliders, where particle beams are accelerated to high energies and collided, and detectors which observe the products
-of these collisions. 
-The LHC in Geneva collides protons 30 million times per second.
+RTA is crucial for the study of the basic constituents of matter and search for possible extensions of the theory describing these. 
+The main experimental tools in HEP are particle colliders, where particle beams are accelerated to high energies and collided, and detectors which observe the products of these collisions. 
 The products of the collisions are observed by four main particle detectors located at the collision points: ALICE, ATLAS, CMS and LHCb\footnote{CERN, \href{http://cds.cern.ch/record/1997374}{The LHC Experiments}, CERN Document Server}.
 All experiments are represented in \acronym. 
-The so-called \textit{trigger system} discards most of those events with a maximum delay of micro- to milliseconds, since the rates of recording them are prohibitive for the current data acquisition and storage systems. 
+The LHC in Geneva collides protons 30 million times per second.
+The so-called \textit{trigger system} needs to analyze those events with a maximum delay of micro- to milliseconds, since the rates of recording them are prohibitive for the current data acquisition and storage systems. 
 
 %This means that the decision on whether to keep the event needs to occur 
 %on the order of micro- to milliseconds. %explain why it's not 25 ns: buffering
@@ -29,14 +31,13 @@ The so-called \textit{trigger system} discards most of those events with a maxim
 LHC experiments are at the forefront of big data, not only within the scientific domain.
 %To give one example, in 2010 it was estimated that 13000~PB of data were saved 
 %worldwide\footnote{\href{http://www.mckinsey.com/insights/business_technology/big_data_the_next_frontier_for_innovation}{Report on Big Data by McKinsey\&Company.}}. 
-Computing sites that are part of the Worldwide LHC Computing Grid need around 1 exabyte to store data from the LHC experiments\footnote{The HEP Software Foundation, \href{https://arxiv.org/pdf/1712.06982.pdf}{A Roadmap for HEP Software and Computing R\&D for the 2020s}, ArXiv Document Server}, while Netflix in 2016 required 
-tens of petabytes\footnote{Ars Technica, \href{https://arstechnica.com/information-technology/2016/02/netflix-finishes-its-massive-migration-to-the-amazon-cloud/}{Interview on Netflix migration to Amazon Cloud}, accessed online 01/2018}. 
+Computing sites that are part of the Worldwide LHC Computing Grid need around 1 exabyte to store data from the LHC experiments\footnote{The HEP Software Foundation, \href{https://arxiv.org/pdf/1712.06982.pdf}{A Roadmap for HEP Software and Computing R\&D for the 2020s}, ArXiv Document Server}, while Netflix in 2016 required tens of petabytes\footnote{Ars Technica, \href{https://arstechnica.com/information-technology/2016/02/netflix-finishes-its-massive-migration-to-the-amazon-cloud/}{Interview on Netflix migration to Amazon Cloud}, accessed online 01/2019}. 
 %Removed in favour of HSF paper
 %The LHCb experiment alone produces 3000~PB of data per year, as it collects 
 %15 million 50~kByte collision events per second during roughly $4\cdot 10^{6}$ seconds/year, while 
 %the ATLAS and CMS experiments produce an order of magnitude more with their data collection rate of 
 %1000 events per second, where the size of each event is 1.5 MB.  
-The codebase of the LHC experiments, more than 50 million lines long\footnote{Information Is Beautiful, \href{http://www.informationisbeautiful.net/visualizations/million-lines-of-code/}{Codebase infographics}, accessed online 01/2018} is larger than all but the biggest commercial projects.  
+The codebase of the LHC experiments, more than 50 million lines long\footnote{Information Is Beautiful, \href{http://www.informationisbeautiful.net/visualizations/million-lines-of-code/}{Codebase infographics}, accessed online 01/2019} is larger than all but the biggest commercial projects.  
 No other research ecosystem provides such an opportunity to develop new methods of analyzing big data. 
 
 The sheer size of the datasets collected by scientific experiments is leading researchers in HEP towards advanced methods normally used in industry, such as ML and AI. 
@@ -49,6 +50,7 @@ The average daily, per-person rate of interactions involving data is expected to
 Advancement in terms of fast and efficient decision-making and data analysis are required by society and the commercial sector. A selection of industrial use cases sharing common issues with HEP has been chosen as integral part of the \acronym research and exploitation program, on two main topics that are
 relevant for European economical advancement: automotive traffic\footnote{The European Union, \href{https://europa.eu/european-union/about-eu/figures/economy_en}{Economy: Transport}, accessed online 01/2018} and IoT sensors$^8$. 
 Researchers in \acronym will contribute to commercial applications towards the optimization of the prediction of automotive traffic, in-vehicle mobile applications, industrial production processes, management of computing farms, and simulation of medical surgery. 
+
 \vskip2pt
 \noindent{\color{blue}{Real-time data processing: why and how}.}
 What is becoming apparent in all LHC collaborations and in industry is that our most advanced tools, both hardware and software, do not optimally handle the available data rates. 
