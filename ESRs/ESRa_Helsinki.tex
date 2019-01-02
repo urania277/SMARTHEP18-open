@@ -1,52 +1,43 @@
 %\begin{table}[h]
 \begin{center}\small
 \resizebox {\textwidth }{!}{%
-\begin{tabular}{|p{19mm}|p{23mm}|p{25mm}|p{21mm}|p{23mm}|p{69mm}|}
+\begin{tabular}{|p{25mm}|p{23mm}|p{18mm}|p{28mm}|p{34mm}|p{60mm}|}
 \hline
 \textbf{\Tstrut Fellow} \,\,\ESRa&
-\textbf{Host} \,\,\helsinki&
+\textbf{Host} \,\,\helsinkientity&
 \textbf{\phd} \,\,Yes&
-\textbf{Start} \,\,Month 8&
-\textbf{Duration} \,\,36&
+\textbf{Start (mo.)} \,\,8&
+\textbf{Duration (mo.)} \,\,36&
 \textbf{Deliverables}\,\,\deliverableWhitepaperStateOfTheArtWPThree, \deliverableWhitepaperDevelopmentWPThree, \deliverableTriggerExperimentalSoftwareWPThree, \deliverableWhitepaperStateOfTheArtWPFive, \deliverableWhitepaperCollectionPapersWPFive, \deliverableFleetmaticsMLMobile \tabularnewline 
-%2.1 & First \acronym conference proceedings & R & PU & 19 & 2 & \saclay & Write and publish proceedings of the first \acronym conference\tabularnewline\midrule 
-%2.2 & Toolkit for deep learning & R & PU & 44 & 2 & \saclay & Implementation and release of toolkit for deep learning within HEP\tabularnewline\midrule
-%2.3 & Medical insurance provision & R & PU & 44 & 2 & \dq & Application of developed methods to medical insurance provision\tabularnewline\midrule
-%2.4 & Deep learning documentation & R & PU & 12,24,36,48 & 2 & \saclay & Publication of research in peer-reviewed journals\tabularnewline\midrule 
-%3.1 & Second \acronym conference proceedings & R & PU & 43 & 3 & \dortmund & Proceedings of the second \acronym conference\tabularnewline\midrule
-%3.2 & Novel MVA triggers& R & PU & 44 & 3 & \dortmund & Implement novel MVA strategies in LHCb trigger\tabularnewline\midrule
-%3.3 & Review of DS methods & R & PU & 44 & 3 & \saclay & Review paper on relationship between DS methods and datasets\tabularnewline\midrule
-%3.4 & New figures of merit documentation & R & PU & 12, 24, 36, 48 & 3 & \dortmund & Publication of research in peer-reviewed journals\tabularnewline\midrule
-%\ESRa &  \helsinki & Yes & Month 6& 36 & \deliverableCMSHLTGeneralPurposeScouting, \deliverableHEPPubCMSBoosted \tabularnewline
 \hline
 \multicolumn{2}{|l|}{\textbf{\Tstrut Work Package:}
 \WPESRa} &
-\multicolumn{2}{l|}{\textbf{Doctoral programme:} \helsinki }&%\tabularnewline\hline
+\multicolumn{2}{l|}{\textbf{Doctoral programme:} \helsinkientity }&%\tabularnewline\hline
 \multicolumn{2}{l|}{\textbf{\Tstrut Title: ML and RTA for object identification in HEP and industry}
 }\tabularnewline\hline
-\multicolumn{6}{|p{20.2cm}|}{\textbf{\Tstrut Objectives:}
-\ESRa will study real-time object identification in HEP and industry, be trained in state-of-the art ML and AI methods, and use these to improve mobile image processing and measure Higgs and $Z$ boson decays to b-quark pairs.
-Deep learning (DL) based algorithms which identify heavy objects (e.g. $b$ quarks) in jets, e.g. DNNs, have been tested offline. 
-Adopting these to the trigger will significantly improve trigger performance, allow to record more interesting data for offline analysis, and allow RTA-based analyses to exploit discriminating features previously only accessible offline. 
-\ESRa's first objective is to understand the resource cost of DL algorithms, and, if feasible, implement them in the trigger. 
+\multicolumn{6}{|p{21.2cm}|}{\textbf{\Tstrut Objectives:} Deep learning (DL) based algorithms which identify heavy objects (e.g. $b$ quarks) in jets, e.g. DNNs, have been tested offline but not yet used in the trigger. 
+As a first objective, \ESRa will understand the resource cost of these DNNs, improve them if necessary, and adapt them to be used in the trigger. This will significantly improve trigger performance, record more interesting data, and allow pure RTA-based data taking to exploit discriminating features previously inaccessible. 
 The industrial secondment to Fleetmatics will have the second objective of adapting DL frameworks, e.g. Tensor Flow and Keras, in resource-constrained environments (e.g. embedded platforms), for real-time processing of images captured by mobile devices. 
 This is an instrumental step towards mobile-phone in-vehicle edge computing applications for Fleetmatics.
-At Fleetmatics \ESRa will be trained in both theory and best practice of DL, and will return with expertise in RTA DL frameworks, which will be key to address the physics challenges.
-\ESRa's third objective is to use their trigger DL algorithms to implement a full RTA in which no "safety net" of offline processed events is needed. 
-By requiring around 1\% of full event storage, this generic "scouting" dataset will allow a much higher event rate and enable a wide range of novel analyses of events with hadronic activity.
+At Fleetmatics, \ESRa will be trained in theory and best practice of DL, and will return with expertise in RTA DL frameworks in constrained environments to improve the initial trigger selections towards their application in physics analysis. 
+\ESRa's third objective is to exploit DL in trigger algorithms to implement a generic RTA that caters to a variety of different physics analyses with hadronic activity and allows a much higher event rate. 
+%By requiring around 1\% of full event storage, this generic "scouting" dataset will allow a much higher event rate and enable a wide range of novel analyses of events with hadronic activity.
 During the 5-month secondment to CERN \ESRa will be trained in both ML and RTA in the context of HEP, and work on the implementation and deployment of this general purpose scouting stream.  
-\ESRa will validate this stream by measuring the frequent and well understood $Z\rightarrow\bar{b}b$ process, and then apply it to a new measurement of $H\rightarrow\bar{b}b$ process.
+\ESRa will validate this stream by measuring the frequent and well understood $Z\rightarrow bb$
+%$Z\rightarrow\bar{b}b$ 
+process, and then apply it to a new measurement of the 
+%$H\rightarrow\bar{b}b$ 
+$H\rightarrow bb$ process.
 }\tabularnewline\hline
-\multicolumn{6}{|p{20.2cm}|}{\textbf{\Tstrut Expected Results:}
-Improve flavor/heavy object tagging at HLT benefiting multiple CMS analyses/triggers, establish high-rate general purpose scouting for Run3.
-Validate by measuring $Z\rightarrow\bar{b}b$ cross section, publish technique and measurement. 
-Measure and publish boosted $H\rightarrow\bar{b}b$ production.
-Implement mobile ML frameworks for in-vehicle image processing at \fleetmatics.
+\multicolumn{6}{|p{21.2cm}|}{\textbf{\Tstrut Expected Results:} 1. Improve flavor/heavy object tagging at HLT in CMS (peer-reviewed paper). 
+2. Implement mobile ML frameworks for in-vehicle image processing at \fleetmatics.
+3. Establish high-rate general purpose RTA stream for Run3.  
+4. Validate stream by measuring $Z\rightarrow bb$ cross section, then measure boosted $H\rightarrow bb$ production (peer-reviewed papers).
 \ESRa will receive a PhD in experimental HEP at \helsinkilong.
 }\tabularnewline\hline
-\multicolumn{6}{|p{20.2cm}|}{\textbf{\Tstrut Secondments:}
+\multicolumn{6}{|p{21.2cm}|}{\textbf{\Tstrut Secondments:}
 \fleetmatics, 4 months, Taccari, In-vehicle image processing in resource-constrained environment; 
-\cern, 5 months, Pierini, commissioning generic data scouting analysis for Run 3. 
+\cern, 5 months, Pierini, commissioning generic data scouting analysis for Run 3 using DL. 
 }\tabularnewline
 \hline
 \end{tabular}
