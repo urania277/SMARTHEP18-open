@@ -190,41 +190,36 @@ extend RTA data-taking techniques in HEP trigger systems where raw data is disca
 
 \acronym defines four research WPs, corresponding to each of the research topics and objectives in the previous section, and three WPs for the management of the consortium, for training, and for outreach and dissemination. These are summarized in the Table below and a description of the overall tasks can be found in Sec.~\ref{sec:WPdescription}. Fig 1. gives a schematic view of the four research WPs and the main actors within the consortium. 
 
-\begin{center}
-\includegraphics[width=0.7\textwidth]{figs/NetworkCompositionCombinedImplementation} %scienceStructure_2.pdf}
-\begin{center}\footnotesize \label{fig:implementation}
-Figure 1: \acronym implementation strategy and main node expertise.
-\end{center}
-\normalsize 
-\vspace{-2mm}
-\end{center}
-
-
 %\vskip10pt
 \begin{center}
 \scriptsize
-\resizebox {\textwidth }{!}{%
-\begin{tabular}{p{7mm}p{30mm}p{35mm}p{5mm}p{5mm}p{35mm}p{17mm}p{17mm}}
+%\resizebox {\textwidth }{!}{%
+%\begin{tabular}{p{7mm}p{30mm}p{10mm}p{5mm}p{5mm}p{35mm}p{17mm}p{17mm}}
+\begin{tabular}{p{10mm}p{30mm}p{35mm}p{5mm}p{5mm}p{30mm}p{13mm}p{18mm}}
 \toprule
 \pbox{8cm}{WP No.} &
 \pbox{8cm}{WP Title} &
 %This is the number of the beneficiary in the original order
-\pbox{8cm}{\Tstrut No. of lead\\Beneficiary\Bstrut} &   
-\pbox{8cm}{Start (mo.)} &  
-\pbox{8cm}{End (mo.)} & 
+\pbox{8cm}{\Tstrut Lead \\Beneficiary\\No. / responsible\Bstrut} &  
+\pbox{8cm}{Start} &  
+\pbox{8cm}{End} & 
 \pbox{8cm}{Activity Type} & 
-\pbox{8cm}{\Tstrut Lead Beneficiary\\Short Name\Bstrut} &  
+\pbox{8cm}{\Tstrut Lead \\Beneficiary\\Short Name\Bstrut} &  
 \pbox{8cm}{ESRs\\Involvem't}\tabularnewline\toprule
 
-\cellcolor{red!70!black} \textbf{\color{white}WP1\color{black}}  & Management & Doglioni  & 1 & 48 & Management & \lundentity & - \tabularnewline\hline\midrule
+%Doglioni
+\cellcolor{red!70!black} \textbf{\color{white}WP1\color{black}}  & Management & N, Doglioni  & 1 & 48 & Management & \lundentity & - \tabularnewline\hline\midrule
 
-\cellcolor{red} \textbf{\color{white}WP2\color{black}}    & Training   & Sfyrla  & 5 & 42 & Recruitment and training & \unigeentity & All \tabularnewline\hline\midrule
+%Sfyrla
+\cellcolor{red} \textbf{\color{white}WP2\color{black}}    & Training   &  N, Sfyrla & 5 & 42 & Recruitment, training & \unigeentity & All \tabularnewline\hline\midrule
 
-\cellcolor{orange} \textbf{\color{black}WP3\color{black}}   & ML, AI and data analysis & Gligorov & 1 & 48 & Research& \cnrs & 1-14 \tabularnewline \hline%: Software and algorithms enabling RTA
-\multicolumn{8}{p{\textwidth}}{
+%Gligorov
+\cellcolor{orange} \textbf{\color{black}WP3\color{black}}   & ML, AI and data analysis &  N, Gligorov & 1 & 48 & Research& \cnrs & 1-14 \tabularnewline \hline \midrule%: Software and algorithms enabling RTA
+%\multicolumn{8}{p{0.95\textwidth}}{
 %ESRs: 1-14
-Different ML algorithms are investigated by ESRs 1-3, 6, 9 for object reconstruction and feature identification, and for benchmarking and optimisation purposes by ESRs 4, 5, 7, 8, 10-12. 
-Custom algorithms for real-time object reconstruction will be deployed by ESRs 3-5, 7, 14, 15.} \tabularnewline \hline \midrule
+%Different ML algorithms are investigated by ESRs 1-3, 6, 9 for object reconstruction and feature identification, and for benchmarking and optimisation purposes by ESRs 4, 5, 7, 8, 10-12. 
+%Custom algorithms for real-time object reconstruction will be deployed by ESRs 3-5, 7, 14, 15.
+%} \tabularnewline \hline \midrule
 
 %%\ESRa will study real-time object identification in the CMS experiment for HEP and industry, receive training in state-of-the art ML and AI methods, and use these to improve mobile image processing and measure Higgs and $Z$ boson decays to b-quark pairs.
 
@@ -253,23 +248,23 @@ Custom algorithms for real-time object reconstruction will be deployed by ESRs 3
 %%%%
 %%%%
 %%%%
+%Lacassagne
+\cellcolor{yellow} \textbf{\color{black}WP4\color{black}}    & Hybrid architectures & N, Lacassagne & 1 & 48 & Research & \sorbonneentity  & 2,3,6,7,11-13,15 \tabularnewline \hline \midrule% : Novel hardware for detectors and computing 
+%\multicolumn{8}{p{0.95\textwidth}}{
 
-\cellcolor{yellow} \textbf{\color{black}WP4\color{black}}    & Hybrid architectures & Lacassagne & 1 & 48 & Research & \sorbonneentity  & 2,3,6-9,13,15 \tabularnewline \hline % : Novel hardware for detectors and computing 
-\multicolumn{8}{p{\textwidth}}{
-
-ESRs: \ESRb, \ESRc, \ESRf, \ESRg, \ESRh, \ESRi, \ESRl, \ESRm
+%ESRs: \ESRb, \ESRc, \ESRf, \ESRg, \ESRl, \ESRm, \ESRn
 %The implementation of ML and detector reconstruction algorithms will be tested on GPUs by ESRs 3, 9, 10 and 11. 
 %The ATLAS Fast TracKer (FTK) (see ATLAS Collaboration,\href{https://inspirehep.net/record/1614024/}{The ATLAS Fast TracKer}, CERN Document Server, 2016), a hardware solution to particle track reconstruction will be the focus of ESRs 4, 8 and 15. ESR10 will optimize data formats and processing techniques to enable CPUs, GPUs, FPGAs, and hybrids to work together to solve problems which none of these technologies could solve on their own. ESR4 and ESR8 will investigate parallelization and multithreading of current algorithms.
-} \tabularnewline \hline \midrule
+%} \tabularnewline \hline \midrule
 
 
 %%%%%%
 %%%%%%
 %%%%%%
-
-\cellcolor{green} \textbf{\color{black}WP5\color{black}}   & \makecell[vl]{Real-time decision making} & Albrecht, Sopasakis & 1 & 48 & Research & \makecell[vl]{\dortmundentity} & 1-6,12,13,15 \tabularnewline\hline %: Physics measurements and searches
-\multicolumn{8}{p{\textwidth}}{
-ESRs: \ESRa, \ESRb, \ESRc, \ESRd, \ESRe, \ESRf, \ESRl, \ESRn, \ESRm
+%Albrecht, Sopasakis 
+\cellcolor{green} \textbf{\color{black}WP5\color{black}}   & \makecell[vl]{Real-time decision making} & N, Albrecht/Sopasakis & 1 & 48 & Research & \makecell[vl]{\dortmundentity} & All \tabularnewline\hline \midrule%: Physics measurements and searches
+%\multicolumn{8}{p{0.95\textwidth}}{
+%ESRs: \ESRa, \ESRb, \ESRc, \ESRd, \ESRe, \ESRf, \ESRl, \ESRn, \ESRm
 %%\textbf{Motivation:} 
 
 %%Physics phenomena beyond the SM are needed to explain many observed phenomena, for example, the existence of massive "dark" matter.%, or 
@@ -289,28 +284,38 @@ ESRs: \ESRa, \ESRb, \ESRc, \ESRd, \ESRe, \ESRf, \ESRl, \ESRn, \ESRm
 %%The common denominator of all those searches and measurements is that they would not be possible without specifically designed data taking techniques with a strong real-time component.
 %%as detailed in Sec.~\ref{sub:Originality}. 
 %%\vspace{-2mm}
-} \tabularnewline \hline\midrule
+%} \tabularnewline \hline\midrule
 %%
 %
 %%%%
 %%%%
 %%%%
-
-\cellcolor{cyan} \textbf{\color{black}WP6\color{black}}   & Monitoring, discoveries & De Sainte Marie, Pierini  & 1 & 48 & Research& \ibmentity & 1,2,5,6,8-15 \tabularnewline\hline %: Exploitation of RTA 
-\multicolumn{8}{p{\textwidth}}{
-ESRs: \ESRa, \ESRb, \ESRe, \ESRf, \ESRh, \ESRi, \ESRj, \ESRk, \ESRl, \ESRx, \ESRn, \ESRm
+%De Sainte Marie, Pierini
+\cellcolor{cyan} \textbf{\color{black}WP6\color{black}}   & Monitoring \& discoveries & N, de Sainte Marie/Pierini & 1 & 48 & Research& \ibmentity & 1,4,6,8-10,13-15 \tabularnewline\hline \midrule%: Exploitation of RTA 
+%\multicolumn{8}{p{0.95\textwidth}}{
+%ESRs: \ESRa, \ESRd, \ESRf, \ESRj, \ESRk, \ESRl, \ESRx, \ESRn, \ESRm
 %%\textbf{Motivation:} 
 %%Real-time analysis techniques are employed in a variety of industrial contexts.
 %%\acronym selected the cases with the best fit to the physics research program and techniques employed by each ESRs for their industrial secondments.
 %%Most ESRs include a project with concrete industrial deliverables, concerning real-time traffic prediction (ESR1), in-vehicle mobile pattern recognition (ESR2), Internet-of-Things sensors (ESR3, ESR13, ESR15), task optimization and parallelization (ESR4, ESR8), efficient handling of computing clusters (ESR7), medical applications and insurance (ESR9, ESR11).
-} \tabularnewline \hline\midrule
+%} \tabularnewline \hline\midrule
 %%
 %
-\cellcolor{violet} \textbf{\color{black}WP7\color{black}}  & Dissemination, outreach  & Petersen & 1 & 48 & \pbox{8cm}{Dissemination and outreach} & \cern & All \tabularnewline
+%Petersen
+\cellcolor{violet} \textbf{\color{black}WP7\color{black}}  & Dissemination \& communication of results  & N, Petersen & 1 & 48 & \pbox{8cm}{Dissemination, outreach} & \cern & All \tabularnewline
 \bottomrule
 %%\caption{Work-Package list.}\label{tab:WP}
 \end{tabular}
-}%end of resizebox
+%}%end of resizebox
+\end{center}
+
+\begin{center}
+\includegraphics[width=0.7\textwidth]{figs/NetworkCompositionCombinedImplementation} %scienceStructure_2.pdf}
+\begin{center}\footnotesize \label{fig:implementation}
+Figure 1: \acronym implementation strategy and main node expertise.
+\end{center}
+\normalsize 
+\vspace{-2mm}
 \end{center}
 
 In \acronym, cutting-edge techniques in ML and hybrid architectures will be assessed and developed by the ESRs. They will be applied to specific use cases to RTA techniques that advance HEP, industry and society, and the results exploited, disseminated and communicated (Sec.~\ref{sec:qualityExploitDissemination}). These steps correspond to the the milestones in Sec.~\label{sub:milestones}. This modus operandi is at the heart of \acronym and ensures the efficiency of its implementation. 
