@@ -1,5 +1,5 @@
 \documentclass[11pt,a4paper]{article}
-\usepackage[margin=15mm]{geometry}
+\usepackage[margin=15mm,showframe]{geometry}
 % a minimum font size of 11 points, except for the Gantt chart and tables where the minimum font size is 8 points
 %8 points for 11pt is \scriptsize
 \usepackage{lipsum}
@@ -40,6 +40,8 @@
 \usepackage[nomarkers,nolists]{endfloat}
 %\usepackage[float]
 %\restylefloat{figure}
+\renewcommand\fbox{\fcolorbox{blue}{white}}
+
 
 \makesavenoteenv{tabular}
 %\makesavenoteenv{table}
@@ -73,12 +75,12 @@
 \headheight 14pt
 \headsep 2.5mm
 \footskip 6.5mm
-\textheight 240mm
-%\parskip 3pt
-\def\baselinestretch{1.}
+\textheight 255mm
+%%\parskip 3pt
+%\def\baselinestretch{1.}
 
 % horizontal page spacing
-\oddsidemargin -10.5mm
+%\oddsidemargin -10.5mm
 \textwidth  180mm
 
 %fonts
@@ -149,7 +151,7 @@
 \chead{\textbf{ \acronym\ -\ ETN}}
 \rhead{}
 \lfoot{}
-\cfoot{\textbf{Part B2\ -\ Page \thepage}}%\ of \pageref{LastPage}}}
+\cfoot{\textbf{Part B2\ -\ Page \thepage\ of \pageref{LastPage}}}
 \rfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
