@@ -164,7 +164,7 @@ Since high-level quantities are much smaller than raw data, more events can be r
 \hline
 \textbf{Research Objective:} & \textbf{Outcomes:} \\
 \hline
-implement outlier detection techniques in physics and industry & potential for not-yet-theorized discoveries at the LHC, improved fraud detection algorithms and IoT-ready industrial production chains(ADD DELIVERABLES) ;\\
+implement outlier detection techniques in physics and industry & potential for not-yet-theorized discoveries at the LHC, improved fraud detection algorithms and IoT-ready industrial predictive maintenance (ADD DELIVERABLES) ;\\
 \hline
 study and design rule-induction algorithms as complement to ML to improve accountability and understandability & RTA for fraud detection and HEP triggers (ADD DELIVERABLES);\\
 \hline
@@ -188,7 +188,48 @@ extend RTA data-taking techniques in HEP trigger systems where raw data is disca
 %Explain how the individual ESRs fit into the WP in table 
 %use a figure to illustrate relationship?
 
-\acronym defines four research WPs, corresponding to each of the research topics and objectives in the previous section, and three WPs for the management of the consortium, for training, and for outreach and dissemination. These are summarized in the Table below and a description of the overall tasks can be found in Sec.~\ref{sec:WPdescription}. Fig 1. gives a schematic view of the four research WPs and the main actors within the consortium. 
+%%\ESRa will study real-time object identification in the CMS experiment for HEP and industry, receive training in state-of-the art ML and AI methods, and use these to improve mobile image processing and measure Higgs and $Z$ boson decays to b-quark pairs.
+
+%\ESRb will study RTA in both HEP and industry, be trained in state-of-the art ML and AI methods, and use these to improve ATLAS track reconstruction and monitoring of industrial machinery. \ESRb will work on industrial production chains in IoT-ready plants, collecting and aggregating sensor data in real-time, and forecasting their behavior. 
+
+%\ESRc will be trained in algorithm optimization for highly parallel computing architectures in both HEP and industry, deploy this to improve the performance of both ATLAS RTA and commercial investment code, and search for LLPs with the first Run 3 ATLAS data. 
+
+%\ESRd will develop unified real-time selections and models in HEP and industry, and be trained in state of the art AI and ML methods and algorithms for real-time applications.
+
+%\ESRe will study deep learning (DL) RTAs of complex systems, in both HEP and industry. 
+
+%\ESRf will be trained in the real-time reconstruction of trajectories and images in both HEP and industry, and apply them to the reconstruction and analysis of particle trajectories in ATLAS as well as GPS data processing. 
+
+%\ESRg hybrid architectures
+
+%\ESRh will study and be trained in advanced ML methods for RTA in both HEP and industry, and apply these methods to the optimization of resources for RTA, searches for LFV, and mobile traffic apps. 
+
+%\ESR13 (IBM) will be trained in the most advanced industrial ML and AI anomaly detection methods, including development for supercomputer systems, and use these in RTA to search for dark matter particles with ATLAS.
+
+%\ESRl (HD ATLAS): noise suppression in real time, FTK
+%\ESRn (HD LHCb): dark photon RTA
+
+%\ESRm (KKT) will be trained in state-of-the-art computer vision algorithms based on deep learning and will study how to adapt and specialize them for RTA of videos collected by dashcams (camera on vehicle) installed on \fleetmatics customers.
+
+%\ESRx will contribute to the next generation of AI that bridges a data driven automated learning with human-readable rules in real-time decision making. 
+
+\acronym defines three WPs for the management of the consortium, for training, and for outreach and dissemination, and four research WPs, corresponding to each of the research topics in the previous section. 
+
+In \textbf{\colorbox{orange}{WP3}}\color{black}, we make full use of advanced \textbf{Machine Learning, AI and data analysis} techniques in RTA. This is an emerging field of research that enables real time decision-making, monitoring and discoveries in industry and society. All ESRs will be involved in this WP, including studies of best practices and performance (\ESRh, \ESRi).
+
+In \textbf{\colorbox{yellow}{WP4}}, we will develop algorithm implementations which efficiently use modern computing hardware that is increasingly both highly parallel (\ESRc) and heterogeneous, with CPU-based processing farms complemented by GPU or FPGA co-processors (\ESRf, \ESRg, \ESRl). 
+This kind of~\textbf{hybrid architectures} enables faster data processing, and their design requires highly-specialized training which few contemporary researchers in the physical sciences and that the consortium including computer scientists is best placed to deliver. 
+
+In \textbf{\colorbox{green}{WP5}}, we will employ the techniques and tools developed in WP1 and WP2 to enable advanced RTA techniques for \textbf{decision-making}. In HEP, we will develop and commission the upgraded triggers of the main LHC collaborations and use them for physics analysis (all ESRs), while in industry we will improve traffic and fleet safety (\ESRd, \ESRh, \ESRl, \ESRm).
+ 
+Within \textbf{\colorbox{cyan}{WP6}}, we will focus on the \textbf{monitoring of complex processes and prepare for unexpected discoveries}, feeding back to the decision-making WP through novelty/anomaly detection algorithms (\ESRj) that are understandable and reproducible (\ESRx) and enable predictive maintenance (\ESRb), and perform physics analysis that is fully based on RTA without the need to save raw data (\ESRa, \ESRd, \ESRn, \ESRl, \ESRk). 
+
+All results will be \textbf{disseminated and communicated} to a variety of audiences within \textbf{\colorbox{violet}{\color{white}WP7\color{black}}}, paying particular attention so that publications, software and documentation are accessible as legacy of the action according to the FAIR principles. 
+
+HEP experiments are by their very nature built around \textbf{training}, as around a third of all LHC collaborations consist of PhD students. The training WP (\textbf{\colorbox{red}{WP2}}) encompasses WP3-7 and combines this collaborative, training-based research culture, with a focus on cutting-edge technologies. 
+
+Throughout this ETN, RTA will provide the common language linking these challenges and disciplines, in research, academia and industry, and will enable each of the WPs to benefit from the progress made in the others.
+The WPs are summarized in the Table below, and Fig 1. gives a schematic view of the four research WPs and the main actors within the consortium. 
 
 %\vskip10pt
 \begin{center}
@@ -221,37 +262,13 @@ extend RTA data-taking techniques in HEP trigger systems where raw data is disca
 %Custom algorithms for real-time object reconstruction will be deployed by ESRs 3-5, 7, 14, 15.
 %} \tabularnewline \hline \midrule
 
-%%\ESRa will study real-time object identification in the CMS experiment for HEP and industry, receive training in state-of-the art ML and AI methods, and use these to improve mobile image processing and measure Higgs and $Z$ boson decays to b-quark pairs.
-
-%\ESRb will study RTA in both HEP and industry, be trained in state-of-the art ML and AI methods, and use these to improve ATLAS track reconstruction and monitoring of industrial machinery. \ESRb will work on industrial production chains in IoT-ready plants, collecting and aggregating sensor data in real-time, and forecasting their behavior. 
-
-%\ESRc will be trained in algorithm optimization for highly parallel computing architectures in both HEP and industry, deploy this to improve the performance of both ATLAS RTA and commercial investment code, and search for LLPs with the first Run 3 ATLAS data. 
-
-%\ESRd will develop unified real-time selections and models in HEP and industry, and be trained in state of the art AI and ML methods and algorithms for real-time applications.
-
-%\ESRe will study deep learning (DL) RTAs of complex systems, in both HEP and industry. 
-
-%\ESRf will be trained in the real-time reconstruction of trajectories and images in both HEP and industry, and apply them to the reconstruction and analysis of particle trajectories in ATLAS as well as GPS data processing. 
-
-%\ESRg hybrid architectures
-
-%\ESRh will study and be trained in advanced ML methods for RTA in both HEP and industry, and apply these methods to the optimization of resources for RTA, searches for LFV, and mobile traffic apps. 
-
-%\ESR13 (IBM) will be trained in the most advanced industrial ML and AI anomaly detection methods, including development for supercomputer systems, and use these in RTA to search for dark matter particles with ATLAS.
-
-%\ESRl (HD ATLAS): noise suppression in real time, FTK
-
-%\ESRm (KKT) will be trained in state-of-the-art computer vision algorithms based on deep learning and will study how to adapt and specialize them for RTA of videos collected by dashcams (camera on vehicle) installed on \fleetmatics customers.
-
-%\ESRx will contribute to the next generation of AI that bridges a data driven automated learning with human-readable rules in real-time decision making. 
 
 %%%%
 %%%%
 %%%%
 %Lacassagne
-\cellcolor{yellow} \textbf{\color{black}WP4\color{black}}    & Hybrid architectures & N, Lacassagne & 1 & 48 & Research & \sorbonneentity  & 2,3,6,7,11-13,15 \tabularnewline \hline \midrule% : Novel hardware for detectors and computing 
+\cellcolor{yellow} \textbf{\color{black}WP4\color{black}}    & Hybrid architectures & N, Lacassagne & 1 & 48 & Research & \sorbonneentity  & \ESRsForWPFourText \tabularnewline \hline \midrule% : Novel hardware for detectors and computing 
 %\multicolumn{8}{p{0.95\textwidth}}{
-
 %ESRs: \ESRb, \ESRc, \ESRf, \ESRg, \ESRl, \ESRm, \ESRn
 %The implementation of ML and detector reconstruction algorithms will be tested on GPUs by ESRs 3, 9, 10 and 11. 
 %The ATLAS Fast TracKer (FTK) (see ATLAS Collaboration,\href{https://inspirehep.net/record/1614024/}{The ATLAS Fast TracKer}, CERN Document Server, 2016), a hardware solution to particle track reconstruction will be the focus of ESRs 4, 8 and 15. ESR10 will optimize data formats and processing techniques to enable CPUs, GPUs, FPGAs, and hybrids to work together to solve problems which none of these technologies could solve on their own. ESR4 and ESR8 will investigate parallelization and multithreading of current algorithms.
@@ -262,7 +279,7 @@ extend RTA data-taking techniques in HEP trigger systems where raw data is disca
 %%%%%%
 %%%%%%
 %Albrecht, Sopasakis 
-\cellcolor{green} \textbf{\color{black}WP5\color{black}}   & \makecell[vl]{Real-time decision making} & N, Albrecht/Sopasakis & 1 & 48 & Research & \makecell[vl]{\dortmundentity} & All \tabularnewline\hline \midrule%: Physics measurements and searches
+\cellcolor{green} \textbf{\color{black}WP5\color{black}}   & \makecell[vl]{Real-time decision making} & N, Albrecht/Sopasakis & 1 & 48 & Research & \makecell[vl]{\dortmundentity} & All \tabularnewline\hline \midrule
 %\multicolumn{8}{p{0.95\textwidth}}{
 %ESRs: \ESRa, \ESRb, \ESRc, \ESRd, \ESRe, \ESRf, \ESRl, \ESRn, \ESRm
 %%\textbf{Motivation:} 
@@ -291,7 +308,7 @@ extend RTA data-taking techniques in HEP trigger systems where raw data is disca
 %%%%
 %%%%
 %De Sainte Marie, Pierini
-\cellcolor{cyan} \textbf{\color{black}WP6\color{black}}   & Monitoring \& discoveries & N, de Sainte Marie/Pierini & 1 & 48 & Research& \ibmentity & 1,4,6,8-10,13-15 \tabularnewline\hline \midrule%: Exploitation of RTA 
+\cellcolor{cyan} \textbf{\color{black}WP6\color{black}}   & Monitoring \& discoveries & N, de Sainte Marie/Pierini & 1 & 48 & Research& \ibmentity & \ESRsForWPSixText \tabularnewline\hline \midrule 
 %\multicolumn{8}{p{0.95\textwidth}}{
 %ESRs: \ESRa, \ESRd, \ESRf, \ESRj, \ESRk, \ESRl, \ESRx, \ESRn, \ESRm
 %%\textbf{Motivation:} 
