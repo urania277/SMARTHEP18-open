@@ -188,6 +188,12 @@ extend RTA data-taking techniques in HEP trigger systems where raw data is disca
 %Explain how the individual ESRs fit into the WP in table 
 %use a figure to illustrate relationship?
 
+%\multicolumn{8}{p{0.95\textwidth}}{
+%ESRs: \ESRb, \ESRc, \ESRf, \ESRg, \ESRl, \ESRm, \ESRn
+%The implementation of ML and detector reconstruction algorithms will be tested on GPUs by ESRs 3, 9, 10 and 11. 
+%The ATLAS Fast TracKer (FTK) (see ATLAS Collaboration,\href{https://inspirehep.net/record/1614024/}{The ATLAS Fast TracKer}, CERN Document Server, 2016), a hardware solution to particle track reconstruction will be the focus of ESRs 4, 8 and 15. ESR10 will optimize data formats and processing techniques to enable CPUs, GPUs, FPGAs, and hybrids to work together to solve problems which none of these technologies could solve on their own. ESR4 and ESR8 will investigate parallelization and multithreading of current algorithms.
+%} \tabularnewline \hline \midrule
+
 %%\ESRa will study real-time object identification in the CMS experiment for HEP and industry, receive training in state-of-the art ML and AI methods, and use these to improve mobile image processing and measure Higgs and $Z$ boson decays to b-quark pairs.
 
 %\ESRb will study RTA in both HEP and industry, be trained in state-of-the art ML and AI methods, and use these to improve ATLAS track reconstruction and monitoring of industrial machinery. \ESRb will work on industrial production chains in IoT-ready plants, collecting and aggregating sensor data in real-time, and forecasting their behavior. 
@@ -234,8 +240,6 @@ The WPs are summarized in the Table below, and Fig 1. gives a schematic view of 
 %\vskip10pt
 \begin{center}
 \scriptsize
-%\resizebox {\textwidth }{!}{%
-%\begin{tabular}{p{7mm}p{30mm}p{10mm}p{5mm}p{5mm}p{35mm}p{17mm}p{17mm}}
 \begin{tabular}{p{10mm}p{30mm}p{35mm}p{5mm}p{5mm}p{30mm}p{13mm}p{18mm}}
 \toprule
 \pbox{8cm}{WP No.} &
@@ -248,82 +252,15 @@ The WPs are summarized in the Table below, and Fig 1. gives a schematic view of 
 \pbox{8cm}{\Tstrut Lead \\Beneficiary\\Short Name\Bstrut} &  
 \pbox{8cm}{ESRs\\Involvem't}\tabularnewline\toprule
 
-%Doglioni
 \cellcolor{red!70!black} \textbf{\color{white}WP1\color{black}}  & Management & N, Doglioni  & 1 & 48 & Management & \lundentity & - \tabularnewline\hline\midrule
-
-%Sfyrla
 \cellcolor{red} \textbf{\color{white}WP2\color{black}}    & Training   &  N, Sfyrla & 5 & 42 & Recruitment, training & \unigeentity & All \tabularnewline\hline\midrule
-
-%Gligorov
-\cellcolor{orange} \textbf{\color{black}WP3\color{black}}   & ML, AI and data analysis &  N, Gligorov & 1 & 48 & Research& \cnrs & 1-14 \tabularnewline \hline \midrule%: Software and algorithms enabling RTA
-%\multicolumn{8}{p{0.95\textwidth}}{
-%ESRs: 1-14
-%Different ML algorithms are investigated by ESRs 1-3, 6, 9 for object reconstruction and feature identification, and for benchmarking and optimisation purposes by ESRs 4, 5, 7, 8, 10-12. 
-%Custom algorithms for real-time object reconstruction will be deployed by ESRs 3-5, 7, 14, 15.
-%} \tabularnewline \hline \midrule
-
-
-%%%%
-%%%%
-%%%%
-%Lacassagne
-\cellcolor{yellow} \textbf{\color{black}WP4\color{black}}    & Hybrid architectures & N, Lacassagne & 1 & 48 & Research & \sorbonneentity  & \ESRsForWPFourText \tabularnewline \hline \midrule% : Novel hardware for detectors and computing 
-%\multicolumn{8}{p{0.95\textwidth}}{
-%ESRs: \ESRb, \ESRc, \ESRf, \ESRg, \ESRl, \ESRm, \ESRn
-%The implementation of ML and detector reconstruction algorithms will be tested on GPUs by ESRs 3, 9, 10 and 11. 
-%The ATLAS Fast TracKer (FTK) (see ATLAS Collaboration,\href{https://inspirehep.net/record/1614024/}{The ATLAS Fast TracKer}, CERN Document Server, 2016), a hardware solution to particle track reconstruction will be the focus of ESRs 4, 8 and 15. ESR10 will optimize data formats and processing techniques to enable CPUs, GPUs, FPGAs, and hybrids to work together to solve problems which none of these technologies could solve on their own. ESR4 and ESR8 will investigate parallelization and multithreading of current algorithms.
-%} \tabularnewline \hline \midrule
-
-
-%%%%%%
-%%%%%%
-%%%%%%
-%Albrecht, Sopasakis 
+\cellcolor{orange} \textbf{\color{black}WP3\color{black}}   & ML, AI and data analysis &  N, Gligorov & 1 & 48 & Research& \cnrs & 1-14 \tabularnewline \hline \midrule
+\cellcolor{yellow} \textbf{\color{black}WP4\color{black}}    & Hybrid architectures & N, Lacassagne & 1 & 48 & Research & \sorbonneentity  & \ESRsForWPFourText \tabularnewline \hline \midrule
 \cellcolor{green} \textbf{\color{black}WP5\color{black}}   & \makecell[vl]{Real-time decision making} & N, Albrecht/Sopasakis & 1 & 48 & Research & \makecell[vl]{\dortmundentity} & All \tabularnewline\hline \midrule
-%\multicolumn{8}{p{0.95\textwidth}}{
-%ESRs: \ESRa, \ESRb, \ESRc, \ESRd, \ESRe, \ESRf, \ESRl, \ESRn, \ESRm
-%%\textbf{Motivation:} 
-
-%%Physics phenomena beyond the SM are needed to explain many observed phenomena, for example, the existence of massive "dark" matter.%, or 
-%%%New Higgs searches
-%%the apparent difference between the measured mass of the recently discovered Higgs boson 
-%%and what theorized within the SM. %% PS I just removed the clause with Higgs mass, as it is dodgy
-%%ESRs 1-4, 8, 13 and 15 search for new phenomena that could resolve these issues, and measure the properties of the Higgs boson. 
-%%%LFU
-%%ESRs 5-7 and 10-12 probe the SM prediction that the weak force couplings to all lepton types are equal (Lepton Flavor Universality, or LFU), and that the overall number of leptons of a given type does not change in interactions (Lepton Flavor Violation, LFV). 
-%%loop-level 
-%%(CITE RK,RK*), 
-%%Two researches in this proposal are leading
-%%ERC research groups to further investigate this question. 
-%%CD this is best in the quality of the supervision
-%%%ALICE
-%%The collective behavior of particles measured by ESR15 sheds light on the state of matter present in the early universe a few milliseconds after the Big Bang. 
-%%The common denominator of all those searches and measurements is that they would not be possible without specifically designed data taking techniques with a strong real-time component.
-%%as detailed in Sec.~\ref{sub:Originality}. 
-%%\vspace{-2mm}
-%} \tabularnewline \hline\midrule
-%%
-%
-%%%%
-%%%%
-%%%%
-%De Sainte Marie, Pierini
 \cellcolor{cyan} \textbf{\color{black}WP6\color{black}}   & Monitoring \& discoveries & N, de Sainte Marie/Pierini & 1 & 48 & Research& \ibmentity & \ESRsForWPSixText \tabularnewline\hline \midrule 
-%\multicolumn{8}{p{0.95\textwidth}}{
-%ESRs: \ESRa, \ESRd, \ESRf, \ESRj, \ESRk, \ESRl, \ESRx, \ESRn, \ESRm
-%%\textbf{Motivation:} 
-%%Real-time analysis techniques are employed in a variety of industrial contexts.
-%%\acronym selected the cases with the best fit to the physics research program and techniques employed by each ESRs for their industrial secondments.
-%%Most ESRs include a project with concrete industrial deliverables, concerning real-time traffic prediction (ESR1), in-vehicle mobile pattern recognition (ESR2), Internet-of-Things sensors (ESR3, ESR13, ESR15), task optimization and parallelization (ESR4, ESR8), efficient handling of computing clusters (ESR7), medical applications and insurance (ESR9, ESR11).
-%} \tabularnewline \hline\midrule
-%%
-%
-%Petersen
 \cellcolor{violet} \textbf{\color{black}WP7\color{black}}  & Dissemination \& communication of results  & N, Petersen & 1 & 48 & \pbox{8cm}{Dissemination, outreach} & \cern & All \tabularnewline
 \bottomrule
-%%\caption{Work-Package list.}\label{tab:WP}
 \end{tabular}
-%}%end of resizebox
 \end{center}
 
 \begin{center}
