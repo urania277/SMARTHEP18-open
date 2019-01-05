@@ -280,102 +280,49 @@ In \acronym, cutting-edge techniques in ML and hybrid architectures will be asse
 %Expand on the state of the art: why is this original, innovative ad timely
 %Refer to the state of the art in the first paragraph
 
-Add gender!! We got the benchmark of 40\% with node responsibles
+The ESRs in the \acronym network will undertake a timely and ambitious research program on RTA, benefitting from the experience not only of their direct supervisors, but of the entire network, to reach their objectives. Some of the original and innovative aspects of the projects in the network are listed below. 
 
-\noindent {\color{blue}{1. Researchers from \acronym learn to process large datasets using novel analysis techniques}.}
-%  \begin{wrapfigure}{r}{0.7\textwidth}
-%%\begin{figure}{l}{\textwidth}
-	%\vspace{12mm}
-%	\includegraphics[width=0.7\textwidth]{figs/WPs} %scienceStructure_2.pdf}
-%    \vspace{-5mm} 
-%	\caption*{Figure 2 : Structure and Research Objectives of the Work Packages.\label{fig:WPs}}
-     %\vspace{-5mm} 
-%%\begin{figure}	
-%\end{wrapfigure}
-A large part of the novelty of this proposal is the volume of data which will be processed, comparable to the largest commercial tasks. 
+\noindent {\color{blue}{1. Researchers from \acronym process large datasets using RTA techniques in a cost-effective way}.}
+A part of the novelty of this proposal is the volume of data which will be processed in real-time, comparable to the largest commercial tasks, but on a much smaller budget. 
+%Instead of generating data that 
 % MLD this is a great sentence but it is just out of place here
 %This is true across both academic and non-academic applications:
 %an estimated 90$\%$ of generated data is considered too expensive to store\footnote{\href{http://www.mckinsey.com/insights/business_technology/big_data_the_next_frontier_for_innovation}{2010 report on Big Data by McKinsey\&Company.}}.
 One can compare Facebook and e.g. the LHCb collaboration.
 %MLD I switched to numbers because then the comparison is more powerful (also shorter!)
-The former processes $O(100)$ petabytes of data per year and spends 500M dollars a year on computing\footnote{Facebook, \href{http://www.datacenterknowledge.com/the-facebook-data-center-faq-page-three/}{The Facebook Data Center FAQ}, 2010.} while the latter processes  $O(1000)$ petabytes of data per year and spends around 7M dollars a year on computing\footnote{Private communication, \href{mailto:peter.clarke@ed.ac.uk}{Prof. Peter Clarke}, University of Edinburgh.}.
-The essential difference is that Facebook stores and distributes this data to its users while LHC experiments largely process and then dispose of the data.
+The former 
+%processes $O(100)$ petabytes of data per year and 
+spends hundreds of millions of dollars a year on computing\footnote{Facebook, \href{http://www.datacenterknowledge.com/the-facebook-data-center-faq-page-three/}{The Facebook Data Center FAQ}, 2010.} while the latter only 
+spends order 10M dollars a year on computing~\footnote{Private communication, \href{mailto:peter.clarke@ed.ac.uk}{Prof. Peter Clarke}, University of Edinburgh.}. 
+% processes  $O(1000)$ petabytes of data per year and spends around 7M dollars a year on computing
+%The essential difference is that Facebook stores and distributes this data to its users while LHC experiments largely process and then dispose of the data.
 %MLD I felt this was not needed to make the above argument. It removes your figure 3 but see my comment from the email. 
 %An example of this are the physics searches and measurements performed solely using trigger information.
 %In these searches only a small fraction of each event, regardless of whether LHC experiments are able to record it for offline reconstruction or not, is saved for further processing. 
 %This overcomes the storage limitations and allows to be more than an order of magnitude more sensitive to certain new particles (e.g. associated to Dark Matter, as in Fig.3).
+To achieve this goal and maintain a cost-effective data taking strategy, LHC experiments need a more systematic application of RTA (especially fully RTA-based analysis that discards bulky raw data), machine learning and hybrid architectures for HEP. 
+As RTA is essential in industry as well, the research environment can benefit from a generation of ESRs with experience in industrial grade algorithms and tools. 
+In particular, the ESRs will be trained in topics matching the emerging trend of real-time big data analytics\footnote{\href{https://www.scnsoft.com/blog/real-time-big-data-analytics-comprehensive-guide}{A comprehensive guide to real-time big data analytics.}} by invited speakers from large enterprises using these methods.   
 
-To achieve and go beyond this, the LHC experiments need a more systematic application of RTA, machine learning and hybrid architectures for HEP. Examples are methods using Deep Learning techniques, which build high-level features from raw data (ESR1 and ESR2), using Recurrent Neural Networks (RNNs), which learn ordered patterns in the data and can be applicable both to tracking and to model paths taken by vehicles (ESR10), and Generative Adversarial Networks (GAN) for anomaly detection techniques (ESR13).
-This paradigm shift can be used in industry as well, while the research environment can benefit from a generation of ESRs trained in industrial grade algorithms and tools. 
-
-%\begin{wrapfigure}{r}{0.4\textwidth}
-%	\vspace{-4mm}
-%\includegraphics[width=0.4\textwidth]{figs/TLA.png} 
-%    \vspace{-10mm} 
-%    \caption*{Figure 3: Example of the number of events using traditional techniques (blue) compared to a trigger-level analysis (black)
-%in the search for new particles. Main analyzers: Boveia, Doglioni, Starovoitov, Dunford. \label{fig:TLA}}
-%\vspace{-4mm}
-%    \end{wrapfigure}
-%    \vspace{-3mm} 
-%Real-time analysis, machine learning and hybrid architectures have so far not been systematically
-%applied to HEP problems. 
-%Moreover, even where toolkits exist for HEP,
-%notably \tmva\ or \scikit\, they are little more than a collection
-%of individual algorithms applied in an ad-hoc manner.
-%The research program of \acronym is developed coherently around 
-%four main research questions that are at the forefront of 
-%the long-term goals of all major LHC experiments. 
-%which work against each other, 
-%one generating examples and the other classifying them. 
-%The classifying network gets a normal score, while 
-%the generating network is scored when it can create an example	
-%that escapes the classifier, so to make the classifier more 
-%sensitive to non-standard cases as it is essential in RTA
-%where rare, non-standard but interesting events risk being lost for good. 
-
-%%CD: possible text about machine learning
-%An additional driving challenge for the \acronym research program is the continuous need for improvement of background rejection
-%techniques once the data has been taken. The discovery of the Higgs boson in 2012, which lead to the award of a Nobel Prize in Physics, has 
-%opened the door to a whole new set of measurements of the properties of this new particle and possible discoveries 
-%of deviations from the Standard Model. However, the frequency with which
-%the Higgs boson particle is produced is minuscule compared to the rates of the backgrounds yielding the same detector signatures as the Higgs boson.  
-%An efficient background rejection is key for both measurements involving the Higgs boson and similarly rare particles. 
-%The need for novel techniques that only select the interesting events and reject the background is acute, in high energy physics and in
-%commercial applications alike. The first challenge of analyzing events in real-time addressed by \acronym also has similar needs: 
-%the current paradigm of triggering on simple features 
-%ignores the growing importance of the analysis of raw, unstructured, data across both academia
-%and industry. For both issues, a series of techniques known as machine learning, multivariate analysis, and 
-
-\noindent {\color{blue}{2. The \acronym program of searches and measurement could lead to breakthroughs in our understanding of nature}}
-Research topics chosen to drive conceptual developments within \acronym have potential to lead to the discovery of new physics beyond the Standard Model, but only RTA techniques enable full exploitation of the LHC dataset. 
-%the full statistical reach of the LHC data to be exploited. 
-%Only RTA techniques will enable such discoveries. 
-ESRs working on physics topics will target common challenges, e.g. when real-time algorithms and reconstruction techniques are not sufficiently advanced to distinguish signal from noise, or when the statistical power of the dataset is not fully exploited if objects are reconstructed with traditional techniques. 
-%The advanced tools under design in \acronym
-%will allow the real-time systems of LHC 
-%experiments to improve coherently. 
-
-% MLD this sudden detailed motivation of the physics seems out of place. This section is supposed to be motivating why the training program is unique. Also the level of detail here is not consistent with other parts. 
-Examples include studies of lepton flavor and its conservation and universality in different final states and experiments (ESR 5-7, 9, 11-12), and dark matter mediators and new light particles\footnote{M. Chala et al, \href{http://arxiv.org/abs/1503.05916}{Constraining Dark Sectors with Monojets and Dijets}, JHEP 1507 (2015) 089.}.
-The volume of data needed to be sensitive to these rare processes is the perfect testing ground for improved real-time techniques for ESR1 and 8.  
-RTAs looking for dark matter mediators in ESR13 and 15, and the search for new particles of ESR3 and 4 using ML have never been performed at the LHC, nor have generic searches for rare new phenomena as in ESR2.
-Measurements in ESR2 and 15 precisely probe the SM in the Higgs and heavy ions sectors. 
-
-The choice of physics topics that all need RTA to achieve beyond-state-of-the-art results ensures advancement in detector development and contribution to major advances in key analyses of LHC data.
-%paving the way to understand the main questions of our universe. 
+\noindent {\color{blue}{2. The \acronym research program could lead to breakthroughs in our understanding of nature}}
+Only fully-real time data acquisition techniques and trigger improvements enable full exploitation of the LHC dataset. 
+The HEP research topics chosen to drive conceptual developments within \acronym have the potential to lead to the discovery of new physics beyond the Standard Model. 
+%ESRs working on physics topics will target common challenges, e.g. when real-time algorithms and reconstruction techniques are not sufficiently advanced to distinguish signal from noise, or when the statistical power of the dataset is not fully exploited if objects are reconstructed with traditional techniques. 
+Examples include studies of lepton flavor and its conservation and universality in different final states and experiments, dark matter mediators and new light particles, precise probes of the Higgs boson and of heavy ion physics, as well as not-yet-theorized phenomena that would not be possible to record using the current state-of-the-art triggers. 
 
 \noindent {\color{blue}{3. ESRs in \acronym deploy and disseminate their research at a unique time for particle physics}.}
-As highlighted by the HEP Software Foundation Whitepaper$^{4}$, the period 2019-2023 is ideal for this R\&D in HEP, as it is a time of transition between LHC data taking periods that will be necessary to prepare for an upgrade of the LHC accelerator where the amount of data delivered will make RTA techniques  the key to pursue the physics programs of the four main LHC experiments.
+As highlighted by the HEP Software Foundation Whitepaper$^{4}$, the period 2019-2023 is ideal for this R\&D in HEP, as it is a time of transition between LHC data taking periods that will be necessary to prepare for an upgrade of the LHC accelerator where the amount of data delivered will make RTA techniques the key to pursue the physics programs of the four main LHC experiments.
 The systematic optimization of HEP experiments by \acronym will boost the performance of the current and planned upgrades of the CERN based accelerator experiments.
 Furthermore, the developed toolkits will be advertised at international conferences and thus the developed methods will shape the online event selection of all future HEP experiments. 
 %The next LHC run (Run-3) will be starting in 2021 and the following one (Run-4) will begin in 2026.  
 %Therefore, the 2020-2024 period is an ideal time for performing trigger upgrades and commissioning them with data, following the LHC upgrades that will deliver a much larger dataset than what is currently available. 
 
-\noindent {\color{blue}{4. \acronym researchers develop techniques and infrastructures that can be exploited in industrial applications, as well as in HEP}.}
+\noindent {\color{blue}{4. \acronym researchers further the RTA paradigm in both HEP and industry}.}
 The close links of the research institutes of the consortium with the industry partners means that the ESRs will directly drive the development of novel industrial products, while also bringing professional methods of data mining that are exercised in large companies into the academic environment. 
-Most modern methods applied in research can in this way be transferred more easily to industry applications in automotive traffic optimization (ESR1-2, 6, 8) and analysis of sensor data for IoT and medical applications (ESR3-4, 9, 11, 13, 15).
-%JA: not , 14 (??)) 
-The proposed algorithms and the use of ML methods on these scales of data are novel to both HEP and industry. 
+Most modern methods applied in research can in this way be transferred to industry applications. 
 By exposing industry-grade methods to the volume and complexity of HEP data, we will stimulate their development in a complementary way for the benefit of industry.
+% in automotive traffic optimization (ESR1-2, 6, 8) and analysis of sensor data for IoT and medical applications (ESR3-4, 9, 11, 13, 15).
+%JA: not , 14 (??)) 
+%The proposed algorithms and the use of ML methods on these scales of data are novel to both HEP and industry. 
 
 
