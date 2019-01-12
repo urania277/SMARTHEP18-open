@@ -15,53 +15,40 @@
 %This modus operandi is at the heart of \acronym and ensures the efficiency of its implementation. 
 
 \subsubsection{Work Packages description}\label{sec:WPdescription}
+\label{sub:WPsDescription}
 
 %Earlier text
-\acronym WPs have been introduced in Sec.~\ref{sec:metho}. 
-Most ESRs will work on projects which fall within different research WPs, strengthening
-\acronym into a coherent whole.
-As is clear from our research methodology %and represented in Fig.~\ref{fig:implementation}, 
-Real-Time Analysis is the conceptual and technical challenge which permeates all research work packages 
-and motivates the network.
+\acronym research topics and corresponding WPs have been introduced in Sec.~\ref{sec:metho}. 
+The ESRs will work on projects which fall within different research WPs, strengthening \acronym into a coherent whole.
+RTA is the conceptual and technical challenge which permeates all research work packages and motivates the network.
 \vspace{-5mm}
 %\newpage\clearpage
 \input{WorkPackages/AllWP}
-%\input{WorkPackages/WP1}
-%%\clearpage
-%\input{WorkPackages/WP2}
-%%\clearpage
-%\input{WorkPackages/WP3}
-%%\clearpage
-%\input{WorkPackages/WP4}
-%%\clearpage
-%\input{WorkPackages/WP5}
-%%\clearpage
-%\input{WorkPackages/WP6}
-%%\clearpage
-%\input{WorkPackages/WP7}
-
 \FloatBarrier
 %\clearpage
 
 \subsubsection{List of major deliverables}
+\label{sub:deliverables}
 
 %A deliverable is a distinct output of the action, meaningful in terms of the action?s overall objectives and constituted by a report, a document, a technical diagram, a software, training, conference, etc. These should be divided into scientific deliverables and management, training, recruitment and dissemination deliverables. Scientific deliverables have technical/scientific content specific to the action. The number of deliverables in a given Work Package must be reasonable and commensurate with the Work Package content. Note that during implementation, the submission of these deliverables to the REA will be a contractual obligation.
 %Table 3.1.b, Including the awarding of doctoral degrees!
-\vspace{-1mm}
-The following tables lists the major deliverables of the project. 
+%\vspace{-1mm}
+The following tables list the deliverables of the project. 
 
-\color{blue}\noindent Scientific Deliverables\color{black}\addtocounter{table}{1}\vspace{-11mm}\\
+\color{blue}\noindent Scientific Deliverables\color{black}\addtocounter{table}{1} \vspace{-9mm}\\
 \begin{center}
-\resizebox {\textwidth }{!}{%
-\begin{tabular}{@{}p{5mm}@{~~}p{60mm}p{6mm}p{18mm}p{6mm}cp{8mm}p{90mm}@{}}
+\scriptsize
+%\resizebox {\textwidth }{!}{%
+\begin{tabular}{@{}p{5mm}@{~~}p{105mm}p{6mm}p{18mm}p{6mm}cp{8mm}@{}}
 \toprule
-\multicolumn{2}{l}{\pbox{8cm}{Deliverable\\Number \& Title}} &
+\multicolumn{2}{l}{\pbox{8cm}{Deliverable Number \& Title}} &
 %Deliverable numbers in order of delivery dates. Please use the numbering convention <WP number>.<number of deliverable within that WP>. For example, deliverable 4.2 would be the second deliverable from Work Package 4.
 WP &
 \pbox{8cm}{\Tstrut Lead Benef.\\Short Name\Bstrut}& %\\Short\\Name
 \multicolumn{2}{c}{\pbox{8cm}{Type \& Dissemin.\\Level}}&
 %Type: Please indicate the nature of the deliverable using one of the following codes:
-%R = Report; ADM = Administrative (website completion, recruitment completion, etc.); PDE = dissemination and/or exploitation of results; OTHER = Other, including coordination 
+%R = Report; ADM = Administrative (website completion, recruitment completion, etc.); 
+%PDE = dissemination and/or exploitation of results; OTHER = Other, including coordination 
 
 %Dissemination level:
 %Please indicate the dissemination level using one of the following codes:	
@@ -70,164 +57,163 @@ WP &
 %Please consider that deliverables marked as "PU" will automatically be published on CORDIS once approved: the applicants should 
 %therefore consider the relevance of marking a deliverable as "PU";
 %CI = Classified: classified information as intended in Commission Decision 2001/844/EC. 
-\pbox{8cm}{Due\\Date} & 
-Description\tabularnewline 
+\pbox{8cm}{Due\\Date} 
+%Description
+\tabularnewline 
 \toprule
 
-%WP3
+%20
+\deli{\deliverableWhitepaperStateOfTheArtWPFive} & 
+Review of the state of the art of the triggers of LHC collaborations and best practices&
+5 & \dortmundentity & R & PU & \deliverableWhitepaperStateOfTheArtWPFiveMonth 
+%20
+\tabularnewline\midrule 
+\deli{\deliverableWhitepaperStateOfTheArtWPSix} & 
+Whitepaper on the state of the art of fully RTA-based searches in HEP and best practices&
+6 & \ibmentity & R & PU & \deliverableWhitepaperStateOfTheArtWPSixMonth 
+%24
+\tabularnewline\midrule 
+\deli{\deliverableWhitepaperStateOfTheArtWPThree} & 
+Whitepaper summarizing the state of the art in ML techniques for RTA and best practices& 
+3 & \cnrs & R & PU & \deliverableWhitepaperStateOfTheArtWPThreeMonth 
+%29
+\tabularnewline\midrule 
+\deli{\deliverableLogisticsOptimisation} & 
+Client software for optimization of transport with \pointeightentity and associated publications &
+5 & \dortmundentity & OTHER & CO & \deliverableLogisticsOptimisationMonth
+%29
+\tabularnewline\midrule 
+\deli{\deliverableWhitepaperStateOfTheArtWPFour} & 
+Whitepaper on the state of the art on hybrid architectures in real-time analysis &
+4 & \sorbonneentity & R & PU & \deliverableWhitepaperStateOfTheArtWPFourMonth
+%31
+\tabularnewline\midrule 
+\deli{\deliverablePredictiveMaintenance} &
+Software for sensors for Internet-of-things and industrial process optimization in \lightboxentity &
+6 & \ibmentity & OTHER & CO & \deliverablePredictiveMaintenanceMonth
+%32
+\tabularnewline\midrule 
+\deli{\deliverableTriggerExperimentalSoftwareWPThree} & 
+ML algorithms and software enabling RTA at LHC during Run-2 data taking  & 
+3 & \cnrs & OTHER & CO & \deliverableTriggerExperimentalSoftwareWPThreeMonth
+%32
+\tabularnewline\midrule 
+\deli{\deliverableTriggerExperimentalSoftwareWPFive} &
+Software for LHC trigger upgrades for Run-3 data taking &
+5 & \dortmundentity & OTHER & CO & \deliverableTriggerExperimentalSoftwareWPFiveMonth
+%32
+\tabularnewline\midrule 
+\deli{\deliverableSoftwareWPSix} & 
+Software enabling advanced fully RTA-based searches at LHC &
+6 & \ibmentity & OTHER & CO & \deliverableSoftwareWPSixMonth 
+%35
+\tabularnewline\midrule 
+\deli{\deliverableFinalWhitepaperWPThree} & 
+Review paper collecting ML and data analysis advancements from ESR projects & 
+3 & \cnrs & PDE & PU & \deliverableFinalWhitepaperWPThreeMonth 
+%35
+\tabularnewline\midrule 
+\deli{\deliverableParallelization} & 
+\lightboxentity software to optimize parallelization of financial transactions, associated publications &
+4 & \cnrs & OTHER & CO & \deliverableParallelizationMonth 
+%36
+\tabularnewline\midrule 
+\deli{\deliverableXimantisHybrid} & 
+Improved \ximantisentity app (e.g. using hybrid/Attention ML networks) and associated publications &
+5 & \dortmundentity & OTHER & CO & \deliverableXimantisHybridMonth 
+%39
+\tabularnewline\midrule 
+\deli{\deliverableParallelizationOptimizationWPFour} & 
+Software toolkits and hardware improvements in HEP (e.g. FTK for ATLAS, GPU for LHCb) &
+4 & \cnrs & OTHER & CO & \deliverableParallelizationOptimizationWPFourMonth
+%40
+\tabularnewline\midrule 
+\deli{\deliverableFleetmaticsMLMobile} & 
+Toolkits for real-time fleet monitoring within \fleetmaticsentity and associated publications &
+6 & \ibmentity & OTHER & CO & \deliverableFleetmaticsMLMobileMonth
+%40
+\tabularnewline\midrule 
+\deli{\deliverableRule} & 
+Algorithms for fraud detection and HEP triggers in \ibmentity and associated publications &
+6 & \ibmentity & OTHER & CO & \deliverableRuleMonth
+%42
+\tabularnewline\midrule 
+\deli{\deliverableWhitepaperDevelopmentWPFour} &
+Review paper collecting advancements in optimization of hybrid architectures for LHC triggers &
+4 & \cnrs & PDE & PU & \deliverableWhitepaperDevelopmentWPFourMonth
+%42
+\tabularnewline\midrule 
+\deli{\deliverableWhitepaperCollectionPapersWPSix} & 
+Review paper collecting ESR physics results using fully RTA-based analyses &
+6 & \ibmentity & PDE & PU & \deliverableWhitepaperCollectionPapersWPSixMonth 
+%42
+\tabularnewline\midrule 
+\deli{\deliverableWhitepaperCollectionPapersWPFive} & 
+Review paper collecting ESR physics results using trigger selection improvements &
+5 & \dortmundentity & PDE & PU & \deliverableWhitepaperCollectionPapersWPFiveMonth 
 
-\deliverableWhitepaperStateOfTheArtWPThree & Whitepaper on the state of the art of Machine Learning (ML) and data analysis & 3 & \cnrs & R & PU & \deliverableWhitepaperStateOfTheArtWPThreeMonth & Publication of whitepaper summarizing the state of the art in ML techniques for RTA \tabularnewline\midrule 
-\deliverableTriggerExperimentalSoftwareWPThree & Software for experiment real-time systems & 3 & \cnrs & OTHER & CO & \deliverableTriggerExperimentalSoftwareWPThreeMonth & Deployment of software enabling RTA at LHC before data taking \tabularnewline\midrule 
-\deliverableWhitepaperDevelopmentWPThree & Whitepaper with results from ML application to real-time systems & 3 & \cnrs & PDE & PU & \deliverableWhitepaperDevelopmentWPThreeMonth & Publication of whitepaper collecting ML and reconstruction advancements from ESR projects \tabularnewline\midrule 
-
-%\deliverableCMSHLTDNNJEC  & Software for DNN in CMS object reconstruction & 3 & \cnrs, \helsinki & R & PU & 24 & Release of CMS software for improvement of jet calibration \tabularnewline\midrule 
-%\deliverableCMSHLTGeneralPurposeScouting  & Software for CMS trigger & 3 & \cnrs, \helsinki & R & PU & 32 & Release of CMS software for general purpose scouting dataset, supplemented with heavy object/flavor tagging information \tabularnewline\midrule 
-%\deliverableLLPTrackingToolkit & Software for tracking in ATLAS trigger & 3 & \cnrs, \unige & R & PU & 24 & Release of ATLAS software for tracking in trigger, including long-lived particles\tabularnewline\midrule
-%\deliverableTriggerOptToolkit & Toolkit for trigger optimization & 3 & \cnrs, \nikhef & R & PU & 30 & Release of toolkit for automatic coptimization of trigger systems\tabularnewline\midrule
-%\deliverableTechPubMLForOptimisation & Publication related to \deliverableTriggerOptToolkit & 3 & \cnrs, \nikhef & R & PU & 34 & Publication documenting the automatic optimization of trigger systems\tabularnewline\midrule
-%\deliverableTechPubAdversarialFramework & Publication related to \deliverableAdversarialFramework & 3 & \cnrs & R & PU & 32 & Publication documenting intersector toolkit for creation of adversarial network examples\tabularnewline\midrule
-%\deliverableTechPubTimeOrderedSourcesFramework & Publication related to \deliverableTimeOrderedSourcesFramework & 3 & \cnrs & R & PU & 32 & Release of intersector toolkit for combination of time-ordered and non-time-ordered sources in industry and HEP\tabularnewline\midrule
-
-%WP4
-
-\deliverableWhitepaperStateOfTheArtWPFour & Whitepaper on the state of the art of Machine Learning (ML) and data analysis & 3 & \sorbonneentity & R & PU & \deliverableWhitepaperStateOfTheArtWPFourMonth & Publication of whitepaper summarizing the state of the art in ML techniques for RTA \tabularnewline\midrule 
-\deliverableWhitepaperDevelopmentWPFour & Whitepaper with results from application of hybrid architectures to real-time systems & 3 & \sorbonneentity & PDE & PU & \deliverableWhitepaperDevelopmentWPFourMonth & Publication of whitepaper collecting advancements in hybrid architectures from ESR projects \tabularnewline\midrule 
-\deliverableParallelizationOptimizationWPFour & Toolkit for hybrid architectures & 3 & \sorbonneentity & OTHER & PU & \deliverableParallelizationOptimizationWPFourMonth & Release of intersector toolkit for benchmarking and optimization of hybrid architectures \tabularnewline\midrule 
-
-%\deliverableTechPubLLPGPU & Publication on ATLAS trigger tracking & 4 & \cnrs, \unige & R & PU & 30 & Documentation of testing of ATLAS tracking algorithms on GPU \tabularnewline\midrule
-%\deliverableTechPubMultithreaded & Software for multithreading in ATLAS trigger system & 4 & \cnrs, \cern & R & PU & 30 & Release of toolkit for optimization of creation of FTK pattern banks\tabularnewline\midrule
-%\deliverableToolkitTrainingFTK & Software for optimization of FTK & 4 & \cnrs & R & PU & 28 & Release of software for optimization of creation of FTK pattern banks in ATLAS\tabularnewline\midrule
-%\deliverableHEPPubATLASFTK & Documentation of \deliverableToolkitTrainingFTK & 4 & \cnrs & R & PU & 34 & Publication on generation of FTK pattern banks using industrial-grade parallelization frameworks\tabularnewline\midrule
-%\deliverableToolkitHybrid & Toolkit for hybrid architectures & 4 & \cnrs & R & PU & 28 & Intersector toolkit for benchmarking and optimization of hybrid architectures\tabularnewline\midrule
-%\deliverableTechPubHybrid & Publication related to \deliverableTimeOrderedSourcesFramework & 4 & \cnrs & R & PU & 28 & Publication documenting intersector toolkit for benchmarking and optimization of hybrid architectures\tabularnewline\midrule
-%\deliverableHEPPubHybrid & Publication related to \deliverableTimeOrderedSourcesFramework in HEP & 4 & \cnrs & R & PU & 40 & Publication documenting technical HEP use cases of toolkit for benchmarking and optimization of hybrid architectures\tabularnewline\midrule
-
-%WP5
-
-\deliverableWhitepaperStateOfTheArtWPFive & Whitepaper on the state of the art physics analysis with real-time objects & 3 & \helsinki & R & PU & \deliverableWhitepaperStateOfTheArtWPFiveMonth & Publication of whitepaper summarizing the state of the art in LHC searches and measurements using RTA \tabularnewline\midrule 
-\deliverableWhitepaperCollectionPapersWPFive &  Whitepaper with \acronym results of RTA to physics problems & 3 & \helsinki & PDE & PU & \deliverableWhitepaperCollectionPapersWPFiveMonth & Publication of whitepaper collecting summaries of peer-reviewed results from physics analysis within \acronym  \tabularnewline\midrule 
-
-%WP6
-\deliverableLogisticsOptimisation & Study of use of RTA in logistics and transport  & 6 & \pointeightentity & OTHER & PU & \deliverableLogisticsOptimisationMonth & Software and publication of optimisation of logistics and transport using ML and RTA. \tabularnewline\midrule
-\deliverablePredictiveMaintenance & \lightbox IoT-based industrial maintenance software & 6 & \dqentity & OTHER & CO & \deliverablePredictiveMaintenanceMonth & Release of \lightboxentity software for predictive maintenance of industrial processes \tabularnewline\midrule
-\deliverableFleetmaticsMLMobile  & \fleetmatics Contribution to ML in-vehicle image processing and website & 6 & \dqentity & OTHER & CO & \deliverableFleetmaticsMLMobileMonth & Contribution to \fleetmaticsentity app using ML toolkits for in-vehicle image processing and online learning website\tabularnewline\midrule
-\deliverableParallelization & \lightboxentity software for real-time task parallelization & 6 & \dqentity & OTHER & CO & \deliverableParallelizationMonth & Release of \lightboxentity toolkit to improve the efficiency of a simulated task in real-time \tabularnewline\midrule
-\deliverableXimantisML & \ximantis app with re-trained AI & 6 & \dqentity & OTHER & CO & \deliverableXimantisMLMonth & Contribution to \ximantisentity app using Convolutional NNs \tabularnewline\midrule
-\deliverableXimantisHybrid & \ximantis app using hybrid network & 6 & \dqentity & OTHER & CO & \deliverableXimantisHybridMonth & Contribution to \ximantisentity app using Hybrid networks\tabularnewline\midrule
-\deliverableDashboardCam & \fleetmatics software & 6 & \dqentity & OTHER & CO & \deliverableDashboardCamMonth & Contribution to software for dashboard cameras for in-fleet monitoring \tabularnewline\midrule
-\deliverableRule & Implementation of algorithms that combine of symbolic knowledge and analytics models & 6, 3 & \ibmentity & OTHER & PU & \deliverableNNMonth & Release implementation of algorithms (commercial and demo) combining symbolic knowledge and analytics models\tabularnewline\midrule
-
-%\deliverableTimeOrderedSourcesFramework & Toolkit for combination of sources in ML & 6, 3 & \dqentity & R & PU & XX & Release of \dq intersector toolkit for combination\tabularnewline\midrule
-
-%\deliverableHEPPubALICETPC & Publication on ALICE TPC & 5 & \helsinkientity, \lundentity & R & PU & 24 & Publication on real-time calibration of ALICE TPC \tabularnewline\midrule
-%\deliverableHEPPubLFVReco & Publication on LHCb reconstruction in trigger & 5 & \helsinkientity, \cern & R & PU & 24 & Documentation of LHCb trigger tracking algorithms for low energy particles \tabularnewline\midrule
-%\deliverableHEPPubCMSHLTDNNJEC  & Publication on DNN in CMS object reconstruction & 3, 5 & \cnrs, \helsinki & R & PU & 26 & Publication related to CMS software for improvement of jet calibration \tabularnewline\midrule 
-%
-%\deliverableHEPPubLLP & Publication on Dark Sector long-lived particle search & 5 & \helsinkientity, \unige & R & PU & 40 & Publication of ATLAS Dark Sector search with RTA long-lived particle algorithms in trigger\tabularnewline\midrule
-%\deliverableHEPPubATLASTLAFTK & Publication on dijet Dark Matter search & 5 & \helsinkientity, \cnrs & R & PU & 40 & Publication of ATLAS Dark Matter search exploiting FTK in dijet final states \tabularnewline\midrule
-%\deliverableHEPPubATLASTLAMultijet & Publication on multijet Dark Matter search & 5 & \helsinkientity, \heidelberg & R & PU & 30 & Publication of ATLAS Dark Matter search in multijet final states at the trigger level \tabularnewline\midrule
 \label{tab:DeliverList}
 \end{tabular}
-}%
-\vspace{-8mm}
+%}%
+%\vspace{-8mm}
 \end{center}
-%
 %\noindent Scientific Deliverables (contd) \addtocounter{table}{1}\vspace{-6mm}\\
+
+\noindent \color{blue} Management, Training, Recruitment and Dissemination Deliverables\color{black}\addtocounter{table}{1}\vspace{-5mm}\\
+% 	Including overall recruitment (e.g. advertising vacancies), Researcher Declarations on Conformity, Career development Plan, training deliverable x, etc. The individual recruitments should only be listed in Table 1.2a 
+\begin{center}
+\scriptsize
+%\resizebox {\textwidth }{!}{%
+\begin{tabular}{@{}p{5mm}@{~~}p{100mm}p{6mm}p{10mm}p{6mm}cp{20mm}@{}}
+%\begin{tabular}{@{}p{5mm}@{~~}p{95mm}p{4mm}p{10mm}p{6mm}cp{12mm}@{}}
+\toprule
+\multicolumn{2}{l}{\pbox{8cm}{Deliverable Number \& Title}} &
+WP &
+\pbox{8cm}{\Tstrut Lead Benef.\\Short Name\Bstrut}&
+\multicolumn{2}{c}{\pbox{8cm}{Type \& Dissemin.\\Level}}&
+\pbox{8cm}{Due\\Date} 
+\tabularnewline 
+\toprule
+\deli{1.1} & Project manager hired  at the PC's institute & 1 & \lundentity & ADM & CO & 2 \tabularnewline\midrule
+\deli{1.2} & Signature of Consortium Agreement by all parties & 1 & \lundentity & ADM & CO & 2 \tabularnewline\midrule
+\deli{1.3} & Launch of the website and social media accounts & 1,7 & \lundentity & PDE & PU & 3  \tabularnewline\midrule
+\deli{1.4} & Advertisement, selection and recruitment of all ESRs & 1 & \lundentity & ADM & CO & 3, 8  \tabularnewline\midrule
+\deli{1.5} & EB/SB meeting minutes and EU reports  & 1 & \lundentity & R & CO & 3,13,25,37,48  \tabularnewline\midrule
+\deli{1.6} & Collect documentation, reports and feedback for all Network events and schools. & 1 & \lundentity & R & PU/PDE & 3,13,19,25,37,48 \tabularnewline\midrule
+\deli{2.2} & Design and organization of network-wide schools together with other responsibles & 2-6 & \unigeentity & OTHER & CO & 10, 15, 27-29, 38 \tabularnewline\midrule
+\deli{2.1} & Preparation, network approval and monitoring of PCDP & 2 & \unigeentity & OTHER & CO & 12, 24, 36, 42 \tabularnewline\midrule
+\deli{7.4} & Reports on commmunication, outreach and \acronym Masterclass/WWDD. & 7 & \cernentity & R & PU & 12, 24, 36, 48 \tabularnewline\midrule
+\deli{2.3} & Publication of \acronym school \& event proceedings on website & 2 & \unigeentity & PDE & PU & 11, 16, 30, 39 \tabularnewline\midrule
+\deli{2.4} & Presentation from fellows at Network schools and final conference & 2,7 & \unigeentity & PDE & PU & 12, 24, 36, 42 \tabularnewline\midrule
+\deli{7.1} & Data challenge website online and open to the public & 7 & \cernentity & PDE & PU & 14 \tabularnewline\midrule
+\deli{7.2} & Reports on presentation of results at international conferences; & 7 & \cernentity & PDE/R & PU & 24, 36, 48 \tabularnewline\midrule
+\deli{2.5} & ESRs with three-year PhD project receive a degree & 2 & \unigeentity & ADM & CO & 44 \tabularnewline\midrule
+\deli{7.3} & Report on publication of results in peer-reviewed journals & 7 & \cernentity & PDE/R & PU & 24, 36, 48 \tabularnewline\midrule
+\multicolumn{6}{l}{R: Report, ADM: Administrative; PDE: dissemin.; PU: Public; CO: Confidential, restricted to consortium and Commission services}\tabularnewline
+\end{tabular}
+%}%
+\end{center}
+%\end{table}
+%\vfill
+%\newpage
 %\begin{center}
 %\resizebox {\textwidth }{!}{%
-%\begin{tabular}{@{}p{5mm}@{~~}p{60mm}p{6mm}p{12mm}p{16mm}cp{15mm}p{80mm}@{}}
+%\begin{tabular}{@{}p{5mm}@{~~}p{60mm}p{6mm}p{18mm}p{10mm}cp{20mm}p{80mm}@{}}
 %\toprule
-%\multicolumn{2}{l}{\pbox{8cm}{Deliverable\\Number \& Title}} &
-%%Deliverable numbers in order of delivery dates. Please use the numbering convention <WP number>.<number of deliverable within that WP>. For example, deliverable 4.2 would be the second deliverable from Work Package 4.
-%WP &
-%\pbox{8cm}{\Tstrut Lead\\Benef.\\Short\\Name\Bstrut}&
-%\multicolumn{2}{c}{\pbox{8cm}{Type \&\\Dissemin.\\Level}}&
-%%Type: Please indicate the nature of the deliverable using one of the following codes:
-%%R = Report; ADM = Administrative (website completion, recruitment completion, etc.); PDE = dissemination and/or exploitation of results; OTHER = Other, including coordination 
-%%Dissemination level:
-%%Please indicate the dissemination level using one of the following codes:	
-%%PU = Public: fully open, e.g. web; CO = Confidential: restricted to consortium, other designated entities (as appropriate) and Commission %services; Please consider that deliverables marked as "PU" will automatically be published on CORDIS once approved: the applicants should %therefore consider the relevance of marking a deliverable as "PU";
-%%CI = Classified: classified information as intended in Commission Decision 2001/844/EC. 
-%\pbox{8cm}{Due\\Date} & 
-%Description\tabularnewline 
-%\toprule
-%
-%\deliverableHEPPubCMSDijet & Publication on dijet Dark Matter search & 5 & \helsinkientity & R & PU & 30 & Publication of CMS Dark Matter search in dijet final states at the trigger level \tabularnewline\midrule
-%\deliverableHEPPubCMSBoosted & Publication on Higgs boson and Z measurements & 5 & \helsinkientity & R & PU & 30 & Publication of CMS Higgs and Z boson trigger-level measurements, decaying in heavy flavor quarks \tabularnewline\midrule
-%
-%\deliverableHEPPubLFVFlavored & Publication on Lepton Flavor Violation in flavored mesons  & 5 & \helsinkientity, \cern & R & PU & 40 & Publication on Lepton Flavor Violation using flavored meson decays in LHCb \tabularnewline\midrule
-%\deliverableHEPPubLFVUnflavored & Publication on Lepton Flavor Violation in unflavored mesons & 5 & \helsinkientity, \dortmund & R & PU & 40 & Publication on Lepton Flavor Violation using unflavored meson decays in LHCb \tabularnewline\midrule
-%\deliverableHEPPubLFV & Publication on Lepton Flavor Violation in tau to muon+photon & 5 & \helsinkientity, \nikhef & R & PU & 40 & Publication on Lepton Flavor Violation in tau to muon+photon in LHCb \tabularnewline\midrule
-%\deliverableHEPPubLFV & Publication on Lepton Flavor Violation in tau to three muons & 5 & \helsinkientity, \nikhef & R & PU & 40 & Publication on Lepton Flavor Violation in ATLAS \tabularnewline\midrule
-%
-%\deliverableHEPPubALICEPhysics & ALICE Publication on nuclear modification factor & 5 & \helsinkientity, \lundentity & R & PU & 40 & ALICE Publication on nuclear modification factor with RTA in Run-3 data \tabularnewline\midrule
-%
-%%WP6
+%%\multicolumn{2}{l}{\pbox{8cm}{Deliverable\\Number \& Title}} &
+%%WP &
+%%\pbox{8cm}{\Tstrut Lead\\Benef.\\Short\\Name\Bstrut}&
+%%\multicolumn{2}{c}{\pbox{8cm}{Type \&\\Dissemin.\\Level}}&
+%%\pbox{8cm}{Due\\Date} & 
+%%Description\tabularnewline 
+%%\toprule
+%%%%
 %
 %\multicolumn{8}{l}{\pbox{21cm}{\small R: Report, ADM: Administrative; PDE: dissemin.; PU: Public; CO: Confidential, restricted to consortium and Commission services}}\tabularnewline
 %\end{tabular}
 %}%
 %\end{center}
-
-
-%Note: this needs to match the deliverables in the WPs and in the ESRs.
-%\end{table}
-%\vfill
-
-\noindent \color{blue} Management, Training, Recruitment and Dissemination Deliverables\color{black}\addtocounter{table}{1}\vspace{-10mm}\\
-% 	Including overall recruitment (e.g. advertising vacancies), Researcher Declarations on Conformity, Career development Plan, training deliverable x, etc. The individual recruitments should only be listed in Table 1.2a 
-\begin{center}
-\resizebox {\textwidth }{!}{%
-\begin{tabular}{@{}p{5mm}@{~~}p{60mm}p{6mm}p{18mm}p{10mm}cp{20mm}p{80mm}@{}}
-\toprule
-\multicolumn{2}{l}{\pbox{8cm}{Deliverable\\Number \& Title}} &
-WP &
-\pbox{8cm}{\Tstrut Lead Benef.\\Short Name\Bstrut}&
-\multicolumn{2}{c}{\pbox{8cm}{Type \& Dissemin.\\Level}}&
-\pbox{8cm}{Due\\Date} & 
-Description\tabularnewline 
-\toprule
-1.1 & Project manager hired & 1 & \lundentity & ADM & CO & 1  & Project manager is hired at the PC's institute \tabularnewline\midrule
-1.2 & Consortium Agreement & 1 & \lundentity & ADM & CO & 2 & Signature of Consortium Agreement by all parties \tabularnewline\midrule
-1.3 & Website\&Social Media & 1 & \lundentity & PDE & PU & 3  & Creation of Network website \& social media accounts\tabularnewline\midrule
-1.4 & Recruitment & 1 & \lundentity & ADM & CO & 3, 6  & All the ESRs have been advertised and recruited \tabularnewline\midrule
-1.5 & Network meeting minutes, EU reports & 1 & \lundentity & R & CO & 3,13,25,37,48  & Prepare EB/SB meeting minutes and EU reports \tabularnewline\midrule
-1.6 & Documentation of the Network events & 1 & \lundentity & R & PU/PDE & 3,13,19,25,37,48  & Advertise and document network events \tabularnewline\midrule
-2.1 & PCDP for each ESR & 2 & \unigeentity & OTHER & CO & 12, 24, 36, 42 & Preparation, approval and monitoring of PCDP \tabularnewline\midrule
-2.2 & Design and organization of network-wide schools & 2-6 & \unigeentity & OTHER & CO & 10, 18, 27-29, 38 & Design and organization of network-wide schools (ML and physics, Hybrid architectures and industry) together with WP and beneficiaries responsible \tabularnewline\midrule
-2.3 & \acronym school \& event proceedings & 2 & \unigeentity & PDE & PU & 11, 19, 30, 39 & Gathering of lecture proceedings for students and website \tabularnewline\midrule
-2.4 & Presentation from fellows at Network schools and conferences & 2,7 & \unigeentity & PDE & PU/CO & 12, 18, 24, 36, 42  & Presentation of the latest status of ESR work \tabularnewline\midrule
-\multicolumn{8}{l}{\pbox{21cm}{\small R: Report, ADM: Administrative; PDE: dissemin.; PU: Public; CO: Confidential, restricted to consortium and Commission services}}\tabularnewline
-\end{tabular}
-}%
-\end{center}
-%\end{table}
-%\vfill
-\newpage
-\begin{center}
-\resizebox {\textwidth }{!}{%
-\begin{tabular}{@{}p{5mm}@{~~}p{60mm}p{6mm}p{18mm}p{10mm}cp{20mm}p{80mm}@{}}
-\toprule
-%\multicolumn{2}{l}{\pbox{8cm}{Deliverable\\Number \& Title}} &
-%WP &
-%\pbox{8cm}{\Tstrut Lead\\Benef.\\Short\\Name\Bstrut}&
-%\multicolumn{2}{c}{\pbox{8cm}{Type \&\\Dissemin.\\Level}}&
-%\pbox{8cm}{Due\\Date} & 
-%Description\tabularnewline 
-%\toprule
-%%%
-7.1 & Outreach on website, social media & 7 &  \cernentity & PDE & PU & 3-48 &\url{www.smarthep.org}, Facebook, Twitter accounts\tabularnewline\midrule% as a platform for outreach 
-7.2 & Talks and Posters in conferences & 7 & \cernentity & PDE  & PU & 12-48 & \tabularnewline\midrule
-7.3 & Publication of results and list of \acronym papers & 7  & \cernentity & PDE  & PU & 12-48 & Publication of scientific results in peer-reviewed journals, keeping list on website \tabularnewline\midrule
-7.4 & Outreach to the general public & 7 & \cernentity & PDE & PU & 12, 18, 24, 36, 42, 48  & Outreach to general public at \acronym schools and events \tabularnewline\midrule
-7.5 & Deliver \acronym Masterclass exercise & 7 & \cernentity & PDE & PU & 18, 31, 42  & Masterclass exercise specific to \acronym \tabularnewline\midrule
-7.6 & Organize \acronym data challenges on RTA & 7 & PDE & PU & 12-48 & Organization of various data challenges on ESR-specific problems \tabularnewline\midrule 
-
-\multicolumn{8}{l}{\pbox{21cm}{\small R: Report, ADM: Administrative; PDE: dissemin.; PU: Public; CO: Confidential, restricted to consortium and Commission services}}\tabularnewline
-\end{tabular}
-}%
-\end{center}
-
+%
 %
 %
 \FloatBarrier
