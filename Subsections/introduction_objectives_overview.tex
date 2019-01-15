@@ -77,7 +77,7 @@ As introduced in Sec.~\ref{sec:introRO}, the \acronym ESRs will be trained in:
 \item real-time monitoring of complex processes and discovery of unexpected phenomena.
 \end{itemize}
 
-These training goals define the four main research topics for \acronym, each corresponding to a research Work Package (WP) detailed in Sec.~\ref{sec:metho} and with objectives shown in each table in this Section that can be reached thanks to collaboration between industry and HEP.  
+These training goals define the four main research topics for \acronym, each corresponding to a research Work Package (WP) detailed in Sec.~\ref{sec:metho}, with objectives and outcomes shown in each table in this Section that can be reached thanks to collaboration between industry and HEP.  
 The first two topics, ML and hybrid architectures, provide the research tools so that RTA methods can used for the latter two topics, with concrete deliverables in physics and industry listed in Sec.~\ref{sub:WPsDescription}.  
 
 %\vspace{-2mm}
@@ -98,9 +98,9 @@ Meta-analysis (benchmarking) is also necessary to understand the algorithm perfo
 \begin{tabular}{|p{0.5\textwidth}|p{0.5\textwidth}|}
 %\toprule
 \hline
-\textbf{Research Objective:} & \textbf{Outcomes (corresponding to groups of deliverables):} \\
+\textbf{Research Objective:} & \textbf{Outcomes:} \\
 \hline
-design and use a variety of ML algorithms for RTA (GAN, RNN, Deep Learning)  & HEP and commercial software toolkits;\\
+design and use a variety of ML algorithms for RTA (GAN, RNN, Deep Learning)  & toolkits to be used in HEP and commercially;\\
 \hline
 implement efficient real-time object and event reconstruction & software for HEP experiment triggers;\\
 \hline
@@ -240,14 +240,16 @@ In \acronym, cutting-edge techniques in ML and hybrid architectures will be asse
 
 \acronym defines three WPs for the management of the consortium (\textbf{textbf{\color{white}WP1\color{black}}}), for training (\textbf{\colorbox{red}{WP2}}), and for outreach and dissemination, and four research WPs, corresponding to each of the research topics in the previous section. 
 
-In \textbf{\colorbox{orange}{WP3}}\color{black}, we make full use of advanced \textbf{Machine Learning, AI and data analysis} techniques in RTA. This is an emerging field of research that enables real time decision-making, monitoring and discoveries in industry and society. All ESRs will be involved in this WP, including studies of best practices and performance (\ESRh, \ESRi).
+In \textbf{\colorbox{orange}{WP3}}\color{black}, we make full use of advanced \textbf{Machine Learning, AI and data analysis} techniques in RTA. This is an emerging field of research that enables real time decision-making, monitoring and discoveries in industry and society. 
+The ESRs involved in this WP will use ML to speed up the reconstruction of raw detector information and use it for decision making (ESRs \ESRa, \ESRb, \ESRd, \ESRe, \ESRn), develop, optimize and benchmark algorithms for use in resource-constrained environments (ESRs \ESRm, \ESRf, \ESRg, \ESRh, \ESRi) and detect outliers (ESRs \ESRx, \ESRj). 
+% studies of best practices and performance 
 
-In \textbf{\colorbox{yellow}{WP4}}, we will develop algorithm implementations which efficiently use modern computing hardware that is increasingly both highly parallel (\ESRc) and heterogeneous, with CPU-based processing farms complemented by GPU or FPGA co-processors (\ESRf, \ESRg, \ESRl). 
+In \textbf{\colorbox{yellow}{WP4}}, we will develop algorithm implementations which efficiently use modern computing hardware that is increasingly both highly parallel (ESRs \ESRc) and heterogeneous, with CPU-based processing farms complemented by GPU or FPGA co-processors (ESRs \ESRm, \ESRl, \ESRf, \ESRb, \ESRg, \ESRn). 
 This kind of~\textbf{hybrid architectures} enables faster data processing, and their design requires highly-specialized training that the consortium including computer scientists is best placed to deliver. 
 
-In \textbf{\colorbox{green}{WP5}}, we will employ the techniques and tools developed in WP1 and WP2 to enable advanced RTA techniques for \textbf{decision-making}. In HEP, we will develop and commission the upgraded triggers of the main LHC collaborations and use them for physics analysis (all ESRs), while in industry we will improve traffic and fleet safety (\ESRd, \ESRh, \ESRl, \ESRm).
+In \textbf{\colorbox{green}{WP5}}, we will employ the techniques and tools developed in WP1 and WP2 to enable advanced RTA techniques for \textbf{decision-making}. In HEP, we will develop and commission the upgraded triggers of the main LHC collaborations and use them for physics analysis (ESRs 5, 7, 8, 10-14), while in industry we will improve traffic and fleet safety (ESRs \ESRd, \ESRh, \ESRl, \ESRm). 
  
-Within \textbf{\colorbox{cyan}{WP6}}, we will focus on \textbf{real time monitoring of complex processes and preparations for unexpected discoveries}. This feeds back to the decision-making WP5 through novelty/anomaly detection algorithms (\ESRj) that are understandable and reproducible, in HEP, finance (\ESRx) and predictive maintenance (\ESRb). We will perform physics analysis that is fully based on RTA without the need to save raw data (\ESRa, \ESRd, \ESRn, \ESRl, \ESRk). 
+Within \textbf{\colorbox{cyan}{WP6}}, we will focus on \textbf{real time monitoring of complex processes and preparations for unexpected discoveries}. This feeds back to the decision-making WP5 through novelty/anomaly detection algorithms that are understandable and reproducible, in HEP (ESR \ESRj, \ESRx), finance (ESR \ESRx) and predictive maintenance (ESR \ESRb). We will perform physics analysis that is fully based on RTA without the need to save raw data (ESRs \ESRa, \ESRd, \ESRl, \ESRn, \ESRk). 
 
 %\vskip10pt
 \begin{center}
@@ -266,9 +268,9 @@ Within \textbf{\colorbox{cyan}{WP6}}, we will focus on \textbf{real time monitor
 
 \cellcolor{red!70!black} \textbf{\color{white}WP1\color{black}}  & Management & N, Doglioni  & 1 & 48 & Management & \lundentity & - \tabularnewline\hline\midrule
 \cellcolor{red} \textbf{\color{white}WP2\color{black}}    & Training   &  N, Sfyrla & 5 & 42 & Recruitment, training & \unigeentity & All \tabularnewline\hline\midrule
-\cellcolor{orange} \textbf{\color{black}WP3\color{black}}   & ML, AI and data analysis &  N, Gligorov & 1 & 48 & Research& \cnrs & 1-14 \tabularnewline \hline \midrule
+\cellcolor{orange} \textbf{\color{black}WP3\color{black}}   & ML, AI and data analysis &  N, Gligorov & 1 & 48 & Research& \cnrs & \ESRsForWPThreeText \tabularnewline \hline \midrule
 \cellcolor{yellow} \textbf{\color{black}WP4\color{black}}    & Hybrid architectures & N, Lacassagne & 1 & 48 & Research & \sorbonneentity  & \ESRsForWPFourText \tabularnewline \hline \midrule
-\cellcolor{green} \textbf{\color{black}WP5\color{black}}   & \makecell[vl]{Real-time decision making} & N, Albrecht/Sopasakis & 1 & 48 & Research & \makecell[vl]{\dortmundentity} & All \tabularnewline\hline 
+\cellcolor{green} \textbf{\color{black}WP5\color{black}}   & \makecell[vl]{Real-time decision making} & N, Albrecht/Sopasakis & 1 & 48 & Research & \makecell[vl]{\dortmundentity} & \ESRsForWPFiveText \tabularnewline\hline 
 \cellcolor{cyan} \textbf{\color{black}WP6\color{black}}   & Monitoring \& discoveries & N, de Sainte Marie/Pierini & 1 & 48 & Research& \ibmentity & \ESRsForWPSixText \tabularnewline\hline \midrule 
 \cellcolor{violet} \textbf{\color{black}WP7\color{black}}  & Dissemination \& communication of results  & N, Petersen & 1 & 48 & \pbox{8cm}{Dissemination, outreach} & \cern & All \tabularnewline \hline \midrule
 \multicolumn{8}{p{0.975\textwidth}}{
