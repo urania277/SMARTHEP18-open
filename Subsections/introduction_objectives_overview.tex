@@ -33,23 +33,22 @@ As detailed in Secs.~\ref{sec:trainingcontrib} and~\ref{ss:competence_44}, resea
 Within \acronym, they will pool their expertise and complement it with that of computer scientists, entrepreneurs and professionals. 
 With this consortium, \acronym can \textbf{strengthen European innovation capacity, recognizing that RTA methods solve both academic research and industry challenges}, can be transferred from research to industry and vice versa leading to concrete deliverables.
 
-\acronym's ESR projects employ RTA in projects that are useful to industry and society. 
-Time-to-insight from raw data is a crucial benchmark for a competitive and effective use of the information. For this reason, advancement in terms of fast and efficient data analysis and decision-making are required by society and the commercial sector, and a selection of example industrial use cases sharing common issues with HEP has been chosen as integral part of the \acronym research and exploitation program as described further in Sec.~\ref{sec:exploit}.  
+\acronym's ESR projects solve both research and industry challenges, as time-to-insight from raw data is a crucial benchmark for a competitive and effective use of the information. For this reason, advancement in terms of fast and efficient data analysis and decision-making are required by society and the commercial sector, and a selection of example industrial use cases sharing common issues with HEP has been chosen as integral part of the \acronym research and exploitation program (see Sec.~\ref{sec:exploit}).  
 RTA is a key point for improving transport and its safety, as well as for optimizing industrial processes. 
 The information on the position of private or public transport vehicles and their possible routes are transmitted to a central analysis system, so that the traffic conditions around it are analyzed and a forecast is made. 
 All of this needs to be done on a timescale that is short enough for a city to modify its traffic light system to avoid congestion, or to reroute vehicles to avoid delays. 
-This requires both ML and hybrid computing architectures for algorithm training, similarly to the solution of complex problems such as tracking particles in a HEP detector. 
-The detection of a driver's behavior (e.g. drowsiness) in fleets of cars needs to happen in the timescale of milliseconds to preserve safety, and detection of malfunctioning components in industrial processes must trigger maintenance before the component breaks. Both those use cases require the optimization of advanced algorithms on limited computational resources, much like HEP's trigger systems.
+This requires both ML and hybrid computing architectures for algorithm training, similarly to complex problems such as tracking particles in a HEP detector. 
+The detection of a driver's behavior (e.g. drowsiness) in fleets of cars should occur in milliseconds to preserve safety, and detection of malfunctioning components in industrial processes must trigger maintenance before the component breaks. Both those use cases require the optimization of advanced algorithms on limited computational resources, much like HEP's trigger systems.
 Another use case for RTA in industry is fraud detection, where spotting an anomalous transaction and deciding whether it is allowed or not needs to be made on a short timescale. This is a similar challenge to HEP triggers looking for unexpected phenomena. 
 While ML algorithms trained to detect outliers are the current state of the art for this purpose, their black box approach raises interpretability and explainability challenges. 
-This is one of the topics beyond the state-of-the-art that is tackled by \acronym: knowledge-based approaches for the induction of explicit decision rules are useful both for increasing the accountability of fraud detection algorithms and for HEP trigger systems where every decision to discard an event is final and must be completely understood.\\
-%\vskip-10pt
-%\noindent
+This is one of the topics beyond the state-of-the-art that is tackled by \acronym: knowledge-based approaches for the induction of explicit decision rules are useful both for increasing the accountability of fraud detection and for HEP trigger systems where every decision to discard an event is final and must be understood.\\
+\vskip1pt
+\noindent
 \fbox{\begin{minipage}{0.985\textwidth}
 \textbf{In summary, \acronym trains researchers in ML, AI and data analysis and hybrid computing architectures, so they can enable RTA for the advancement of decision-making as well as monitoring and discoveries in both research and industry. 
-The work and expertise developed within \acronym will develop and commission upgraded trigger systems for LHC experiments for HEP measurements and searches, improve transport~\footnote{According to the \href{https://ec.europa.eu/programmes/horizon2020/en/h2020-section/smart-green-and-integrated-transport}{H2020 Societal Challenge for Smart, green and integrated transport}}, industrial process and financial decision-making.}
-\end{minipage}}
-
+The work and expertise developed within \acronym will develop and commission upgraded trigger systems for LHC experiments for HEP measurements and searches, improve transport, industrial process and financial decision-making.~\footnotemark} \end{minipage}}
+\footnotetext{In line with the H2020 Societal Challenge for Smart, green and integrated transport.}
+\vskip-20pt
 %\fbox{\begin{minipage}{0.985\textwidth}
 %\textbf{Within \acronym, the cross-pollination on RTA between academia and example use cases in industry will lead to concrete deliverables with a focus on 
 %enhancing the capabilities and reproducibility of decision-making in finance,
@@ -69,23 +68,31 @@ All consortium members have successfully proven their capabilities for research,
 
 \subsubsection*{Network goals and research objectives}
 
-As introduced in Sec.~\ref{sec:introRO}, the \acronym ESRs will be trained in:
-\begin{itemize}
-\item ML techniques and advanced data analysis;
-\item hybrid computing architectures;
-\item real-time decision making;
-\item real-time monitoring of complex processes and discovery of unexpected phenomena.
-\end{itemize}
+The goal of \acronym is to train ESRs in ML techniques and advanced data analysis, hybrid computing architectures, so they can advance real-time decision making and real-time monitoring of complex processes and discovery of unexpected phenomena.
 
-These training goals define the four main research topics for \acronym, each corresponding to a research Work Package (WP) detailed in Sec.~\ref{sec:metho}, with objectives and outcomes shown in each table in this Section that can be reached thanks to collaboration between industry and HEP.  
+These training goals define the four main research topics for \acronym, each corresponding to a research Work Package (WP) detailed in Sec.~\ref{sec:metho}, with research objectives and outcomes shown in each table in this Section that can be reached thanks to collaboration between industry and HEP.  
 The first two topics, ML and hybrid architectures, provide the research tools so that RTA methods can used for the latter two topics, with concrete deliverables in physics and industry listed in Sec.~\ref{sub:WPsDescription}.  
+
+%\begin{wrapfigure}{l}{0.5\textwidth}
+%	\vspace{-5mm}
+%\centering
+\begin{center}
+\includegraphics[width=0.65\textwidth]{figs/NetworkCompositionCombinedImplementation} \\ %scienceStructure_2.pdf}\\
+%\begin{center}\footnotesize \label{fig:implementation}
+Figure 1: \acronym network goals and implementation strategy, corresponding to WPs. The nodes with their main expertise in a given WP are represented in the respective WP box.
+\end{center}
+\normalsize 
+%\vspace{-5mm}
+%\end{wrapfigure}
+
+%\end{center}
 
 %\vspace{-2mm}
 %\begin{multicols}{2}[]
 %%\footnotesize
 %\begin{enumerate}%{\leftmargin=1em}
 
-The first research topic concerns the use of \textbf{ML and advanced data analysis} in RTA techniques.
+The first network goal is to train ESRs in the use of \textbf{ML and advanced data analysis} for use in in RTA techniques.
 %The sheer size of the datasets collected by scientific experiments has lead researchers in HEP to use advanced data analysis methods normally used in industry, such as ML and AI. 
 ML techniques are by now ubiquitous in both HEP and industry, in order to optimally analyze raw, unstructured data. 
 In \acronym we will further extend their use in RTA and event reconstruction, paying particular attention to their understandability and reproducibility (see research topic 4).
@@ -107,14 +114,14 @@ implement efficient real-time object and event reconstruction & software for HEP
 benchmark and optimize RTA algorithm performance & inter-sector benchmarking toolkits;\\
 \hline
 %\bottomrule
-%\vspace{-1cm}
+\vspace{-1cm}
+\vskip-10pt
 \end{tabular}
 }
 \end{center}
 %\end{table}
-%\vskip5pt
-
-The second research topic focuses on the design of innovative \textbf{hybrid computing architecture} solutions in hardware/software, given that the complexity and rate of LHC data and beyond does not allow standard processors or data analysis techniques to be competitive\footnote{J.P. Vlimant, \href{https://erez.weizmann.ac.il/pls/htmldb/f?p=101:58:::NO:RP:P58_CODE,P58_FILE:5393,Y}{Machine Learning in Charged Particle Tracking}, Hammers and Nails ML\&HEP Conference, 2017}. An example of such a technology in HEP is the Fast TracKer in ATLAS, a hardware-based ATLAS Fast TracKer (FTK)\footnote{J Adelman et al., \href{https://inspirehep.net/record/1614024/}{ATLAS FTK Challenge: Simulation of a Billion-fold Hardware Parallelism,} Procedia Comput.Sci. 66 (2015) 540-545}, a unique hardware processor made by several custom electronic boards based on Field Programmable Gate Arrays (FPGA) to reconstruct the trajectory (track) of the charged particles that cross the inner part of the experiment. In industry, Graphic Processing Units (GPU) are used for computing parallel processes and training ML algorithms, and their use is being prototyped in HEP by members of \acronym. 
+\vskip-5pt
+The second research topic focuses on the design of innovative \textbf{hybrid computing architecture} solutions in hardware/software, given that the complexity and rate of LHC data and beyond does not allow standard processors or data analysis techniques to be competitive\footnote{e.g. J.P. Vlimant, \href{https://erez.weizmann.ac.il/pls/htmldb/f?p=101:58:::NO:RP:P58_CODE,P58_FILE:5393,Y}{Machine Learning in Charged Particle Tracking}, Hammers and Nails ML\&HEP Conference, 2017}. An example of such a technology in HEP is the Fast TracKer in ATLAS, a hardware-based ATLAS Fast TracKer (FTK)\footnote{J Adelman et al., \href{https://inspirehep.net/record/1614024/}{ATLAS FTK Challenge: Simulation of a Billion-fold Hardware Parallelism,} Procedia Comput.Sci. 66 (2015) 540-545}, a unique hardware processor made by several custom electronic boards based on Field Programmable Gate Arrays (FPGA) to reconstruct the trajectory (track) of the charged particles that cross the inner part of the experiment. In industry, Graphic Processing Units (GPU) are used for computing parallel processes and training ML algorithms, and their use is being prototyped in HEP by members of \acronym. 
 \begin{center}
 \vskip-15pt
 \resizebox {\textwidth }{!}{%
@@ -134,9 +141,10 @@ design parallelized and multithreaded algorithms & RTA software needed for the i
 %\vspace{-1cm}
 \end{tabular}
 }
+\vskip-5pt
+
 \end{center}
 %\end{table}
-%\vskip5pt
 
 The third research topic concerns \textbf{real-time decision making in physics and industry}. 
 The outcomes of the previous research topics will be applied to concrete physics cases and industrial challenges. 
@@ -159,6 +167,8 @@ use ML and hybrid architecture for RTA to improve transport and safety of fleets
 %\vspace{-1cm}
 \end{tabular}
 }
+\vskip-5pt
+
 \end{center}
 %\end{table}
 %\vskip5pt
@@ -169,7 +179,7 @@ Firstly, industry and HEP share the challenge of not knowing in advance what kin
 Outlier/novelty detection is a growing field, with dedicated ML algorithms\footnote{R. Domingues et al, \href{A comparative evaluation of outlier detection algorithms: experiments and analyses}{http://doi.org/10.1016/j.patcog.2017.09.037}, Pattern Recognition 74 (2018)}. In \acronym, experts in the field and their supervised ESRs will apply those to physics and industry use cases, and extending them to methods where rules on what are inferred from a mixture of theory and known events to increase their accountability and understandability.
 
 Secondly, the present HEP paradigm is to select in real-time a small number of interesting events, but keep the full detector data for later analysis. This paradigm depends on the assumption that interesting events are very rare compared to the SM backgrounds. It is however becoming increasingly clear that crucial HEP research questions can only be answered by either precise measurements of the abundant SM processes themselves, or by searching for new processes which closely mimic these SM backgrounds~\footnote{See e.g. Gligorov and Fitzpatrick, \href{http://cds.cern.ch/record/1670985}{Anatomy of an upgrade event in the upgrade era, and implications for the LHCb trigger}, CDS Document Server and ALICE Collaboration including Christiansen, \href{https://cds.cern.ch/record/2011297/files/ALICE-TDR-019.pdf}{Technical Design Report}, CDS Document Server}. To be sensitive to these processes, higher-level physics insight must be obtained in real-time. This way, only a small subset of this higher-level information can be stored for each event, greatly reducing its size. This technique is referred in the following as \textit{fully RTA-based data taking}, it has been pioneered by \acronym members and published in one of the highest-impact journals in the field
-\footnote{CMS Collaboration including Pierini, \href{https://arxiv.org/abs/1604.08907}{Search for narrow resonances in dijet final states at $\sqrt{s}$ = 8 TeV with the novel CMS technique of data scouting}, Phys. Rev. Lett. 117 (2016) 031802. ATLAS Collaboration including Boveia, Starovoitov, Dunford and Strom, \href{Search for low-mass dijet resonances using trigger-level jets with the ATLAS detector in pp collisions at sqrt(s)=13 TeV}{https://arxiv.org/abs/1804.03496}, Phys. Rev. Lett. 121 (2018) 081801, LHCb collaboration with Borsato as lead author \href{LHCb Collaboration: Search for dark photons produced in 13 TeV pp collisions}{https://arxiv.org/abs/1710.02867}, Phys.Rev.Lett. 120 (2016) 061801.}.
+\footnote{CMS Collaboration including Pierini, \href{https://arxiv.org/abs/1604.08907}{Search for narrow resonances in dijet final states at $\sqrt{s}$ = 8 TeV with the novel CMS technique of data scouting}, Phys. Rev. Lett. 117 (2016) 031802. ATLAS Collaboration including Boveia, Starovoitov, Dunford and Strom, \href{https://arxiv.org/abs/1804.03496}{Search for low-mass dijet resonances using trigger-level jets with the ATLAS detector in pp collisions at sqrt(s)=13 TeV}, Phys. Rev. Lett. 121 (2018) 081801, LHCb collaboration with Borsato as lead author \href{LHCb Collaboration: Search for dark photons produced in 13 TeV pp collisions}{https://arxiv.org/abs/1710.02867}, Phys.Rev.Lett. 120 (2016) 061801.}.
 
 \acronym will improve and extend this technique beyond the current state-of-the-art towards the upgrades, in LHCb where most of the data will be recorded this way, in ALICE where it will be implemented for the first time, and in ATLAS and CMS where it will be applied to a larger number of searches. 
 \begin{center}
@@ -236,73 +246,52 @@ extend RTA data-taking techniques in HEP trigger systems where raw data is disca
 
 %\ESRx will contribute to the next generation of AI that bridges a data driven automated learning with human-readable rules in real-time decision making. 
 
-In \acronym, cutting-edge techniques in ML and hybrid architectures will be assessed and developed by the ESRs. They will be applied to specific use cases to RTA techniques that advance HEP, industry and society, and the results exploited, disseminated and communicated (Sec.~\ref{sec:qualityExploitDissemination}). These steps correspond to the the milestones in Sec.~\label{sub:milestones}. This modus operandi is at the heart of \acronym and ensures the efficiency of its implementation. 
+In \acronym, cutting-edge techniques in ML and hybrid architectures will be assessed and developed by the ESRs. They will be applied to specific use cases of RTA that advance HEP, industry and society, and the results exploited, disseminated and communicated (Sec.~\ref{sec:qualityExploitDissemination}). This modus operandi is at the heart of \acronym and ensures the efficiency of its implementation. 
 
-\acronym defines WPs for the management of the consortium (\textbf{{\colorbox{red!70!black}{\color{white}WP1\color{black}}}}), for training (\textbf{\colorbox{red}{WP2}}), and for outreach and dissemination, and four research WPs, corresponding to each of the research topics in the previous section. 
-
-In \textbf{\colorbox{orange}{WP3}}\color{black}, we make full use of advanced \textbf{Machine Learning, AI and data analysis} techniques in RTA. This is an emerging field of research that enables real time decision-making, monitoring and discoveries in industry and society. 
-The ESRs involved in this WP will use ML to speed up the reconstruction of raw detector information and use it for decision making (ESRs 1,7,13-14), develop, optimize and benchmark algorithms for use in resource-constrained environments (ESRs 4,6,9-11) and detect outliers (ESRs 2,3). 
-% studies of best practices and performance 
-
-In \textbf{\colorbox{yellow}{WP4}}, we will develop algorithm implementations which efficiently use modern computing hardware that is increasingly both highly parallel (\ESRc) and heterogeneous, with CPU-based processing farms complemented by GPU or FPGA co-processors (ESRs 4-7,9,14). 
-This kind of~\textbf{hybrid architectures} enables faster data processing, and their design requires highly-specialized training that the consortium including computer scientists is best placed to deliver. 
-
-In \textbf{\colorbox{green}{WP5}}, we will employ the techniques and tools developed in WP1 and WP2 to enable advanced RTA techniques for \textbf{decision-making}. In HEP, we will develop and commission the upgraded triggers of the main LHC collaborations and use them for physics analysis (ESRs 5, 7, 8, 10-14), while in industry we will improve traffic and fleet safety (ESRs \ESRd, \ESRh, \ESRl, \ESRm). 
- 
-Within \textbf{\colorbox{cyan}{WP6}}, we will focus on \textbf{real time monitoring of complex processes and preparations for unexpected discoveries}. This feeds back to the decision-making WP5 through novelty/anomaly detection algorithms that are understandable and reproducible, in HEP (ESR \ESRj, \ESRx), finance (ESR \ESRx) and predictive maintenance (ESR \ESRb). We will perform physics analysis that is fully based on RTA without the need to save raw data (ESRs \ESRa, \ESRd, \ESRl, \ESRn, \ESRk). 
-
-All results will be \textbf{disseminated and communicated} to a variety of audiences within \textbf{\colorbox{violet}{\color{white}WP7\color{black}}}, paying particular attention so that publications, software and documentation are accessible as legacy of the action according to the FAIR principles. 
-
-HEP experiments are by their very nature built around \textbf{training}, as around a third of all LHC collaborations consist of PhD students. The training WP (\textbf{\colorbox{red}{WP2}}) encompasses WP3-7 and combines this collaborative, training-based research culture, with a focus on cutting-edge technologies. 
-
-The WPs are summarized in the Table 1.1. Fig 1. gives a schematic view of the four research WPs and the main actors within the consortium. 
-
-Throughout this ETN, RTA will provide the common language linking these challenges and disciplines, in research, academia and industry, and will enable each of the WPs to benefit from the progress made in the others. In particular, WP3 and WP4 will provide the techniques to enable advancements in WP4 and WP5. For this reason, most ESRs will start their research focusing on either ML or hybrid architecture then proceed to apply the knowledge and technique to the decision-making or monitoring and discoveries, as shown in GANTT CHART. 
-
-\clearpage %HARDCODED!
+\acronym defines WPs for the management of the consortium (\textbf{{\colorbox{red!70!black}{\color{white}WP1\color{black}}}}), for training (\textbf{\colorbox{red}{WP2}}), and for outreach and dissemination, and four research WPs, corresponding to each of the research topics in the previous section. The WPs are summarized in the Table 1.1. Fig 1. gives a schematic view of the four research WPs and the main actors within the consortium. 
 
 %\vskip10pt
 \begin{center}
 \scriptsize
-\begin{tabular}{p{10mm}p{30mm}p{35mm}p{5mm}p{5mm}p{30mm}p{13mm}p{18mm}}
+\begin{tabular}{p{7mm}p{30mm}p{35mm}p{5mm}p{5mm}p{30mm}p{13mm}p{18mm}}
 \toprule
 \pbox{8cm}{WP No.} &
 \pbox{8cm}{WP Title} &
 %This is the number of the beneficiary in the original order
-\pbox{8cm}{\Tstrut Lead \\Beneficiary\\No. / responsible\Bstrut} &  
+\pbox{8cm}{\Tstrut Lead Beneficiary No. / responsible\Bstrut} &  
 \pbox{8cm}{Start} &  
 \pbox{8cm}{End} & 
 \pbox{8cm}{Activity Type} & 
-\pbox{8cm}{\Tstrut Lead \\Beneficiary\\Short Name\Bstrut} &  
-\pbox{8cm}{ESRs\\Involvem't}\tabularnewline\toprule
+\pbox{8cm}{\Tstrut Lead (short)\Bstrut} &  
+\pbox{8cm}{ESRs}\tabularnewline\toprule
 
-\cellcolor{red!70!black} \textbf{\color{white}WP1\color{black}}  & Management & N, Doglioni  & 1 & 48 & Management & \lundentity & - \tabularnewline\hline\midrule
-\cellcolor{red} \textbf{\color{white}WP2\color{black}}    & Training   &  N, Sfyrla & 5 & 42 & Recruitment, training & \unigeentity & All \tabularnewline\hline\midrule
-\cellcolor{orange} \textbf{\color{black}WP3\color{black}}   & ML, AI and data analysis &  N, Gligorov & 1 & 48 & Research& \cnrs & \ESRsForWPThreeText \tabularnewline \hline \midrule
-\cellcolor{yellow} \textbf{\color{black}WP4\color{black}}    & Hybrid architectures & N, Lacassagne & 1 & 48 & Research & \sorbonneentity  & \ESRsForWPFourText \tabularnewline \hline \midrule
-\cellcolor{green} \textbf{\color{black}WP5\color{black}}   & \makecell[vl]{Real-time decision making} & N, Albrecht/Sopasakis & 1 & 48 & Research & \makecell[vl]{\dortmundentity} & \ESRsForWPFiveText \tabularnewline\hline 
-\cellcolor{cyan} \textbf{\color{black}WP6\color{black}}   & Monitoring \& discoveries & N, de Sainte Marie/Pierini & 1 & 48 & Research& \ibmentity & \ESRsForWPSixText \tabularnewline\hline \midrule 
-\cellcolor{violet} \textbf{\color{black}WP7\color{black}}  & Dissemination \& communication of results  & N, Petersen & 1 & 48 & \pbox{8cm}{Dissemination, outreach} & \cern & All \tabularnewline \hline \midrule
+\cellcolor{red!70!black} \textbf{\color{white}WP1\color{black}}  & Management & 1, Doglioni  & 1 & 48 & Management & \lundentity & - \tabularnewline\hline\midrule
+\cellcolor{red} \textbf{\color{white}WP2\color{black}}    & Training   &  8, Sfyrla & 5 & 42 & Recruitment, training & \unigeentity & All \tabularnewline\hline\midrule
+\cellcolor{orange} \textbf{\color{black}WP3\color{black}}   & ML, AI and data analysis &  2, Gligorov & 1 & 48 & Research& \cnrs & \ESRsForWPThreeText \tabularnewline \hline \midrule
+\cellcolor{yellow} \textbf{\color{black}WP4\color{black}}    & Hybrid architectures & 9, Lacassagne & 1 & 48 & Research & \sorbonneentity  & \ESRsForWPFourText \tabularnewline \hline \midrule
+\cellcolor{green} \textbf{\color{black}WP5\color{black}}   & \makecell[vl]{Real-time decision making} & 3, Albrecht/Sopasakis & 1 & 48 & Research & \makecell[vl]{\dortmundentity} & \ESRsForWPFiveText \tabularnewline\hline 
+\cellcolor{cyan} \textbf{\color{black}WP6\color{black}}   & Monitoring \& discoveries & 10, de Sainte Marie/Pierini & 1 & 48 & Research& \ibmentity & \ESRsForWPSixText \tabularnewline\hline \midrule 
+\cellcolor{violet} \textbf{\color{black}WP7\color{black}}  & Dissemination \& communication of results  & 6, Petersen & 1 & 48 & \pbox{8cm}{Dissemination, outreach} & \cern & All \tabularnewline \hline \midrule
 \multicolumn{8}{p{0.975\textwidth}}{
 \footnotesize 
 \vskip-2pt
 Table 1.1: Work Package (WP) List
-\vskip2pt
 \normalsize
 }
 \end{tabular}
 \end{center}
+%\vskip-10pt
+In \textbf{\colorbox{orange}{WP3}}\color{black}, we make full use of advanced \textbf{Machine Learning, AI and data analysis} techniques in RTA. This is an emerging field of research that enables real time decision-making, monitoring and discoveries in industry and society. 
+The ESRs involved in this WP will use ML to speed up the reconstruction of raw detector information and use it for decision making (ESRs 1,7,13-14), develop, optimize and benchmark algorithms for use in resource-constrained environments (ESRs 4,6,9-11) and detect outliers (ESRs 2,3). 
+% studies of best practices and performance 
+In \textbf{\colorbox{yellow}{WP4}}, we will develop algorithm implementations which efficiently use modern computing hardware that is increasingly both highly parallel (\ESRc) and heterogeneous, with CPU-based processing farms complemented by GPU or FPGA co-processors (ESRs 4-7,9,14). 
+This kind of~\textbf{hybrid architectures} enables faster data processing, and their design requires highly-specialized training that the consortium including computer scientists is best placed to deliver. 
+In \textbf{\colorbox{green}{WP5}}, we will employ the techniques and tools developed in WP1 and WP2 to enable advanced RTA techniques for \textbf{decision-making}. In HEP, we will develop and commission the upgraded triggers of the main LHC collaborations and use them for physics analysis (ESRs 5, 7, 8, 10-14), while in industry we will improve traffic and fleet safety (ESRs 4,5,10,12). 
+Within \textbf{\colorbox{cyan}{WP6}}, we will focus on \textbf{real time monitoring of complex processes and preparations for unexpected discoveries}. This feeds back to the decision-making WP5 through novelty/anomaly detection algorithms that are understandable and reproducible, in HEP (ESR 2,3), finance (ESR 3) and predictive maintenance (ESR 7). We will perform physics analysis that is fully based on RTA without the need to save raw data (ESRs 1,5,12,14,15). 
+All results will be \textbf{disseminated and communicated} to a variety of audiences within \textbf{\colorbox{violet}{\color{white}WP7\color{black}}}, paying particular attention so that publications, software and documentation are accessible as legacy of the action according to the FAIR principles. 
+HEP experiments are by their very nature built around \textbf{training}, as around a third of all LHC collaborations consist of PhD students. The training WP (\textbf{\colorbox{red}{WP2}}) encompasses WP3-7 and combines this collaborative, training-based research culture, with a focus on cutting-edge technologies. 
 
-\vskip-20pt
-
-\begin{center}
-\includegraphics[width=0.6\textwidth]{figs/NetworkCompositionCombinedImplementation} %scienceStructure_2.pdf}
-\begin{center}\footnotesize \label{fig:implementation}
-Figure 1: \acronym implementation strategy and WPs. The nodes with their main expertise in a given WP are represented in the respective WP box.
-\end{center}
-\normalsize 
-\vspace{-2mm}
-\end{center}
+Throughout this ETN, RTA will provide the common language linking these challenges and disciplines, in research, academia and industry, and will enable each of the WPs to benefit from the progress made in the others. In particular, WP3 and WP4 will provide the techniques to enable advancements in WP4 and WP5. For this reason, most ESRs will start their research focusing on either ML or hybrid architecture then proceed to apply the knowledge and technique to the decision-making or monitoring and discoveries, as shown in Fig. 4. 
 
 %TODO: shorten this to one sentence, remove the blue
 \subsubsection{Originality and innovative aspects of the research program} 
