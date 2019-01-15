@@ -18,22 +18,22 @@ The products of the collisions are analyzed by scientists operating four main pa
 Recording each event would require 1000 times the available storage, and in many cases over 10 times the available data acquisition bandwidth.
 Each experiment therefore has a \textit{trigger system} composed of hardware and software.
 The trigger system analyzes collision events in real time, with a maximum delay of micro- to milliseconds, and selects the ones most interesting for further analysis. 
-%This real time event selection is crucial for HEP, especially because the. 
-While there are many observed phenomena that are still not included in the SM (e.g. dark matter~\footnote{Doglioni and Boveia, \href{https://arxiv.org/abs/arXiv:1810.12238}{Dark Matter searches at colliders}, Ann.Rev.Nucl.Part.Sci. 68 (2018) 429-459}), the leading predictive theories such as Supersymmetry have so far yielded null results. 
+While there are many observed phenomena that are still not included in the SM (e.g. dark matter~\footnote{Doglioni and Boveia, \href{https://arxiv.org/abs/arXiv:1810.12238}{Dark Matter searches at colliders}, Ann.Rev.Nucl.Part.Sci. 68 (2018) 429-459}), the leading predictive theories such as Supersymmetry have not yet yielded a discovery. 
 This is prompting HEP researchers to reconsider their definition of "interesting". 
 New phenomena could have unexpected, not-yet-theorized manifestations in the detector, and they would be missed using the current trigger algorithms. 
 New phenomena could also be extremely rare and buried in uninteresting backgrounds, and require specialized data taking techniques. 
 Moreover, disagreements of data with the SM prediction require dedicated investigation with the new dataset, and therefore dedicated trigger reconstruction and selection criteria. 
-For example, the SM prediction that the weak force couples equally to all lepton types (Lepton Flavor Universality, or LFU) has recently been challenged by LHCb measurements~\footnote{LHCb Collaboration, \href{https://arxiv.org/abs/1705.05802}{Test of lepton universality with $ B^{+}\rightarrow K^{+}\ell^{+}\ell$}, Phys. Rev. Lett. 113, 151601 (2014). LHCb Collaboration, \href{https://arxiv.org/abs/1705.05802}{Test of lepton universality with $B^{0}\rightarrow K^{* 0}\ell^{+}\ell$}, JHEP 08 (2017) 055.}. This makes LFU and LFV (Lepton Flavor Violation, the prediction that the overall number of leptons of a given type does not change in interactions) among the most interesting topics for the near-future of particle physics and ones that need RTA to be explored. 
-%Studying these processes with Run-3 data requires the implementation of dedicated trigger reconstruction and selection criteria. 
+For example, the SM prediction that the weak force couples equally to all lepton types (Lepton Flavor Universality, or LFU) has recently been challenged by LHCb measurements~\footnote{LHCb Collaboration, \href{https://arxiv.org/abs/1705.05802}{Test of lepton universality with $ B^{+}\rightarrow K^{+}\ell^{+}\ell$}, Phys. Rev. Lett. 113, 151601 (2014). LHCb Collaboration, \href{https://arxiv.org/abs/1705.05802}{Test of lepton universality with $B^{0}\rightarrow K^{* 0}\ell^{+}\ell$}, JHEP 08 (2017) 055.}. This makes LFU and LFV (Lepton Flavor Violation, the prediction that the overall number of leptons of a given type does not change in interactions) among the most interesting topics for the near-future of particle physics. 
+Measurements of LFU and LFV are only one of the many examples that need RTA to be explored in detail with the upcoming LHC dataset. 
+\acronym will train a new generation of researchers with a strong expertise on RTA techniques and analysis of large datasets. 
+The ESRs will \textbf{exploit innovative ML techniques and hybrid computing architectures to upgrade the trigger systems of LHC experiments for the next LHC data taking periods where the volume of data will increase tenfold}. 
+The ESR in \acronym will deploy the necessary RTA tools and use them to \textbf{perform measurements to verify the SM to a high precision and to search for new, unexpected physics phenomena that can shed light on the open questions of the fundamental components of matter}. 
 
 As detailed in Secs.~\ref{sec:trainingcontrib} and~\ref{ss:competence_44}, researchers in the \acronym consortium are experts on the trigger systems of all four main LHC experiments. 
-Within \acronym, they will pool their expertise and complement it with that of computer scientists, entrepreneurs and professionals.\\
-\fbox{\begin{minipage}{0.985\textwidth}
-\textbf{\acronym will train a new generation of researchers with a strong expertise on RTA techniques and analysis of large datasets. The ESRs will exploit innovative ML techniques and hybrid computing architectures to upgrade the trigger systems of LHC experiments for the next LHC data taking periods where the volume of data will increase tenfold. They will perform physics analysis with these improved systems, towards precise probes of the SM and searches for new phenomena.} 
-\end{minipage}}
+Within \acronym, they will pool their expertise and complement it with that of computer scientists, entrepreneurs and professionals. 
+With this consortium, \acronym can \textbf{strengthen European innovation capacity, recognizing that RTA methods solve both academic research and industry challenges}, can be transferred from research to industry and vice versa leading to concrete deliverables.
 
-\acronym's ESR projects also employ RTA in projects that are useful to industry and society. 
+\acronym's ESR projects employ RTA in projects that are useful to industry and society. 
 Time-to-insight from raw data is a crucial benchmark for a competitive and effective use of the information. For this reason, advancement in terms of fast and efficient data analysis and decision-making are required by society and the commercial sector, and a selection of example industrial use cases sharing common issues with HEP has been chosen as integral part of the \acronym research and exploitation program as described further in Sec.~\ref{sec:exploit}.  
 RTA is a key point for improving transport and its safety, as well as for optimizing industrial processes. 
 The information on the position of private or public transport vehicles and their possible routes are transmitted to a central analysis system, so that the traffic conditions around it are analyzed and a forecast is made. 
@@ -42,10 +42,21 @@ This requires both ML and hybrid computing architectures for algorithm training,
 The detection of a driver's behavior (e.g. drowsiness) in fleets of cars needs to happen in the timescale of milliseconds to preserve safety, and detection of malfunctioning components in industrial processes must trigger maintenance before the component breaks. Both those use cases require the optimization of advanced algorithms on limited computational resources, much like HEP's trigger systems.
 Another use case for RTA in industry is fraud detection, where spotting an anomalous transaction and deciding whether it is allowed or not needs to be made on a short timescale. This is a similar challenge to HEP triggers looking for unexpected phenomena. 
 While ML algorithms trained to detect outliers are the current state of the art for this purpose, their black box approach raises interpretability and explainability challenges. 
-This is one of the topics beyond the state-of-the-art that is tackled by \acronym: knowledge-based approaches for the induction of explicit decision rules are useful both for increasing the accountability of fraud detection algorithms and for HEP trigger systems where every decision to discard an event is final and must be completely understood.\\ 
+This is one of the topics beyond the state-of-the-art that is tackled by \acronym: knowledge-based approaches for the induction of explicit decision rules are useful both for increasing the accountability of fraud detection algorithms and for HEP trigger systems where every decision to discard an event is final and must be completely understood.\\
+%\vskip-10pt
+%\noindent
 \fbox{\begin{minipage}{0.985\textwidth}
-\textbf{Within \acronym, the cross-pollination on RTA between academia and example use cases in industry will lead to concrete deliverables that contribute to improving European transport as per the \href{https://ec.europa.eu/programmes/horizon2020/en/h2020-section/smart-green-and-integrated-transport}{H2020 Societal Challenge for Smart, green and integrated transport}, to enhancing the capabilities and reproducibility of decision-making in finance and to improving industrial processes.}
+\textbf{In summary, \acronym trains researchers in ML, AI and data analysis and hybrid computing architectures, so they can enable RTA for the advancement of decision-making as well as monitoring and discoveries in both research and industry. 
+The work and expertise developed within \acronym will develop and commission upgraded trigger systems for LHC experiments for HEP measurements and searches, improve transport~\footnote{According to the \href{https://ec.europa.eu/programmes/horizon2020/en/h2020-section/smart-green-and-integrated-transport}{H2020 Societal Challenge for Smart, green and integrated transport}}, industrial process and financial decision-making.}
 \end{minipage}}
+
+%\fbox{\begin{minipage}{0.985\textwidth}
+%\textbf{Within \acronym, the cross-pollination on RTA between academia and example use cases in industry will lead to concrete deliverables with a focus on 
+%enhancing the capabilities and reproducibility of decision-making in finance,
+%improving industrial processes, and on
+%improving European transport ).
+%}
+%\end{minipage}}
 
 \subsubsection*{Consortium composition}
 
@@ -58,10 +69,16 @@ All consortium members have successfully proven their capabilities for research,
 
 \subsubsection*{Network goals and research objectives}
 
-\acronym trains researchers in ML, AI and data analysis and hybrid computing architectures, in order to enable RTA for the advancement of decision-making as well as monitoring and discoveries in both research and industry. 
-The work and expertise developed within \acronym will develop and commission upgraded triggers systems for LHC experiments for HEP measurements and searches, improve transport, industrial process and financial decision-making. 
-These network goals define the four main research topics for \acronym, each corresponding to a research Work Package (WP) detailed in Sec.~\ref{sec:metho}. 
-Each of the research topics has research objectives (RO) shown in each table. The RO can be achieved with this network thanks to the collaboration between industry and HEP, and they are linked to concrete deliverables in Sec.~\ref{sub:WPsDescription}. 
+As introduced in Sec.~\ref{sec:introRO}, the \acronym ESRs will be trained in:
+\begin{itemize}
+\item ML techniques and advanced data analysis;
+\item hybrid computing architectures;
+\item real-time decision making;
+\item real-time monitoring of complex processes and discovery of unexpected phenomena.
+\end{itemize}
+
+These training goals define the four main research topics for \acronym, each corresponding to a research Work Package (WP) detailed in Sec.~\ref{sec:metho} and with objectives shown in each table in this Section that can be reached thanks to collaboration between industry and HEP.  
+The first two topics, ML and hybrid architectures, provide the research tools so that RTA methods can used for the latter two topics, with concrete deliverables in physics and industry listed in Sec.~\ref{sub:WPsDescription}.  
 
 %\vspace{-2mm}
 %\begin{multicols}{2}[]
@@ -71,7 +88,7 @@ Each of the research topics has research objectives (RO) shown in each table. Th
 The first research topic concerns the use of \textbf{ML and advanced data analysis} in RTA techniques.
 %The sheer size of the datasets collected by scientific experiments has lead researchers in HEP to use advanced data analysis methods normally used in industry, such as ML and AI. 
 ML techniques are by now ubiquitous in both HEP and industry, in order to optimally analyze raw, unstructured data. 
-In \acronym we will further extend their use in RTA and event reconstruction, paying particular attention to their understandability and reproducibility (see research topic 4).   
+In \acronym we will further extend their use in RTA and event reconstruction, paying particular attention to their understandability and reproducibility (see research topic 4).
 Meta-analysis (benchmarking) is also necessary to understand the algorithm performance prior to using them in RTA and to satisfy he requirements of resource-constrained environments.
 
 \begin{center}
@@ -81,7 +98,7 @@ Meta-analysis (benchmarking) is also necessary to understand the algorithm perfo
 \begin{tabular}{|p{0.5\textwidth}|p{0.5\textwidth}|}
 %\toprule
 \hline
-\textbf{Research Objective:} & \textbf{Outcomes:} \\
+\textbf{Research Objective:} & \textbf{Outcomes (corresponding to groups of deliverables):} \\
 \hline
 design and use a variety of ML algorithms for RTA (GAN, RNN, Deep Learning)  & HEP and commercial software toolkits;\\
 \hline
@@ -147,16 +164,13 @@ use ML and hybrid architecture for RTA to improve transport and safety of fleets
 %\vskip5pt
 
 The fourth research topic concerns efficient and accountable \textbf{monitoring} of complex processes and increase the sensitivity to physics \textbf{discoveries} through outlier detection and novel RTA techniques in data taking. 
+
 Firstly, industry and HEP share the challenge of not knowing in advance what kind of "interesting" events will appear, in the case of malfunctioning equipment, fraudulent financial transaction or potential not-yet-theorised new physics process. 
-Outlier/novelty detection is a growing field, with dedicated ML algorithms\footnote{R. Domingues et al, \href{A comparative evaluation of outlier detection algorithms: experiments and analyses}{http://doi.org/10.1016/j.patcog.2017.09.037}, Pattern Recognition 74 (2018)}. In \acronym, experts in the field from \ibmentity and their supervised ESRs will apply those to physics and industry use cases, and extending them to methods where rules on what are inferred from a mixture of theory and known events to increase their accountability and understandability.
- 
-Second, the present HEP paradigm is to select in real-time a small number of interesting events, but keep the full detector data for later analysis. This paradigm depends on the assumption that interesting events are very rare compared to the SM backgrounds. It is however becoming increasingly clear that crucial HEP research questions can only be answered by either precise measurements of the abundant SM processes themselves, or by searching for new processes which closely mimic these SM backgrounds. In this case, as pioneered by SMARTHEP members, higher-level physics insight must be obtained in real-time, so that only a small subset of this higher-level information can be stored for each event, greatly reducing its size.
-\footnote{e.g. Gligorov and Fitzpatrick, \href{http://cds.cern.ch/record/1670985}{Anatomy of an upgrade event in the upgrade era, and implications for the LHCb trigger}, CERN Document Server. ALICE Collaboration including Christiansen, \href{https://cds.cern.ch/record/2011297/files/ALICE-TDR-019.pdf}{Technical Design Report}, CDS Document Server. CMS Collaboration including Pierini, \href{https://arxiv.org/abs/1604.08907}{Search for narrow resonances in dijet final states at $\sqrt{s}$ = 8 TeV with the novel CMS technique of data scouting}, Phys. Rev. Lett. 117, 031802 (2016). ATLAS Collaboration including Boveia, Starovoitov, Dunford and Strom, ADD HERE TLA REF, LHCb collaboration including Gligorov, Borsato ADD HERE DARK PHOTON REF}
-%Secondly, the present HEP paradigm, in which a pre-selection of interesting signals based on simple event features reduces the event rate to a manageable size for further storage, works well in an environment dominated by uninteresting backgrounds. 
-%, where the backgrounds can be distinguished from the signal using those event features (e.g. only around one in ten trillion LHC collisions produce a Higgs boson). 
-%However,  Not being able to fully exploit the wealth of collision data delivered by the LHC because it is impossible to save it for further analysis is a severe cost for the advancement of the physics program of all LHC experiments, especially in light of the planned upgrades to the LHC collider that will significantly increase the collision rates. For this reason, many of the members of \acronym have been extending the physics program of their experiments using novel RTA techniques in data taking\footnote{e.g. Gligorov and Fitzpatrick, \href{http://cds.cern.ch/record/1670985}{Anatomy of an upgrade event in the upgrade era, and implications for the LHCb trigger}, CERN Document Server. ALICE Collaboration including Christiansen, \href{https://cds.cern.ch/record/2011297/files/ALICE-TDR-019.pdf}{Technical Design Report}, CDS Document Server, ADD ATLAS TRIGGER PAPER}. 
-%The technique they pioneered exploits real-time reconstruction and analysis at the trigger level to only record high-level  information, rather than the raw detector information as it is traditionally done. 
-%Since high-level quantities are much smaller than raw data, more events can be recorded and used for physics analysis, and and a much increased sensitivity for measurements and discoveries can be achieved\footnote{CMS Collaboration including Pierini, \href{https://arxiv.org/abs/1604.08907}{Search for narrow resonances in dijet final states at $\sqrt{s}$ = 8 TeV with the novel CMS technique of data scouting}, Phys. Rev. Lett. 117, 031802 (2016). ATLAS Collaboration including Boveia, Starovoitov, Dunford and Strom, ADD HERE TLA REF, LHCb collaboration including Gligorov, Borsato ADD HERE DARK PHOTON REF}. 
+Outlier/novelty detection is a growing field, with dedicated ML algorithms\footnote{R. Domingues et al, \href{A comparative evaluation of outlier detection algorithms: experiments and analyses}{http://doi.org/10.1016/j.patcog.2017.09.037}, Pattern Recognition 74 (2018)}. In \acronym, experts in the field and their supervised ESRs will apply those to physics and industry use cases, and extending them to methods where rules on what are inferred from a mixture of theory and known events to increase their accountability and understandability.
+
+Secondly, the present HEP paradigm is to select in real-time a small number of interesting events, but keep the full detector data for later analysis. This paradigm depends on the assumption that interesting events are very rare compared to the SM backgrounds. It is however becoming increasingly clear that crucial HEP research questions can only be answered by either precise measurements of the abundant SM processes themselves, or by searching for new processes which closely mimic these SM backgrounds~\footnote{See e.g. Gligorov and Fitzpatrick, \href{http://cds.cern.ch/record/1670985}{Anatomy of an upgrade event in the upgrade era, and implications for the LHCb trigger}, CDS Document Server and ALICE Collaboration including Christiansen, \href{https://cds.cern.ch/record/2011297/files/ALICE-TDR-019.pdf}{Technical Design Report}, CDS Document Server}. To be sensitive to these processes, higher-level physics insight must be obtained in real-time. This way, only a small subset of this higher-level information can be stored for each event, greatly reducing its size. This technique is referred in the following as \textit{fully RTA-based data taking}, it has been pioneered by \acronym members and published in one of the highest-impact journals in the field
+\footnote{CMS Collaboration including Pierini, \href{https://arxiv.org/abs/1604.08907}{Search for narrow resonances in dijet final states at $\sqrt{s}$ = 8 TeV with the novel CMS technique of data scouting}, Phys. Rev. Lett. 117 (2016) 031802. ATLAS Collaboration including Boveia, Starovoitov, Dunford and Strom, \href{Search for low-mass dijet resonances using trigger-level jets with the ATLAS detector in pp collisions at sqrt(s)=13 TeV}{https://arxiv.org/abs/1804.03496}, Phys. Rev. Lett. 121 (2018) 081801, LHCb collaboration with Borsato as lead author \href{LHCb Collaboration: Search for dark photons produced in 13 TeV pp collisions}{https://arxiv.org/abs/1710.02867}, Phys.Rev.Lett. 120 (2016) 061801.}.
+
 \acronym will improve and extend this technique beyond the current state-of-the-art towards the upgrades, in LHCb where most of the data will be recorded this way, in ALICE where it will be implemented for the first time, and in ATLAS and CMS where it will be applied to a larger number of searches. 
 \begin{center}
 \vskip-15pt
@@ -272,8 +286,9 @@ All results will be \textbf{disseminated and communicated} to a variety of audie
 
 HEP experiments are by their very nature built around \textbf{training}, as around a third of all LHC collaborations consist of PhD students. The training WP (\textbf{\colorbox{red}{WP2}}) encompasses WP3-7 and combines this collaborative, training-based research culture, with a focus on cutting-edge technologies. 
 
-Throughout this ETN, RTA will provide the common language linking these challenges and disciplines, in research, academia and industry, and will enable each of the WPs to benefit from the progress made in the others.
 The WPs are summarized in the Table 1.1. Fig 1. gives a schematic view of the four research WPs and the main actors within the consortium. 
+
+Throughout this ETN, RTA will provide the common language linking these challenges and disciplines, in research, academia and industry, and will enable each of the WPs to benefit from the progress made in the others. In particular, WP3 and WP4 will provide the techniques to enable advancements in WP4 and WP5. For this reason, most ESRs will start their research focusing on either ML or hybrid architecture then proceed to apply the knowledge and technique to the decision-making or monitoring and discoveries, as shown in GANTT CHART. 
 
 \begin{center}
 \includegraphics[width=0.6\textwidth]{figs/NetworkCompositionCombinedImplementation} %scienceStructure_2.pdf}
@@ -310,9 +325,8 @@ spends order 10M dollars a year on computing~\footnote{Private communication, \h
 %An example of this are the physics searches and measurements performed solely using trigger information.
 %In these searches only a small fraction of each event, regardless of whether LHC experiments are able to record it for offline reconstruction or not, is saved for further processing. 
 %This overcomes the storage limitations and allows to be more than an order of magnitude more sensitive to certain new particles (e.g. associated to Dark Matter, as in Fig.3).
-To achieve this goal and maintain a cost-effective data taking strategy, LHC experiments need a more systematic application of RTA (especially fully RTA-based analysis that discards bulky raw data), machine learning and hybrid architectures for HEP. 
-As RTA is essential in industry as well, the research environment can benefit from a generation of ESRs with experience in industrial grade algorithms and tools. 
-In particular, the ESRs will be trained in topics matching the emerging trend of real-time big data analytics\footnote{\href{https://www.scnsoft.com/blog/real-time-big-data-analytics-comprehensive-guide}{A comprehensive guide to real-time big data analytics.}} by invited speakers from large enterprises using these methods.   
+To maintain a cost-effective data taking strategy, LHC experiments need a more systematic application of RTA (especially fully RTA-based analysis that discards bulky raw data), machine learning and hybrid architectures for HEP. 
+As RTA is essential in industry as well as in HEP, the research environment can benefit from cross-pollination in terms of research topics, and from a generation of ESRs with experience in industrial grade algorithms and tools. 
 
 \noindent {\color{blue}{2. The \acronym research program could lead to breakthroughs in our understanding of nature}}
 Only fully-real time data acquisition techniques and trigger improvements enable full exploitation of the LHC dataset. 
@@ -331,6 +345,8 @@ Furthermore, the developed toolkits will be advertised at international conferen
 The close links of the research institutes of the consortium with the industry partners means that the ESRs will directly drive the development of novel industrial products, while also bringing professional methods of data mining that are exercised in large companies into the academic environment. 
 Most modern methods applied in research can in this way be transferred to industry applications. 
 By exposing industry-grade methods to the volume and complexity of HEP data, we will stimulate their development in a complementary way for the benefit of industry.
+In particular, the ESRs will be trained in topics matching the emerging trend of real-time big data analytics\footnote{\href{https://www.scnsoft.com/blog/real-time-big-data-analytics-comprehensive-guide}{A comprehensive guide to real-time big data analytics.}} by invited speakers from large enterprises using these methods.   
+
 % in automotive traffic optimization (ESR1-2, 6, 8) and analysis of sensor data for IoT and medical applications (ESR3-4, 9, 11, 13, 15).
 %JA: not , 14 (??)) 
 %The proposed algorithms and the use of ML methods on these scales of data are novel to both HEP and industry. 
